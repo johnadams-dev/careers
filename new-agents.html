@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>New Agents | Adams, Cameron & Co., Realtors</title>
+<meta name="description" content="Launch your real estate career with Adams Cameron. Mentorship, tools, training, and a family culture where new agents thrive from day one." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+<style>
+/* ── HERO (two-column) ── */
+.na-hero { position:relative; min-height:90vh; display:grid; grid-template-columns:1fr 1fr; overflow:hidden; }
+.na-hero-content { background:var(--charcoal); padding:8rem 5rem 5rem 6rem; display:flex; flex-direction:column; justify-content:center; position:relative; z-index:2; }
+.na-hero-content::after { content:''; position:absolute; right:-60px; top:0; width:120px; height:100%; background:var(--charcoal); clip-path:polygon(0 0,0 100%,100% 100%); }
+.na-hero-content h1 { font-family:var(--ff-head); font-size:clamp(2.4rem,4vw,3.6rem); font-weight:700; color:var(--white); line-height:1.08; margin-bottom:1.8rem; }
+.na-hero-content h1 em { font-style:italic; color:var(--gold-lt); }
+.na-hero-sub { font-size:1.05rem; color:rgba(255,255,255,.72); max-width:440px; margin-bottom:2.5rem; font-weight:300; line-height:1.8; }
+.na-hero-image { position:relative; overflow:hidden; }
+.na-hero-image img { width:100%; height:100%; object-fit:cover; object-position:center top; }
+.na-hero-badge { position:absolute; bottom:2.5rem; right:2.5rem; background:var(--white); border-radius:var(--radius); padding:1.2rem 1.6rem; box-shadow:var(--shadow-lg); text-align:center; }
+.na-hero-badge-num { font-family:var(--ff-head); font-size:2.2rem; font-weight:700; color:var(--navy); line-height:1; }
+.na-hero-badge-txt { font-size:.7rem; color:var(--mid); letter-spacing:.05em; text-transform:uppercase; margin-top:.3rem; }
+
+/* ── TRAITS ── */
+.traits { margin-top:2.5rem; display:flex; flex-direction:column; gap:.85rem; }
+.trait { display:flex; align-items:flex-start; gap:1rem; padding:1rem 1.2rem; background:var(--white); border-radius:var(--radius); border-left:3px solid var(--gold); transition:box-shadow .2s; }
+.trait:hover { box-shadow:var(--shadow); }
+.trait-icon { font-size:1.3rem; flex-shrink:0; margin-top:.1rem; }
+.trait-text strong { display:block; font-weight:600; color:var(--charcoal); margin-bottom:.15rem; font-size:.95rem; }
+.trait-text span { font-size:.88rem; color:var(--mid); }
+
+/* ── CTA SPLIT ── */
+.cta-split { display:grid; grid-template-columns:1fr 1fr; gap:6rem; align-items:center; }
+.cta-split-copy h2 { font-family:var(--ff-head); font-size:clamp(1.8rem,3vw,2.5rem); font-weight:700; color:var(--white); margin-bottom:1rem; }
+.cta-split-copy p  { color:rgba(255,255,255,.65); font-size:1.05rem; max-width:100%; margin-bottom:2rem; font-weight:300; line-height:1.75; }
+.perks { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:2rem; }
+.perk { background:rgba(255,255,255,.07); border-radius:6px; padding:1.2rem 1.4rem; }
+.perk-icon { color:var(--gold); font-size:1.4rem; margin-bottom:.4rem; }
+.perk-name { color:var(--white); font-weight:600; font-size:.88rem; }
+.perk-desc { color:rgba(255,255,255,.5); font-size:.78rem; margin-top:.2rem; }
+
+@media(max-width:960px){
+  .na-hero { grid-template-columns:1fr; min-height:auto; }
+  .na-hero-content { padding:5rem 2rem 6rem; }
+  .na-hero-content::after { display:none; }
+  .na-hero-image { height:360px; }
+  .cta-split { grid-template-columns:1fr; gap:3rem; }
+  .perks { grid-template-columns:1fr; }
+}
+</style>
+  <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body data-page="new-agents">
+
+<!-- HERO -->
+<section class="na-hero">
+  <div class="na-hero-content">
+    <p class="hero-eyebrow fade-up delay-1">New Agents &mdash; Start Here</p>
+    <h1 class="fade-up delay-2">High Performance.<br/><em>High Quality<br/>of Life.</em></h1>
+    <p class="na-hero-sub fade-up delay-3">We handle the heavy lifting&mdash;marketing, technology, and training&mdash;so you can focus on serving clients and building a career you love. At Adams Cameron, no one has to succeed alone.</p>
+    <div class="hero-actions fade-up delay-4">
+      <a href="#contact" class="btn-primary">Start Your Career &darr;</a>
+      <a href="#ecosystem" class="btn-ghost">See How We Support You</a>
+    </div>
+  </div>
+  <div class="na-hero-image">
+    <img src="https://images.unsplash.com/photo-1560440021-33f9b867899d?w=900&q=80&fit=crop&crop=center" alt="Florida coastal home" />
+    <div class="na-hero-badge">
+      <div class="na-hero-badge-num">#1</div>
+      <div class="na-hero-badge-txt">Largest Brokerage<br/>Volusia &amp; Flagler</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMISE STRIP -->
+<div class="promise-strip">
+  <div class="promise-strip-label">Our Mission</div>
+  <div class="promise-strip-text">"To empower real estate professionals with the systems and support they need to deliver the highest value to their clients&mdash;with the least amount of stress."</div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar section-sm">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat"><div class="stat-num">60+</div><div class="stat-lbl">Years of Community Trust</div></div>
+      <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">Offices Across the Region</div></div>
+      <div class="stat"><div class="stat-num">7</div><div class="stat-lbl">Days a Week &mdash; Manager Access</div></div>
+      <div class="stat"><div class="stat-num" style="font-size:1.1rem;line-height:1.4;">All Tools<br/>&amp; Marketing</div><div class="stat-lbl">Included at No Cost</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OPPORTUNITY SPLIT -->
+<section class="section" style="background:var(--cream);">
+  <div class="container">
+    <div class="split">
+      <div class="split-image">
+        <div class="split-image-accent"></div>
+        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80&fit=crop&crop=top" alt="Professional real estate agent" />
+        <div class="split-image-badge">
+          <div class="split-image-badge-num">Since<br/>1963</div>
+          <div class="split-image-badge-txt">Volusia County&rsquo;s<br/>Most Trusted Name</div>
+        </div>
+      </div>
+      <div>
+        <p class="section-label">The Opportunity</p>
+        <h2 class="section-title">Is Real Estate Right For You?</h2>
+        <p class="section-intro">A career in real estate rewards the self-starter. Your income reflects your ambition&mdash;and at Adams Cameron, we ensure you&rsquo;re never on that journey alone.</p>
+        <div class="traits">
+          <div class="trait"><div class="trait-icon">🎯</div><div class="trait-text"><strong>Unlimited Earning Potential</strong><span>Your income is tied directly to your effort and drive&mdash;no ceiling, no cap.</span></div></div>
+          <div class="trait"><div class="trait-icon">🕐</div><div class="trait-text"><strong>Flexibility &amp; Independence</strong><span>Set your own schedule and build a business entirely on your own terms.</span></div></div>
+          <div class="trait"><div class="trait-icon">🤝</div><div class="trait-text"><strong>Help Others Through Life&rsquo;s Biggest Decisions</strong><span>Guide families through milestones that matter&mdash;this work has real meaning.</span></div></div>
+          <div class="trait"><div class="trait-icon">📈</div><div class="trait-text"><strong>Constant Personal &amp; Professional Growth</strong><span>Our ecosystem keeps you sharp with training, technology, and mentor access every day.</span></div></div>
+          <div class="trait"><div class="trait-icon">🏠</div><div class="trait-text"><strong>Status &amp; Community Credibility</strong><span>Carry the Adams Cameron name&mdash;the most recognized brand in Volusia &amp; Flagler County.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ECOSYSTEM -->
+<section class="section" id="ecosystem" style="background:var(--charcoal);">
+  <div class="container">
+    <p class="section-label light">Your Support Ecosystem</p>
+    <h2 class="section-title light">We Do the Heavy Lifting.<br/>You Close the Deals.</h2>
+    <p class="section-intro light">Four interconnected systems built specifically so you can deliver the highest value to every client&mdash;with the lowest stress to yourself.</p>
+    <div class="eco-grid">
+      <div class="eco-card"><div class="eco-number">01</div><div class="eco-icon">📣</div><div class="eco-heading">The Visibility Engine</div><div class="eco-goal">Goal: Keep you top-of-mind without the manual grind</div><p class="eco-desc">Automated marketing tools keep your brand working 24/7 so you can stay focused on building relationships, not creating content.</p><div class="eco-tools"><span class="eco-tool">AC Social</span><span class="eco-tool">FRED</span><span class="eco-tool">Direct Mail</span><span class="eco-tool">Agent Websites</span><span class="eco-tool">Brand Since 1963</span></div></div>
+      <div class="eco-card"><div class="eco-number">02</div><div class="eco-icon">🧭</div><div class="eco-heading">The Guidance System</div><div class="eco-goal">Goal: Remove uncertainty and stress at every turn</div><p class="eco-desc">Non-competing managers available 7 days a week. Our office coordinator team&mdash;the largest in the region&mdash;provides daily hands-on help with technology, marketing, and compliance. Ask Cameron AI for instant on-demand answers.</p><div class="eco-tools"><span class="eco-tool">Ask Cameron AI</span><span class="eco-tool">Non-Competing Managers</span><span class="eco-tool">Office Coordinators</span><span class="eco-tool">Ninja Selling</span><span class="eco-tool">Mentoring Program</span></div></div>
+      <div class="eco-card"><div class="eco-number">03</div><div class="eco-icon">⚡</div><div class="eco-heading">The Productivity Platform</div><div class="eco-goal">Goal: Streamline every transaction for higher value</div><p class="eco-desc">Powerful tools at no cost to you. From CRM to custom agent websites to transaction management, everything is ready on day one.</p><div class="eco-tools"><span class="eco-tool">DeltaNet CRM</span><span class="eco-tool">Intranet</span><span class="eco-tool">Custom Agent Websites</span><span class="eco-tool">Transaction Management</span></div></div>
+      <div class="eco-card"><div class="eco-number">04</div><div class="eco-icon">🌐</div><div class="eco-heading">The Reach Network</div><div class="eco-goal">Goal: Deliver value beyond the local market</div><p class="eco-desc">Membership in <a href="https://www.leadingre.com" target="_blank" style="color:var(--gold-lt);font-weight:600;">Leading Real Estate Companies of the World</a> means your clients can relocate anywhere with a trusted referral. Nine offices keep you always close to support.</p><div class="eco-tools"><span class="eco-tool">LeadingRE Global Network</span><span class="eco-tool">Relocation Division</span><span class="eco-tool">9 Local Offices</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <p class="section-label">Core Values</p>
+    <h2 class="section-title">What We Believe.</h2>
+    <p class="section-intro">Not posters on a wall. These are the operating principles that shape every decision we make&mdash;for you and for your clients.</p>
+    <div class="card-grid-3">
+      <div class="card"><div class="card-icon">👨‍👩‍👧‍👦</div><h3>One Family</h3><p style="font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);margin-bottom:.75rem;">Corporate Family</p><p>We are stronger together. At Adams Cameron, &ldquo;family&rdquo; isn&rsquo;t a buzzword&mdash;it&rsquo;s our operational model. We combine our collective strengths so that no one here has to succeed alone.</p></div>
+      <div class="card"><div class="card-icon">🏆</div><h3>Relentless Excellence</h3><p style="font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);margin-bottom:.75rem;">Strong Work Ethic</p><p>High standards produce the highest results. We commit to the hustle behind the scenes so that every client achieves the highest value with the least amount of stress.</p></div>
+      <div class="card"><div class="card-icon">🤲</div><h3>Unwavering Integrity</h3><p style="font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);margin-bottom:.75rem;">Infallible Ethics</p><p>Trust is the antidote to stress. Every interaction is an opportunity to treat people with radical honesty. We build relationships measured in decades, not transactions.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" style="background:var(--cream);">
+  <div class="container">
+    <p class="section-label">In Their Own Words</p>
+    <h2 class="section-title">Why Agents Stay.</h2>
+    <p class="section-intro">Hear directly from agents who started exactly where you are now.</p>
+    <div class="card-grid-3">
+      <div class="testimonial"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="testimonial-quote">I have been approached by a lot of different agencies and I wouldn&rsquo;t go work for anyone else. It&rsquo;s just a great, family-oriented brokerage. Fair, always willing to help, and the training is amazing.</div><div class="testimonial-author"><img class="testimonial-avatar" src="https://www.floridarealtorcareers.com/shared/get/uphoto.php?uid=081500242" alt="Al Wilson" /><div><div class="testimonial-name">Al Wilson</div><div class="testimonial-role">Adams Cameron Agent</div></div></div></div>
+      <div class="testimonial"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="testimonial-quote">As a new agent I shopped around and chose Adams Cameron because they offered the best training and marketing tools. Everyone has been incredibly supportive&mdash;no competition here, just a wonderful atmosphere.</div><div class="testimonial-author"><img class="testimonial-avatar" src="https://www.floridarealtorcareers.com/shared/fs/0815/company/careers/libby-payne-homepage.jpg" alt="Libby Payne" /><div><div class="testimonial-name">Libby Payne</div><div class="testimonial-role">Adams Cameron Agent</div></div></div></div>
+      <div class="testimonial"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="testimonial-quote">The Adams Cameron family is a true family. A top agent handed us his card and said &ldquo;Call me if you have any questions.&rdquo; We were not competition&mdash;just family. We became better agents because of this community.</div><div class="testimonial-author"><img class="testimonial-avatar" src="https://www.floridarealtorcareers.com/shared/fs/0815/company/careers/toni-and-jeff-homepage.jpg" alt="Toni & Jeff Wright" /><div><div class="testimonial-name">Toni &amp; Jeff Wright</div><div class="testimonial-role">Adams Cameron Agents</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA + FORM -->
+<section class="section" id="contact" style="background:var(--navy);position:relative;overflow:hidden;">
+  <div style="position:absolute;top:-150px;right:-150px;width:500px;height:500px;border-radius:50%;background:rgba(255,255,255,.03);"></div>
+  <div class="container">
+    <div class="cta-split">
+      <div class="cta-split-copy">
+        <p class="section-label light">Ready to Start?</p>
+        <h2>You&rsquo;re Not Just Joining a Brokerage.<br/><em style="font-style:italic;color:var(--gold-lt);">You&rsquo;re Gaining a Launchpad.</em></h2>
+        <p>We give new agents every opportunity to thrive&mdash;with mentorship, modern tools, a powerful brand, and a culture that feels like family. Let&rsquo;s build your future in real estate together.</p>
+        <blockquote style="padding:1.5rem 1.5rem 1.5rem 2rem;border-left:3px solid var(--gold);background:rgba(255,255,255,.05);border-radius:0 4px 4px 0;margin-bottom:2rem;">
+          <p style="font-family:var(--ff-head);font-style:italic;color:rgba(255,255,255,.85);font-size:.98rem;line-height:1.65;">&ldquo;A real estate culture where high performance and a high quality of life go hand in hand.&rdquo;</p>
+          <cite style="display:block;margin-top:.6rem;font-size:.75rem;font-style:normal;color:var(--gold);font-weight:700;letter-spacing:.1em;text-transform:uppercase;">&mdash; Adams Cameron Vision Statement</cite>
+        </blockquote>
+        <div class="perks">
+          <div class="perk"><div class="perk-icon">📋</div><div class="perk-name">Discounted Pre-Licensing</div><div class="perk-desc">We help you get there from day one</div></div>
+          <div class="perk"><div class="perk-icon">🏆</div><div class="perk-name">Mentorship From Day One</div><div class="perk-desc">Paired with agents who care about your success</div></div>
+          <div class="perk"><div class="perk-icon">📊</div><div class="perk-name">Full Marketing Suite</div><div class="perk-desc">At no cost to you&mdash;ever</div></div>
+          <div class="perk"><div class="perk-icon">👥</div><div class="perk-name">Manager, 7 Days a Week</div><div class="perk-desc">Non-competing, dedicated to your growth</div></div>
+        </div>
+      </div>
+      <div class="form-wrap" style="position:relative;z-index:2;">
+        <div class="form-heading">Let&rsquo;s Talk</div>
+        <div class="form-sub">Fill out the form and a member of our team will reach out within one business day.</div>
+        <form name="new-agent-inquiry" method="POST" data-netlify="true" action="thank-you.html">
+          <input type="hidden" name="form-name" value="new-agent-inquiry" />
+          <div class="form-row">
+            <div class="form-group"><label for="fname">First Name *</label><input type="text" id="fname" name="fname" required placeholder="Jane" /></div>
+            <div class="form-group"><label for="lname">Last Name *</label><input type="text" id="lname" name="lname" required placeholder="Smith" /></div>
+          </div>
+          <div class="form-group"><label for="email">Email Address *</label><input type="email" id="email" name="email" required placeholder="jane@example.com" /></div>
+          <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" placeholder="(386) 555-1234" /></div>
+          <div class="form-group">
+            <label for="status">Your Licensing Status</label>
+            <select id="status" name="status">
+              <option value="">Select one&hellip;</option>
+              <option>Not yet licensed &mdash; exploring options</option>
+              <option>Currently in pre-licensing school</option>
+              <option>Licensed but not yet active</option>
+              <option>I have my license and I&rsquo;m ready to start</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="comments">Anything you&rsquo;d like us to know?</label><textarea id="comments" name="comments" placeholder="Tell us a bit about yourself and your goals&hellip;"></textarea></div>
+          <button type="submit" class="form-submit">Request More Information &rarr;</button>
+          <div class="form-privacy">We respect your privacy. Your information is never sold or shared.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script src="js/shared.js"></script>
+</body>
+</html>

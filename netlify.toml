@@ -1,0 +1,49 @@
+# netlify.toml
+# ── Netlify Configuration for floridarealtorcareers.com ──────────
+# Drop the entire /acrealtors folder into Netlify to deploy.
+
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/new-agents"
+  to   = "/new-agents.html"
+  status = 200
+
+[[redirects]]
+  from = "/experienced-agents"
+  to   = "/experienced-agents.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to   = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/support"
+  to   = "/support.html"
+  status = 200
+
+[[redirects]]
+  from = "/referral"
+  to   = "/referral.html"
+  status = 200
+
+[[redirects]]
+  from = "/foundation"
+  to   = "/foundation.html"
+  status = 200
+
+[[redirects]]
+  from = "/join"
+  to   = "/join.html"
+  status = 200
+
+# Security headers — good practice
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

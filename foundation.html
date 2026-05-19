@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Adams Cameron Foundation | Adams, Cameron & Co., Realtors</title>
+<meta name="description" content="The Adams Cameron Foundation invests in the communities of Volusia and Flagler County. Learn about our giving, our partners, and how to get involved." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+<style>
+.foundation-hero-accent { display:grid; grid-template-columns:1fr 1fr; min-height:70vh; }
+.fhero-content { background:var(--charcoal); display:flex; flex-direction:column; justify-content:center; padding:6rem 5rem 5rem 6rem; position:relative; z-index:2; }
+.fhero-content::after { content:''; position:absolute; right:-60px; top:0; width:120px; height:100%; background:var(--charcoal); clip-path:polygon(0 0,0 100%,100% 100%); }
+.fhero-image { position:relative; overflow:hidden; }
+.fhero-image img { width:100%; height:100%; object-fit:cover; }
+.impact-numbers { display:grid; grid-template-columns:repeat(4,1fr); gap:1.5px; background:var(--light); margin-top:3rem; }
+.impact-num { background:var(--white); padding:2.5rem 2rem; text-align:center; }
+.impact-num-val { font-family:var(--ff-head); font-size:2.8rem; font-weight:700; color:var(--navy); line-height:1; margin-bottom:.3rem; }
+.impact-num-lbl { font-size:.78rem; color:var(--mid); letter-spacing:.05em; text-transform:uppercase; }
+.cause-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:3rem; }
+.cause-card  { border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); }
+.cause-card-img { width:100%; height:200px; object-fit:cover; }
+.cause-card-body { padding:1.5rem; background:var(--white); }
+.cause-card-body h3 { font-family:var(--ff-head); font-size:1.2rem; font-weight:700; color:var(--charcoal); margin-bottom:.5rem; }
+.cause-card-body p  { font-size:.86rem; color:var(--mid); line-height:1.65; }
+@media(max-width:960px){
+  .foundation-hero-accent { grid-template-columns:1fr; min-height:auto; }
+  .fhero-content { padding:5rem 2rem 6rem; }
+  .fhero-content::after { display:none; }
+  .fhero-image { height:320px; }
+  .impact-numbers { grid-template-columns:1fr 1fr; }
+  .cause-cards { grid-template-columns:1fr; }
+}
+</style>
+  <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body data-page="foundation">
+
+<section class="foundation-hero-accent">
+  <div class="fhero-content">
+    <p class="hero-eyebrow fade-up delay-1">Adams Cameron Foundation</p>
+    <h1 class="fade-up delay-2" style="font-family:var(--ff-head);font-size:clamp(2.2rem,3.8vw,3.4rem);font-weight:700;color:var(--white);line-height:1.1;margin-bottom:1.5rem;">We Give Back to the<br/><em style="font-style:italic;color:var(--gold-lt);">Community That<br/>Gives to Us.</em></h1>
+    <p class="fade-up delay-3" style="font-size:1.05rem;color:rgba(255,255,255,.7);max-width:420px;font-weight:300;line-height:1.8;margin-bottom:2rem;">At Adams Cameron, our roots run deep in Volusia and Flagler County. The Adams Cameron Foundation is our commitment to invest in the people and places that make this region extraordinary.</p>
+    <div class="fade-up delay-4"><a href="#get-involved" class="btn-primary">Get Involved &darr;</a></div>
+  </div>
+  <div class="fhero-image">
+    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=900&q=80&fit=crop&crop=center" alt="Community giving and volunteering" />
+  </div>
+</section>
+
+<div class="breadcrumb"><div class="container"><a href="index.html">Home</a><span>&rsaquo;</span>Adams Cameron Foundation</div></div>
+
+<div class="promise-strip">
+  <div class="promise-strip-label">Our Belief</div>
+  <div class="promise-strip-text">"One Family" isn&rsquo;t just how we describe our brokerage. It&rsquo;s how we see our community. When Volusia and Flagler thrive, everyone in our family thrives.</div>
+</div>
+
+<!-- IMPACT NUMBERS -->
+<section class="section-sm" style="background:var(--cream);">
+  <div class="container">
+    <div class="impact-numbers">
+      <div class="impact-num"><div class="impact-num-val">60+</div><div class="impact-num-lbl">Years of Community Investment</div></div>
+      <div class="impact-num"><div class="impact-num-val">250+</div><div class="impact-num-lbl">Agents Who Give Back</div></div>
+      <div class="impact-num"><div class="impact-num-val">9</div><div class="impact-num-lbl">Office Communities Served</div></div>
+      <div class="impact-num"><div class="impact-num-val">&#x221E;</div><div class="impact-num-lbl">Ongoing Commitment</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT THE FOUNDATION -->
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="split">
+      <div>
+        <p class="section-label">About the Foundation</p>
+        <h2 class="section-title">More Than a Brokerage.<br/>A Community Institution.</h2>
+        <p class="section-intro">Adams, Cameron &amp; Co. has been a fixture of Volusia and Flagler County life since 1963. The Adams Cameron Foundation is the formal expression of a commitment that has always been part of our DNA.</p>
+        <p style="color:var(--mid);font-size:.95rem;line-height:1.8;margin-top:1.5rem;">Every agent who joins our family becomes part of a broader mission: to strengthen the communities where our clients live, work, and raise their families. Through charitable giving, volunteerism, and community partnerships, the Foundation channels the collective resources of the Adams Cameron family toward causes that matter.</p>
+        <p style="color:var(--mid);font-size:.95rem;line-height:1.8;margin-top:1rem;">Our focus areas include education, housing assistance, veterans&rsquo; services, and local nonprofits that serve Volusia and Flagler County residents in need. We believe that a thriving community creates a thriving real estate market&mdash;and that great neighbors make great neighbors.</p>
+      </div>
+      <div class="split-image">
+        <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80&fit=crop" alt="Community volunteering" />
+        <div class="split-image-accent"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOCUS AREAS -->
+<section class="section" style="background:var(--cream);">
+  <div class="container">
+    <p class="section-label">Focus Areas</p>
+    <h2 class="section-title">Where We Invest.</h2>
+    <p class="section-intro">Our giving is focused on the causes and communities that define Volusia and Flagler County.</p>
+    <div class="cause-cards">
+      <div class="cause-card">
+        <img class="cause-card-img" src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=75&fit=crop" alt="Education" />
+        <div class="cause-card-body"><h3>Education &amp; Youth</h3><p>Supporting local schools, scholarship programs, and youth initiatives that give every young person in our region the foundation they deserve.</p></div>
+      </div>
+      <div class="cause-card">
+        <img class="cause-card-img" src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&q=75&fit=crop" alt="Charity and community" />
+        <div class="cause-card-body"><h3>Housing &amp; Stability</h3><p>Partnering with organizations that address housing insecurity and help families in Volusia and Flagler County find stable, safe homes.</p></div>
+      </div>
+      <div class="cause-card">
+        <img class="cause-card-img" src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=600&q=75&fit=crop" alt="Veterans services" />
+        <div class="cause-card-body"><h3>Veterans &amp; First Responders</h3><p>Honoring those who serve by supporting veterans&rsquo; organizations and first responder programs across our region.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW AGENTS GIVE BACK -->
+<section class="section" style="background:var(--charcoal);">
+  <div class="container">
+    <p class="section-label light">The Family Gives Back</p>
+    <h2 class="section-title light">Community Is Part of the Job.</h2>
+    <p class="section-intro light">At Adams Cameron, community involvement isn&rsquo;t a sidebar&mdash;it&rsquo;s part of what it means to be a Realtor in this region. Our agents don&rsquo;t just sell homes here. They live here, serve here, and invest here.</p>
+    <div class="eco-grid">
+      <div class="eco-card"><div class="eco-icon">🏃</div><div class="eco-heading">Charity Events &amp; Fundraisers</div><p class="eco-desc">Throughout the year, Adams Cameron agents organize and participate in charity runs, galas, auctions, and fundraisers that benefit local organizations. The whole family shows up.</p></div>
+      <div class="eco-card"><div class="eco-icon">🔨</div><div class="eco-heading">Community Build Days</h3><p class="eco-desc">We roll up our sleeves. Adams Cameron agents regularly participate in hands-on community projects&mdash;building, cleaning, restoring, and improving the places that make our counties great.</p></div>
+      <div class="eco-card"><div class="eco-icon">🎓</div><div class="eco-heading">Scholarship Programs</div><p class="eco-desc">The Foundation contributes to scholarship funds that help local students pursue higher education. Investing in the next generation is investing in the future of our community.</p></div>
+      <div class="eco-card"><div class="eco-icon">🤲</div><div class="eco-heading">Partner Organization Support</div><p class="eco-desc">We partner with local nonprofits, churches, civic organizations, and government programs to direct resources where they&rsquo;re needed most across Volusia and Flagler County.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GET INVOLVED -->
+<section class="section" id="get-involved" style="background:var(--white);">
+  <div class="container" style="max-width:800px;text-align:center;">
+    <p class="section-label" style="justify-content:center;">Get Involved</p>
+    <h2 class="section-title">Join the Effort.</h2>
+    <p class="section-intro" style="max-width:600px;margin:0 auto 2.5rem;">Whether you&rsquo;re already an Adams Cameron agent or thinking about joining our family, we welcome your involvement in the Foundation&rsquo;s work. Contact us to learn about upcoming events and giving opportunities.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="join.html" class="btn-primary">Join Our Family</a>
+      <a href="tel:3862439504" class="btn-ghost-dk">Call Us: (386) 243-9504</a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <h2>Build a Career With Purpose.</h2>
+  <p>At Adams Cameron, giving back isn&rsquo;t a program. It&rsquo;s a way of life. Join a brokerage that measures success in more ways than one.</p>
+  <div class="cta-banner-actions">
+    <a href="join.html" class="btn-primary">Start Your Journey &rarr;</a>
+    <a href="about.html" class="btn-ghost">Learn About Our Culture</a>
+  </div>
+</div>
+
+
+<script src="js/shared.js"></script>
+</body>
+</html>

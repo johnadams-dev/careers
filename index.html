@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Florida Realtor Careers | Adams, Cameron & Co., Realtors</title>
+<meta name="description" content="Build your real estate career with Adams, Cameron & Co., Realtors — the area's largest brokerage since 1963. Mentorship, tools, and a culture where high performance meets high quality of life." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+<style>
+/* ── HOME HERO ── */
+.home-hero {
+  position: relative;
+  min-height: 95vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+.home-hero-content {
+  background: var(--charcoal);
+  padding: 8rem 5rem 5rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+.home-hero-content::after {
+  content: '';
+  position: absolute;
+  right: -60px; top: 0;
+  width: 120px; height: 100%;
+  background: var(--charcoal);
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+.hero-eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; display: flex; align-items: center; gap: .6rem; }
+.hero-eyebrow::before { content:''; display:inline-block; width:28px; height:2px; background:var(--gold); }
+.home-hero h1 { font-family: var(--ff-head); font-size: clamp(2.4rem,4vw,3.8rem); font-weight: 700; color: var(--white); line-height: 1.08; margin-bottom: 1.8rem; }
+.home-hero h1 em { font-style: italic; color: var(--gold-lt); }
+.home-hero-sub { font-size: 1.05rem; color: rgba(255,255,255,.7); max-width: 440px; margin-bottom: 2.5rem; font-weight: 300; line-height: 1.8; }
+.hero-actions  { display: flex; gap: 1rem; flex-wrap: wrap; }
+.hero-since    { margin-top: 3.5rem; display: flex; align-items: center; gap: 1.5rem; }
+.hero-since-divider { width:1px; height:50px; background:rgba(255,255,255,.15); }
+.hero-stat-num { font-family: var(--ff-head); font-size: 2.6rem; font-weight: 700; color: var(--gold); line-height: 1; }
+.hero-stat-lbl { font-size: .73rem; color: rgba(255,255,255,.5); letter-spacing: .06em; text-transform: uppercase; margin-top: .2rem; }
+.home-hero-image { position: relative; overflow: hidden; }
+.home-hero-image img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.home-hero-image-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(30,42,53,.35) 0%, transparent 60%); }
+.home-hero-badge { position: absolute; bottom: 2.5rem; right: 2.5rem; background: var(--white); border-radius: 6px; padding: 1.2rem 1.6rem; box-shadow: var(--shadow-lg); text-align: center; }
+.home-hero-badge-num { font-family: var(--ff-head); font-size: 2.2rem; font-weight: 700; color: var(--navy); line-height: 1; }
+.home-hero-badge-txt { font-size: .7rem; color: var(--mid); letter-spacing: .05em; text-transform: uppercase; margin-top: .3rem; }
+
+/* ── PATH CARDS ── */
+.path-section { background: var(--cream); }
+.path-grid    { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; margin-top: 3.5rem; }
+.path-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: box-shadow .25s, transform .25s;
+  display: flex;
+  flex-direction: column;
+}
+.path-card:hover { box-shadow: 0 12px 40px rgba(1,104,161,.14); transform: translateY(-4px); }
+.path-card-img  { height: 220px; object-fit: cover; width: 100%; }
+.path-card-body { padding: 2rem; flex-grow: 1; display: flex; flex-direction: column; }
+.path-card-tag  { font-size: .7rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--navy); margin-bottom: .6rem; }
+.path-card-body h3 { font-family: var(--ff-head); font-size: 1.4rem; font-weight: 700; color: var(--charcoal); margin-bottom: .6rem; }
+.path-card-body p  { font-size: .88rem; color: var(--mid); line-height: 1.7; flex-grow: 1; margin-bottom: 1.5rem; }
+
+/* ── WHY SECTION ── */
+.why-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; background: var(--light); margin-top: 4rem; }
+.why-item { background: var(--white); padding: 2.5rem 2rem; border-top: 3px solid transparent; transition: border-color .25s; }
+.why-item:hover { border-color: var(--gold); }
+.why-item-icon  { font-size: 2.2rem; margin-bottom: 1rem; }
+.why-item h3    { font-family: var(--ff-head); font-size: 1.25rem; font-weight: 700; color: var(--charcoal); margin-bottom: .5rem; }
+.why-item p     { font-size: .88rem; color: var(--mid); line-height: 1.7; }
+
+/* ── TESTIMONIALS BG ── */
+.proof-section { background: var(--cream); }
+
+@media (max-width: 960px) {
+  .home-hero { grid-template-columns: 1fr; min-height: auto; }
+  .home-hero-content { padding: 5rem 2rem 6rem; }
+  .home-hero-content::after { display: none; }
+  .home-hero-image { height: 380px; }
+  .path-grid, .why-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .why-grid { gap: 2px; }
+}
+</style>
+  <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body data-page="home">
+
+<!-- HOME HERO -->
+<section class="home-hero">
+  <div class="home-hero-content">
+    <p class="hero-eyebrow fade-up delay-1">Florida Realtor Careers</p>
+    <h1 class="fade-up delay-2">Where High Performance<br/>Meets <em>High Quality<br/>of Life.</em></h1>
+    <p class="home-hero-sub fade-up delay-3">Adams, Cameron &amp; Co. handles the heavy lifting&mdash;marketing, technology, and training&mdash;so you can focus on your clients and build a career you love. Since 1963, no one here has had to succeed alone.</p>
+    <div class="hero-actions fade-up delay-4">
+      <a href="new-agents.html" class="btn-primary">New Agents &rarr;</a>
+      <a href="experienced-agents.html" class="btn-ghost">Experienced Agents</a>
+    </div>
+    <div class="hero-since fade-up delay-4">
+      <div><div class="hero-stat-num">1963</div><div class="hero-stat-lbl">Founded in Volusia County</div></div>
+      <div class="hero-since-divider"></div>
+      <div><div class="hero-stat-num">250+</div><div class="hero-stat-lbl">Agents Across Our Family</div></div>
+      <div class="hero-since-divider"></div>
+      <div><div class="hero-stat-num">9</div><div class="hero-stat-lbl">Regional Offices</div></div>
+    </div>
+  </div>
+  <div class="home-hero-image">
+    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1000&q=80&fit=crop&crop=center" alt="Florida coastal real estate" />
+    <div class="home-hero-image-overlay"></div>
+    <div class="home-hero-badge">
+      <div class="home-hero-badge-num">#1</div>
+      <div class="home-hero-badge-txt">Largest Brokerage<br/>Volusia &amp; Flagler</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMISE STRIP -->
+<div class="promise-strip">
+  <div class="promise-strip-label">Our Mission</div>
+  <div class="promise-strip-text">"To empower real estate professionals with the systems and support they need to deliver the highest value to their clients&mdash;with the least amount of stress."</div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar section-sm">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat"><div class="stat-num">60+</div><div class="stat-lbl">Years of Trust</div></div>
+      <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">Local Offices</div></div>
+      <div class="stat"><div class="stat-num">7</div><div class="stat-lbl">Days/Week Manager Access</div></div>
+      <div class="stat"><div class="stat-num" style="font-size:1.1rem;line-height:1.4;">All Tools<br/>&amp; Marketing</div><div class="stat-lbl">Included at No Cost</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CHOOSE YOUR PATH -->
+<section class="path-section section">
+  <div class="container">
+    <p class="section-label">Choose Your Path</p>
+    <h2 class="section-title">We Have a Place For You</h2>
+    <p class="section-intro">Whether you're just starting, ready to scale, or want to protect the value of your license&mdash;there's a home for you in the Adams Cameron family.</p>
+    <div class="path-grid">
+      <div class="path-card">
+        <img class="path-card-img" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=75&fit=crop" alt="New agent starting career" />
+        <div class="path-card-body">
+          <div class="path-card-tag">Launch Your Career</div>
+          <h3>New Agents</h3>
+          <p>Start with confidence. Our mentorship programs, market-ready tools, and non-competing managers give new agents an extraordinary foundation from day one.</p>
+          <a href="new-agents.html" class="btn-secondary">Explore &rarr;</a>
+        </div>
+      </div>
+      <div class="path-card">
+        <img class="path-card-img" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=75&fit=crop" alt="Experienced real estate professional" />
+        <div class="path-card-body">
+          <div class="path-card-tag">Scale Your Business</div>
+          <h3>Experienced Agents</h3>
+          <p>Stop spending your best hours on marketing and admin. Our ecosystem handles the heavy lifting so you can focus on closing more deals at a higher level.</p>
+          <a href="experienced-agents.html" class="btn-secondary">Explore &rarr;</a>
+        </div>
+      </div>
+      <div class="path-card">
+        <img class="path-card-img" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&q=75&fit=crop" alt="Referral program" />
+        <div class="path-card-body">
+          <div class="path-card-tag">Protect Your Asset</div>
+          <h3>Realty Referral Program</h3>
+          <p>Not actively selling but want to keep your license working? Refer your clients to our trusted network and earn income without the demands of active sales.</p>
+          <a href="referral.html" class="btn-secondary">Explore &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY ADAMS CAMERON -->
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <p class="section-label">The Adams Cameron Difference</p>
+    <h2 class="section-title">Why Build Your Legacy With Us?</h2>
+    <p class="section-intro">Four interconnected systems work together to ensure every agent can deliver their best&mdash;every single day.</p>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-item-icon">📣</div>
+        <h3>The Visibility Engine</h3>
+        <p>Automated tools like AC Social and FRED keep your brand in front of the market without the manual grind. Your marketing never stops working, even when you do.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-item-icon">🧭</div>
+        <h3>The Guidance System</h3>
+        <p>Non-competing managers available 7 days a week. Ask Cameron AI for on-demand support. Ninja Selling training and mentorship. You'll always know your next move.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-item-icon">⚡</div>
+        <h3>The Productivity Platform</h3>
+        <p>DeltaNet CRM, transaction management, custom agent websites, and a powerful intranet&mdash;all at no cost to you. Technology that works as hard as you do.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-item-icon">🌐</div>
+        <h3>The Reach Network</h3>
+        <p>Membership in <a href="https://www.leadingre.com" target="_blank" style="color:var(--navy);font-weight:600;">Leading Real Estate Companies of the World</a> gives your clients global reach across all 50 states and 70+ countries&mdash;far beyond Volusia and Flagler County.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-item-icon">👨‍👩‍👧‍👦</div>
+        <h3>One Family Culture</h3>
+        <p>We are stronger together. No one competes against you here. Our non-competing Sales Managers and the largest office coordinator team in the region are all working for your success, not their own.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-item-icon">🏆</div>
+        <h3>A Trusted Brand</h3>
+        <p>Since 1963, Adams Cameron has been the most recognized name in Volusia and Flagler real estate. That reputation opens doors before you even make a call.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="proof-section section">
+  <div class="container">
+    <p class="section-label">In Their Own Words</p>
+    <h2 class="section-title">Why Agents Stay.</h2>
+    <p class="section-intro">Hear directly from agents who have built their careers inside our family.</p>
+    <div class="card-grid-3" style="margin-top:3.5rem;">
+      <div class="testimonial">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="testimonial-quote">I have been approached by a lot of different agencies and I wouldn&rsquo;t go work for anyone else. It&rsquo;s just a great, family-oriented brokerage. Fair, always willing to help, and the training is amazing.</div>
+        <div class="testimonial-author">
+          <img class="testimonial-avatar" src="https://www.floridarealtorcareers.com/shared/get/uphoto.php?uid=081500242" alt="Al Wilson" />
+          <div><div class="testimonial-name">Al Wilson</div><div class="testimonial-role">Adams Cameron Agent</div></div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="testimonial-quote">As a new agent I shopped around and chose Adams Cameron because they offered the best training and marketing tools. Everyone has been incredibly supportive. No competition here&mdash;just a wonderful atmosphere.</div>
+        <div class="testimonial-author">
+          <img class="testimonial-avatar" src="https://www.floridarealtorcareers.com/shared/fs/0815/company/careers/libby-payne-homepage.jpg" alt="Libby Payne" />
+          <div><div class="testimonial-name">Libby Payne</div><div class="testimonial-role">Adams Cameron Agent</div></div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="testimonial-quote">The Adams Cameron family is a true family. When we started, a top agent handed us his card and said, &ldquo;Call me if you have any questions.&rdquo; We were not competition&mdash;just family.</div>
+        <div class="testimonial-author">
+          <img class="testimonial-avatar" src="https://www.floridarealtorcareers.com/shared/fs/0815/company/careers/toni-and-jeff-homepage.jpg" alt="Toni & Jeff Wright" />
+          <div><div class="testimonial-name">Toni &amp; Jeff Wright</div><div class="testimonial-role">Adams Cameron Agents</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <h2>Take the Next Step in Your Real Estate Career</h2>
+  <p>Join the family that&rsquo;s been building careers&mdash;and community&mdash;across Volusia and Flagler County since 1963.</p>
+  <div class="cta-banner-actions">
+    <a href="join.html" class="btn-primary">Get Started Today</a>
+    <a href="about.html" class="btn-ghost">Learn More About Us</a>
+  </div>
+</div>
+
+
+<script src="js/shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Adams Cameron | Adams, Cameron & Co., Realtors</title>
+<meta name="description" content="Since 1963, Adams Cameron & Co. has been Volusia and Flagler County's most trusted real estate brokerage. Learn about our history, values, and culture." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+<style>
+.timeline { display:flex; flex-direction:column; gap:0; margin-top:3rem; position:relative; }
+.timeline::before { content:''; position:absolute; left:24px; top:0; bottom:0; width:2px; background:var(--light); }
+.tl-item { display:flex; gap:2rem; padding:1.5rem 0 1.5rem 0; position:relative; }
+.tl-dot  { width:50px; height:50px; border-radius:50%; background:var(--navy); color:white; font-family:var(--ff-head); font-size:.85rem; font-weight:700; display:flex; align-items:center; justify-content:center; flex-shrink:0; z-index:1; }
+.tl-dot.gold { background:var(--gold); color:var(--charcoal); }
+.tl-body h3  { font-family:var(--ff-head); font-size:1.2rem; font-weight:700; color:var(--charcoal); margin-bottom:.3rem; }
+.tl-body p   { font-size:.9rem; color:var(--mid); line-height:1.7; }
+.tl-year     { font-size:.72rem; font-weight:700; letter-spacing:.1em; color:var(--navy); margin-bottom:.25rem; }
+
+.golden-circle { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5px; background:var(--light); margin-top:3rem; }
+.gc-item { background:var(--white); padding:2.5rem 2rem; }
+.gc-label { font-size:.7rem; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); margin-bottom:.6rem; }
+.gc-title { font-family:var(--ff-head); font-size:1.3rem; font-weight:700; color:var(--charcoal); margin-bottom:.75rem; }
+.gc-item p { font-size:.9rem; color:var(--mid); line-height:1.7; }
+
+.offices-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:3rem; }
+.office-card { background:var(--white); border-radius:var(--radius); padding:1.5rem; box-shadow:var(--shadow); }
+.office-card h4 { font-family:var(--ff-head); font-size:1.05rem; font-weight:700; color:var(--charcoal); margin-bottom:.5rem; }
+.office-card p  { font-size:.82rem; color:var(--mid); line-height:1.65; }
+.office-card a  { color:var(--navy); font-weight:600; font-size:.82rem; }
+
+@media(max-width:960px){
+  .golden-circle { grid-template-columns:1fr; }
+  .offices-grid  { grid-template-columns:1fr 1fr; }
+}
+@media(max-width:600px){
+  .offices-grid  { grid-template-columns:1fr; }
+}
+</style>
+  <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body data-page="about">
+
+<div class="page-hero">
+  <img class="page-hero-bg" src="https://images.unsplash.com/photo-1582407947304-fd86f28f635f?w=1400&q=80&fit=crop" alt="" />
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <p class="page-hero-eyebrow">About Adams Cameron</p>
+    <h1>The Area&rsquo;s Largest<br/>Brokerage Since 1963.</h1>
+    <p>For over six decades, Adams, Cameron &amp; Co. has been built on three things: trust, community, and an unwavering commitment to helping real estate professionals thrive.</p>
+  </div>
+</div>
+<div class="breadcrumb"><div class="container"><a href="index.html">Home</a><span>&rsaquo;</span>About Adams Cameron</div></div>
+
+<!-- PROMISE STRIP -->
+<div class="promise-strip">
+  <div class="promise-strip-label">Vision</div>
+  <div class="promise-strip-text">"A real estate culture where high performance and a high quality of life go hand in hand."</div>
+</div>
+
+<!-- WHO WE ARE -->
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="split">
+      <div>
+        <p class="section-label">Who We Are</p>
+        <h2 class="section-title">Not Just the Largest.<br/>The Most Trusted.</h2>
+        <p class="section-intro">Adams, Cameron &amp; Co., Realtors is Volusia and Flagler County&rsquo;s largest full-service real estate brokerage. But size alone isn&rsquo;t what defines us.</p>
+        <p style="color:var(--mid);font-size:.95rem;line-height:1.8;margin-top:1.5rem;">We are the area&rsquo;s largest brokerage not because of our numbers, but because of what those numbers represent: hundreds of agents who chose to build their careers inside a culture that puts people first&mdash;clients, agents, and community alike.</p>
+        <p style="color:var(--mid);font-size:.95rem;line-height:1.8;margin-top:1rem;">Since 1963, we have believed that real estate transactions should achieve the highest value with the absolute least amount of stress. That belief shapes every system we build, every manager we hire, and every agent we welcome into our family.</p>
+        <div style="display:flex;gap:2rem;margin-top:2.5rem;flex-wrap:wrap;">
+          <div><div style="font-family:var(--ff-head);font-size:2.5rem;font-weight:700;color:var(--navy);">250+</div><div style="font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mid);">Active Agents</div></div>
+          <div><div style="font-family:var(--ff-head);font-size:2.5rem;font-weight:700;color:var(--navy);">9</div><div style="font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mid);">Office Locations</div></div>
+          <div><div style="font-family:var(--ff-head);font-size:2.5rem;font-weight:700;color:var(--navy);">#1</div><div style="font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mid);">Largest Coordinator Team<br/>in the Region</div></div>
+          <div><div style="font-family:var(--ff-head);font-size:2.5rem;font-weight:700;color:var(--navy);">60+</div><div style="font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mid);">Years Serving Florida</div></div>
+        </div>
+      </div>
+      <div class="split-image">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&fit=crop" alt="Adams Cameron office team" />
+        <div class="split-image-badge">
+          <div style="font-family:var(--ff-head);font-size:1rem;font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:.3rem;">LeadingRE</div><div class="split-image-badge-txt">Global Network Member</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GOLDEN CIRCLE -->
+<section class="section" style="background:var(--cream);">
+  <div class="container">
+    <p class="section-label">The Golden Circle</p>
+    <h2 class="section-title">Why We Do What We Do.</h2>
+    <p class="section-intro">Great organizations start with Why. Here&rsquo;s the belief that drives everything we build at Adams Cameron.</p>
+    <div class="golden-circle">
+      <div class="gc-item">
+        <div class="gc-label">Why &mdash; The Belief</div>
+        <div class="gc-title">Every Transaction Deserves the Highest Value</div>
+        <p>To ensure that every real estate transaction achieves the highest value with the absolute least amount of stress&mdash;for clients and agents alike. This is why Adams Cameron exists.</p>
+      </div>
+      <div class="gc-item">
+        <div class="gc-label">How &mdash; The Action</div>
+        <div class="gc-title">By Empowering Agents to Focus on What Matters</div>
+        <p>By building a support ecosystem that handles the heavy lifting&mdash;marketing, training, and technology&mdash;so agents can serve their clients exceptionally well while maintaining a high quality of life.</p>
+      </div>
+      <div class="gc-item">
+        <div class="gc-label">What &mdash; The Result</div>
+        <div class="gc-title">A Full-Service Brokerage Built Around You</div>
+        <p>Automated marketing. On-demand support. Global reach through <a href="https://www.leadingre.com" target="_blank" style="color:var(--navy);font-weight:600;text-decoration:underline;text-decoration-color:var(--gold);">Leading Real Estate Companies of the World</a>. A culture of One Family. The tools and training that give every agent an extraordinary foundation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE VALUES -->
+<section class="section" style="background:var(--charcoal);">
+  <div class="container">
+    <p class="section-label light">Core Values</p>
+    <h2 class="section-title light">What We Stand For.</h2>
+    <p class="section-intro light">These values are not aspirational. They are operational. They define how we make decisions every single day.</p>
+    <div class="eco-grid">
+      <div class="eco-card"><div class="eco-icon">👨‍👩‍👧‍👦</div><div class="eco-heading">One Family</div><div class="eco-goal">Corporate Family</div><p class="eco-desc">"We believe we are stronger together. At Adams, Cameron &amp; Co., 'family' isn't just a buzzword&mdash;it is our operational model. By working as a team, we combine our collective strengths to support one another and uplift our community. No one here has to succeed alone."</p></div>
+      <div class="eco-card"><div class="eco-icon">🏆</div><div class="eco-heading">Relentless Excellence</div><div class="eco-goal">Strong Work Ethic</div><p class="eco-desc">"We believe that high standards produce the highest results. Our strong work ethic is the engine that drives the best outcomes for our clients. We commit to the hustle behind the scenes so that our buyers and sellers achieve the highest price with the least amount of stress. We don't just list homes&mdash;we champion them."</p></div>
+      <div class="eco-card"><div class="eco-icon">🤲</div><div class="eco-heading">Unwavering Integrity</div><div class="eco-goal">Infallible Ethics</div><p class="eco-desc">"We believe that trust is the antidote to stress. Every interaction is an opportunity to treat people with radical honesty and fairness. We strive to build relationships measured in decades, not transactions, knowing that our reputation is our most valuable asset."</p></div>
+      <div class="eco-card"><div class="eco-icon">🌱</div><div class="eco-heading">Community First</div><div class="eco-goal">Adams Cameron Foundation</div><p class="eco-desc">Our commitment to Volusia and Flagler County goes beyond real estate. Through the Adams Cameron Foundation and decades of community involvement, we invest in the places and people that make this region exceptional.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HISTORY TIMELINE -->
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <p class="section-label">Our History</p>
+    <h2 class="section-title">Six Decades of Building Community.</h2>
+    <p class="section-intro">A brief look at how Adams Cameron became the institution it is today.</p>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-dot gold">1963</div><div class="tl-body"><div class="tl-year">THE BEGINNING</div><h3>Adams Cameron Founded in Volusia County</h3><p>Adams, Cameron &amp; Co., Realtors opens its doors with a simple mission: to serve buyers and sellers in the Daytona Beach area with integrity and expertise. The seeds of a family culture are planted from day one.</p></div></div>
+      <div class="tl-item"><div class="tl-dot">&#8226;</div><div class="tl-body"><div class="tl-year">GROWTH ERA</div><h3>Expansion Across Volusia &amp; Flagler County</h3><p>Multiple office locations open across the region, allowing Adams Cameron to serve a broader community while keeping the personal, neighborhood feel that defines the brand. The brokerage becomes the largest in Volusia County.</p></div></div>
+      <div class="tl-item"><div class="tl-dot">&#8226;</div><div class="tl-body"><div class="tl-year">GLOBAL REACH</div><h3>Membership in Leading Real Estate Companies of the World</h3><p>Adams Cameron joins <a href="https://www.leadingre.com" target="_blank" style="color:var(--navy);font-weight:600;">Leading Real Estate Companies of the World</a>, a network spanning all 50 U.S. states, more than 70 countries, and connecting over 550 member firms. Our agents and clients gain global reach while staying rooted in the local community.</p></div></div>
+      <div class="tl-item"><div class="tl-dot">&#8226;</div><div class="tl-body"><div class="tl-year">COMMUNITY</div><h3>The Adams Cameron Foundation</h3><p>Our community giving receives formal structure through the Adams Cameron Foundation, channeling resources into causes and organizations that strengthen Volusia and Flagler County.</p></div></div>
+      <div class="tl-item"><div class="tl-dot gold">Now</div><div class="tl-body"><div class="tl-year">TODAY</div><h3>250+ Agents. 9 Offices. The Ecosystem Era.</h3><p>Today, Adams Cameron operates the area&rsquo;s most comprehensive agent support ecosystem&mdash;automated marketing, AI-powered tools, non-competing managers, and a global referral network&mdash;all in service of our original belief: every transaction should achieve the highest value with the least amount of stress.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFICES -->
+<section class="section" style="background:var(--cream);">
+  <div class="container">
+    <p class="section-label">Our Offices</p>
+    <h2 class="section-title">Nine Locations. One Family.</h2>
+    <p class="section-intro">We have offices across Volusia and Flagler County so our agents are always close to the communities they serve.</p>
+    <div class="offices-grid">
+      <div class="office-card"><h4>Daytona Beach</h4><p>600 S. Atlantic Ave<br/>Daytona Beach, FL 32118<br/><a href="tel:3862585500">386-258-5500</a></p></div>
+      <div class="office-card"><h4>Ormond Beachside</h4><p>54 S. Atlantic Ave<br/>Ormond Beach, FL 32176<br/><a href="tel:3866777966">386-677-7966</a></p></div>
+      <div class="office-card"><h4>Ormond Mainland</h4><p>759 W Granada Blvd<br/>Ormond Beach, FL 32174<br/><a href="tel:3866732100">386-673-2100</a></p></div>
+      <div class="office-card"><h4>Port Orange</h4><p>1100 Dunlawton Ave<br/>Port Orange, FL 32127<br/><a href="tel:3867616100">386-761-6100</a></p></div>
+      <div class="office-card"><h4>Ponce Inlet</h4><p>4600 S. Atlantic Ave<br/>Ponce Inlet, FL 32127<br/><a href="tel:3863107100">386-310-7100</a></p></div>
+      <div class="office-card"><h4>Flagler County</h4><p>20 Airport Rd, Unit B2<br/>Palm Coast, FL 32164<br/><a href="tel:3864455595">386-445-5595</a></p></div>
+      <div class="office-card"><h4>West Volusia</h4><p>422 S. Woodland Blvd<br/>DeLand, FL 32720<br/><a href="tel:3867381920">386-738-1920</a></p></div>
+      <div class="office-card"><h4>Auction Division</h4><p>600 S. Atlantic Ave<br/>Daytona Beach, FL 32118<br/><a href="tel:3868522481">386-852-2481</a></p></div>
+      <div class="office-card"><h4>Commercial Division</h4><p>600 S. Atlantic Ave<br/>Daytona Beach, FL 32118<br/><a href="tel:3862523120">386-252-3120</a></p></div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <h2>Ready to Join the Adams Cameron Family?</h2>
+  <p>Whether you&rsquo;re new to real estate or a seasoned professional, there&rsquo;s a home for you here.</p>
+  <div class="cta-banner-actions">
+    <a href="join.html" class="btn-primary">Start Your Journey &rarr;</a>
+    <a href="foundation.html" class="btn-ghost">Adams Cameron Foundation</a>
+  </div>
+</div>
+
+
+<script src="js/shared.js"></script>
+</body>
+</html>

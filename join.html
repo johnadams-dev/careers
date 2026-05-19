@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Join Us | Adams, Cameron & Co., Realtors</title>
+<meta name="description" content="Ready to join Adams Cameron? Fill out our contact form and a member of our team will reach out within one business day. New agents, experienced agents, and referral program inquiries welcome." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+<style>
+.join-layout { display:grid; grid-template-columns:1fr 1fr; gap:6rem; align-items:start; }
+.join-sidebar h2 { font-family:var(--ff-head); font-size:clamp(2rem,3vw,2.6rem); font-weight:700; color:var(--white); margin-bottom:1.2rem; line-height:1.15; }
+.join-sidebar p { font-size:1rem; color:rgba(255,255,255,.65); line-height:1.8; margin-bottom:2rem; }
+.sidebar-reasons { display:flex; flex-direction:column; gap:1rem; }
+.sidebar-reason  { display:flex; gap:1rem; align-items:flex-start; padding:1.2rem; background:rgba(255,255,255,.07); border-radius:var(--radius); }
+.sidebar-reason-icon { font-size:1.3rem; flex-shrink:0; }
+.sidebar-reason h4 { font-weight:700; color:var(--white); font-size:.92rem; margin-bottom:.2rem; }
+.sidebar-reason p  { font-size:.82rem; color:rgba(255,255,255,.55); line-height:1.55; margin:0; }
+.contact-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:4rem; }
+.contact-card  { background:var(--white); border-radius:var(--radius); padding:2rem; text-align:center; box-shadow:var(--shadow); }
+.contact-card-icon { font-size:2rem; margin-bottom:1rem; }
+.contact-card h3   { font-family:var(--ff-head); font-size:1.1rem; font-weight:700; color:var(--charcoal); margin-bottom:.5rem; }
+.contact-card p    { font-size:.86rem; color:var(--mid); line-height:1.65; }
+.contact-card a    { color:var(--navy); font-weight:600; }
+@media(max-width:960px){
+  .join-layout { grid-template-columns:1fr; gap:3rem; }
+  .contact-cards { grid-template-columns:1fr; }
+}
+</style>
+  <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body data-page="join">
+
+<div class="page-hero">
+  <img class="page-hero-bg" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1400&q=80&fit=crop" alt="" />
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <p class="page-hero-eyebrow">Join Adams Cameron</p>
+    <h1>Let&rsquo;s Build Your<br/>Future Together.</h1>
+    <p>Fill out the form below and a member of our team will reach out within one business day. No pressure. Just a conversation about where you want to go and how we can help you get there.</p>
+  </div>
+</div>
+<div class="breadcrumb"><div class="container"><a href="index.html">Home</a><span>&rsaquo;</span>Join Us</div></div>
+
+<!-- JOIN FORM + SIDEBAR -->
+<section class="section" style="background:var(--navy);position:relative;overflow:hidden;">
+  <div style="position:absolute;top:-150px;right:-150px;width:600px;height:600px;border-radius:50%;background:rgba(255,255,255,.025);"></div>
+  <div style="position:absolute;bottom:-100px;left:-100px;width:400px;height:400px;border-radius:50%;background:rgba(201,168,76,.05);"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="join-layout">
+      <div class="join-sidebar">
+        <p class="section-label light">Ready to Start?</p>
+        <h2>You&rsquo;re Not Just Joining a Brokerage.<br/><em style="font-style:italic;color:var(--gold-lt);">You&rsquo;re Gaining a Family.</em></h2>
+        <p>Since 1963, Adams, Cameron &amp; Co. has been built on one belief: that real estate professionals thrive when they&rsquo;re truly supported. Our support ecosystem handles the heavy lifting so you can focus on your clients and your life.</p>
+        <div class="sidebar-reasons">
+          <div class="sidebar-reason"><div class="sidebar-reason-icon">📣</div><div><h4>Your Marketing Runs on Autopilot</h4><p>AC Social, FRED, and direct mail tools keep your brand visible without consuming your time.</p></div></div>
+          <div class="sidebar-reason"><div class="sidebar-reason-icon">🧭</div><div><h4>Non-Competing Managers, 7 Days a Week</h4><p>Your manager&rsquo;s only job is your success&mdash;not their own listings. Real support, no conflict.</p></div></div>
+          <div class="sidebar-reason"><div class="sidebar-reason-icon">⚡</div><div><h4>Powerful Tools at No Cost</h4><p>DeltaNet CRM, custom agent websites, transaction management, and more&mdash;all included.</p></div></div>
+          <div class="sidebar-reason"><div class="sidebar-reason-icon">🌐</div><div><h4>Global Reach Through LeadingRE</h4><p>Connect your clients to trusted partners worldwide through our global network membership.</p></div></div>
+          <div class="sidebar-reason"><div class="sidebar-reason-icon">👨‍👩‍👧‍👦</div><div><h4>A Culture That Feels Like Family</h4><p>No one succeeds alone here. The Adams Cameron family is the most collaborative in the region.</p></div></div>
+        </div>
+      </div>
+
+      <div class="form-wrap" style="position:relative;z-index:2;">
+        <div class="form-heading">Get More Information</div>
+        <div class="form-sub">Tell us a little about yourself and we&rsquo;ll reach out within one business day.</div>
+        <form name="join-inquiry" method="POST" data-netlify="true" action="thank-you.html">
+          <input type="hidden" name="form-name" value="join-inquiry" />
+          <div class="form-row">
+            <div class="form-group"><label for="fname">First Name *</label><input type="text" id="fname" name="fname" required placeholder="Jane" /></div>
+            <div class="form-group"><label for="lname">Last Name *</label><input type="text" id="lname" name="lname" required placeholder="Smith" /></div>
+          </div>
+          <div class="form-group"><label for="email">Email Address *</label><input type="email" id="email" name="email" required placeholder="jane@example.com" /></div>
+          <div class="form-group"><label for="phone">Phone Number *</label><input type="tel" id="phone" name="phone" required placeholder="(386) 555-1234" /></div>
+          <div class="form-group">
+            <label for="interest">I&rsquo;m interested in&hellip; *</label>
+            <select id="interest" name="interest" required>
+              <option value="">Select one&hellip;</option>
+              <option>New Agent Opportunities</option>
+              <option>Experienced Agent Opportunities</option>
+              <option>Realty Referral Program</option>
+              <option>General Information</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="status">Your Current Licensing Status</label>
+            <select id="status" name="status">
+              <option value="">Select one&hellip;</option>
+              <option>Not yet licensed</option>
+              <option>Currently in pre-licensing school</option>
+              <option>Licensed but not yet active</option>
+              <option>Active licensee</option>
+              <option>Inactive / referral license</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="office">Preferred Office Location</label>
+            <select id="office" name="office">
+              <option value="">No preference</option>
+              <option>Daytona Beach</option>
+              <option>Ormond Beachside</option>
+              <option>Ormond Mainland</option>
+              <option>Port Orange</option>
+              <option>Ponce Inlet</option>
+              <option>Flagler County / Palm Coast</option>
+              <option>West Volusia / DeLand</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="comments">Tell us about your goals</label><textarea id="comments" name="comments" placeholder="What are you hoping to achieve in your real estate career? Anything you&rsquo;d like us to know before we talk&hellip;"></textarea></div>
+          <button type="submit" class="form-submit">Send My Information &rarr;</button>
+          <div class="form-privacy">We respect your privacy. Your information is never sold or shared with third parties.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT ALTERNATIVES -->
+<section class="section" style="background:var(--cream);">
+  <div class="container">
+    <p class="section-label">Other Ways to Reach Us</p>
+    <h2 class="section-title">Prefer to Talk First?</h2>
+    <p class="section-intro">We&rsquo;re real people who love talking about real estate careers. Reach out however feels most comfortable.</p>
+    <div class="contact-cards">
+      <div class="contact-card"><div class="contact-card-icon">📞</div><h3>Call Us</h3><p>Talk directly to a member of our team.<br/><a href="tel:3862439504">(386) 243-9504</a><br/><small style="color:var(--mid);">Mon&ndash;Fri 8am&ndash;5pm, Sat&ndash;Sun by appointment</small></p></div>
+      <div class="contact-card"><div class="contact-card-icon">📍</div><h3>Visit Us</h3><p>Come see one of our nine offices in person. Our managers would love to meet you.<br/><a href="about.html#offices">View All Office Locations</a></p></div>
+      <div class="contact-card"><div class="contact-card-icon">📧</div><h3>Email Us</h3><p>Prefer to write? Send your questions to<br/><a href="mailto:careers@adamscameron.com">careers@adamscameron.com</a><br/><small style="color:var(--mid);">We respond within one business day.</small></p></div>
+    </div>
+  </div>
+</section>
+
+
+<script src="js/shared.js"></script>
+</body>
+</html>
