@@ -21,6 +21,8 @@ const path = require('path');
 const SITE = 'https://floridarealtorcareers.com';
 const ROOT = path.join(__dirname, '..');
 const CONTENT = path.join(ROOT, 'content');
+let MANIFEST = { pillars: [], pages: [] };
+try { MANIFEST = require('../content/manifest.js'); } catch (_) {}
 
 const ORG = {
   '@type': ['RealEstateAgent', 'Organization'],
@@ -193,6 +195,18 @@ const STYLE = `
 .lst-art em{color:var(--mute)}
 .lst-back{display:inline-block;margin-top:2.2rem;font-family:var(--mono);font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;color:var(--navy);text-decoration:none}
 .lst-back:hover{color:var(--gold-dk)}
+/* comparison table */
+.lst-art-wide{max-width:920px}
+.cmp-wrap{overflow-x:auto;margin:1.5rem 0 1rem}
+.cmp{width:100%;border-collapse:collapse;font-size:.92rem}
+.cmp th,.cmp td{padding:.95rem 1.05rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);line-height:1.45}
+.cmp thead th{font-family:var(--ff-head);font-weight:700;font-size:1rem;color:var(--ink);border-bottom:2px solid var(--ink);vertical-align:bottom}
+.cmp .c-crit{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);width:150px;font-weight:500}
+.cmp td{color:#384450}
+.cmp .c-win{background:rgba(201,168,76,.10)}
+.cmp thead .c-win{color:var(--gold-dk);border-bottom-color:var(--gold)}
+.cmp tbody tr:first-child .c-win{border-top:2px solid var(--gold)}
+.cmp-note{font-size:.82rem;color:var(--mute);font-style:italic;margin:.4rem 0 1.5rem}
 
 .lst a:focus-visible,.lst summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
 @keyframes lstRise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
@@ -229,15 +243,29 @@ const offerHtml = (spec) => `
 
 const SCRIPTS = '\n<script src="js/shared.js"></script>\n</body>\n</html>\n';
 
+// Hub clusters: use hand-listed spec.clusters, else auto-build from the registry
+// (this track's pillars × their pages) so a hub always reflects the manifest.
+function hubClusters(spec) {
+  if (spec.clusters) return spec.clusters;
+  if (!spec.track) return [];
+  return MANIFEST.pillars.filter((pl) => pl.track === spec.track).map((pl) => ({
+    name: pl.title,
+    spokes: MANIFEST.pages
+      .filter((pg) => pg.track === spec.track && pg.pillar === pl.id && pg.type !== 'hub')
+      .map((pg) => ({ slug: pg.slug, title: pg.title })),
+  }));
+}
+
 // ── HUB ─────────────────────────────────────────────────────────────────────
 function renderHub(spec) {
   const url = `${SITE}/${spec.slug}`;
   const crumbs = [{ name: 'Home', url: `${SITE}/` }, { name: spec.crumb || 'Become an Agent', url }];
   const itemList = { '@type': 'ItemList', itemListElement: [] };
   let pos = 0;
-  const n = spec.clusters.length;
+  const clusters = hubClusters(spec);
+  const n = clusters.length;
 
-  const stops = spec.clusters.map((cl, ci) => {
+  const stops = clusters.map((cl, ci) => {
     // Feature the published guides as live rows; fold the rest into a single
     // quiet "+N more publishing soon" line so the page never looks unfinished.
     const liveSpokes = cl.spokes.filter((sp) => slugExists(sp.slug));
@@ -354,6 +382,61 @@ ${offerHtml(spec)}`;
   return head(spec, graph) + body + SCRIPTS;
 }
 
+// ── COMPARISON (the citation wedge) ─────────────────────────────────────────
+// spec.compare = { columns:[...], highlight:0, rows:[{label, values:[...]}] }
+function renderComparison(spec) {
+  const url = `${SITE}/${spec.slug}`;
+  const crumbs = [{ name: 'Home', url: `${SITE}/` }];
+  if (spec.hub) crumbs.push({ name: spec.hub.name, url: `${SITE}/${spec.hub.slug}` });
+  crumbs.push({ name: spec.crumb || spec.h1, url });
+
+  const c = spec.compare || { columns: [], rows: [] };
+  const hi = c.highlight ?? 0;
+  const thead = `<tr><th class="c-crit"></th>${c.columns.map((col, i) => `<th${i === hi ? ' class="c-win"' : ''}>${esc(col)}</th>`).join('')}</tr>`;
+  const tbody = c.rows.map((r) => `<tr><th class="c-crit">${esc(r.label)}</th>${r.values.map((v, i) => `<td${i === hi ? ' class="c-win"' : ''}>${v}</td>`).join('')}</tr>`).join('\n      ');
+
+  const article = { '@type': 'Article', '@id': `${url}#article`, headline: spec.h1, description: spec.metaDesc, url, inLanguage: 'en-US', author: { '@id': `${SITE}/#organization` }, publisher: { '@id': `${SITE}/#organization` }, mainEntityOfPage: url, about: spec.about || 'Comparing real estate brokerages in Volusia and Flagler County, Florida' };
+  const graph = [ORG, WEBSITE, article, breadcrumb(crumbs)];
+  const fq = faqSchema(spec.faq); if (fq) graph.push(fq);
+
+  const crumbHtml = `<div class="lst-crumb"><div class="lst-wrap"><a href="index.html">Home</a><span>&rsaquo;</span>${spec.hub ? `<a href="${spec.hub.slug}.html">${esc(spec.hub.name)}</a><span>&rsaquo;</span>` : ''}${esc(spec.crumb || spec.h1)}</div></div>`;
+
+  const body = `${STYLE}
+<body data-page="${spec.slug}" class="lst">
+
+<header class="lst-art-head">
+  <img class="lst-hero-bg" src="${spec.heroImg}" alt="" />
+  <div class="lst-hero-scrim"></div>
+  <div class="lst-art-head-inner">
+    <span class="lst-kicker" style="color:var(--gold)">${esc(spec.eyebrow || 'The honest comparison')}</span>
+    <h1>${spec.h1}</h1>
+  </div>
+</header>
+${crumbHtml}
+
+<article class="lst-art lst-art-wide">
+  ${spec.tldr ? `<div class="lst-facts"><span class="lst-facts-l">The short answer</span><p>${spec.tldr}</p></div>` : ''}
+  ${spec.intro || ''}
+  <div class="cmp-wrap"><table class="cmp">
+    <thead>${thead}</thead>
+    <tbody>
+      ${tbody}
+    </tbody>
+  </table></div>
+  ${c.note ? `<p class="cmp-note">${c.note}</p>` : ''}
+  ${spec.body || ''}
+  ${spec.hub ? `<a class="lst-back" href="${spec.hub.slug}.html">&larr; Back to ${esc(spec.hub.name)}</a>` : ''}
+</article>
+
+${faqHtml(spec)}
+${offerHtml(spec)}`;
+
+  return head(spec, graph) + body + SCRIPTS;
+}
+
+const RENDERERS = { hub: renderHub, comparison: renderComparison };
+const renderSpec = (spec) => (RENDERERS[spec.format] || RENDERERS[spec.type] || renderArticle)(spec);
+
 // ── render all specs in /content (recursive) ─────────────────────────────────
 function buildSpecs(only = []) {
   const files = [];
@@ -369,15 +452,15 @@ function buildSpecs(only = []) {
   for (const file of files) {
     const spec = JSON.parse(fs.readFileSync(file, 'utf8'));
     if (only.length && !only.includes(spec.slug)) continue;
-    const html = spec.type === 'hub' ? renderHub(spec) : renderArticle(spec);
+    const html = renderSpec(spec);
     fs.writeFileSync(path.join(ROOT, `${spec.slug}.html`), html);
-    console.log(`  ✓ ${spec.type.padEnd(7)} ${spec.slug}.html`);
+    console.log(`  ✓ ${(spec.format || spec.type).padEnd(10)} ${spec.slug}.html`);
     n++;
   }
   return n;
 }
 
-module.exports = { renderHub, renderArticle, buildSpecs, ORG, WEBSITE, SITE };
+module.exports = { renderHub, renderArticle, renderComparison, renderSpec, buildSpecs, ORG, WEBSITE, SITE };
 
 if (require.main === module) {
   const n = buildSpecs(process.argv.slice(2));

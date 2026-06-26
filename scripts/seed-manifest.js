@@ -97,6 +97,8 @@ const BUILT = {
   'become-a-real-estate-agent-in-florida':    { spec: 'content/become-a-real-estate-agent-in-florida.json' },
   'florida-real-estate-license-guide':        { spec: 'content/florida-real-estate-license-guide.json' },
   'become-a-real-estate-agent-daytona-beach': { spec: 'content/become-a-real-estate-agent-daytona-beach.json' },
+  'best-brokerage-for-experienced-agents-volusia-flagler': { spec: 'content/best-brokerage-for-experienced-agents-volusia-flagler.json' },
+  'best-brokerage-experienced-agents-volusia-county':      { spec: 'content/best-brokerage-experienced-agents-volusia-county.json' },
 };
 const EVERGREEN_SLUG_OVERRIDE = { 'How to Get Your Florida Real Estate License: Step-by-Step': 'florida-real-estate-license-guide' };
 

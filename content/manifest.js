@@ -157,7 +157,8 @@ module.exports = {
     "track": "experienced",
     "pillar": "master",
     "title": "Experienced Agents — Switch & Scale",
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-brokerage-for-experienced-agents-volusia-flagler.json"
   },
   {
     "slug": "real-estate-referral-program-florida",
@@ -1143,7 +1144,8 @@ module.exports = {
     "competitor": "FastExpert, Glassdoor",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-brokerage-experienced-agents-volusia-county.json"
   },
   {
     "slug": "best-brokerage-experienced-agents-flagler-county",
