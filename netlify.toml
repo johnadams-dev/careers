@@ -39,6 +39,16 @@
   to   = "/join.html"
   status = 200
 
+# Pretty URLs for the content library (hub + spoke pages).
+# This catch-all serves /some-page.html at the clean URL /some-page, so every
+# new page in the 750-page build resolves at its canonical clean URL with no
+# per-page config. Netlify only applies it when no real file matches the path,
+# so assets (css/js/images) are unaffected. Keep it LAST.
+[[redirects]]
+  from = "/*"
+  to   = "/:splat.html"
+  status = 200
+
 # Security headers — good practice
 [[headers]]
   for = "/*"
