@@ -105,6 +105,8 @@ const BUILT = {
   'become-a-real-estate-agent-port-orange':                { spec: 'content/become-a-real-estate-agent-port-orange.json' },
   'become-a-real-estate-agent-new-smyrna-beach':           { spec: 'content/become-a-real-estate-agent-new-smyrna-beach.json' },
   'become-a-real-estate-agent-deland':                     { spec: 'content/become-a-real-estate-agent-deland.json' },
+  'real-estate-referral-program-florida':                  { spec: 'content/real-estate-referral-program-florida.json' },
+  'how-a-real-estate-referral-company-works-in-florida':   { spec: 'content/how-a-real-estate-referral-company-works-in-florida.json' },
 };
 const EVERGREEN_SLUG_OVERRIDE = { 'How to Get Your Florida Real Estate License: Step-by-Step': 'florida-real-estate-license-guide' };
 

@@ -167,7 +167,8 @@ module.exports = {
     "track": "referral",
     "pillar": "master",
     "title": "Referral — Keep Your License Working",
-    "status": "planned"
+    "status": "built",
+    "spec": "content/real-estate-referral-program-florida.json"
   },
   {
     "slug": "become-a-real-estate-agent-in-florida",
@@ -1615,7 +1616,8 @@ module.exports = {
     "competitor": "Reddit",
     "evergreen": true,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/how-a-real-estate-referral-company-works-in-florida.json"
   },
   {
     "slug": "how-to-earn-referral-income-without-actively-selling-real-estate",
