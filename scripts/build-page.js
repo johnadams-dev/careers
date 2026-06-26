@@ -37,7 +37,11 @@ const ORG = {
 };
 const WEBSITE = { '@type': 'WebSite', '@id': `${SITE}/#website`, url: `${SITE}/`, name: 'Florida Realtor Careers', publisher: { '@id': `${SITE}/#organization` } };
 
-const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+// Entity-aware escape: escapes bare & < > " but leaves valid HTML entities
+// (&mdash; &rsquo; &amp; &#8212; …) intact, so hand-written copy can use them.
+const esc = (s) => String(s)
+  .replace(/&(?!#?[a-zA-Z0-9]+;)/g, '&amp;')
+  .replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com" />\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\n<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />';
 
 const slugExists = (slug) => fs.existsSync(path.join(ROOT, `${slug}.html`));
