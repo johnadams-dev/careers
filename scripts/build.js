@@ -67,12 +67,13 @@ function llms() {
   for (const p of CORE) lines.push(`- [${p.title}](${url(p.slug)})`);
   lines.push('');
 
-  lines.push('## Guides by topic');
-  for (const pillar of M.pillars.filter((p) => p.id !== 'master')) {
-    const pages = built.filter((p) => p.pillar === pillar.id);
-    lines.push(`\n### ${pillar.title}`);
-    if (!pages.length) { lines.push(`- (guides in progress${pillar.planned ? ` — ${pillar.planned} planned` : ''})`); continue; }
-    for (const p of pages) lines.push(`- [${p.title}](${url(p.slug)})`);
+  for (const t of (M.tracks || [])) {
+    const tBuiltPages = built.filter((p) => p.track === t.id && p.pillar !== 'master');
+    const tPlanned = M.pages.filter((p) => p.track === t.id).length;
+    lines.push(`\n## ${t.title}`);
+    lines.push(`_${t.audience}._`);
+    if (!tBuiltPages.length) { lines.push(`- (${tPlanned} guides in progress)`); continue; }
+    for (const p of tBuiltPages) lines.push(`- [${p.title}](${url(p.slug)})`);
   }
   lines.push('');
 
@@ -92,16 +93,14 @@ console.log(`\n┌─ Build report ───────────────
 console.log(`│ rendered ${rendered} page spec(s) this run`);
 console.log(`│ sitemap.xml: ${CORE.length} core + ${built.filter((p) => p.type !== 'core').length} library URLs`);
 console.log(`│ llms.txt: regenerated`);
-console.log(`├─ Library coverage (built / planned) ─────────`);
-let tBuilt = 0, tPlan = 0;
-for (const pillar of M.pillars.filter((p) => p.id !== 'master')) {
-  const b = built.filter((p) => p.pillar === pillar.id).length;
-  const plan = M.pages.filter((p) => p.pillar === pillar.id && p.status === 'planned').length;
-  tBuilt += b; tPlan += plan;
-  const bar = '█'.repeat(b) + '·'.repeat(Math.min(plan, 24));
-  console.log(`│ ${pillar.id.padEnd(11)} ${String(b).padStart(3)}/${String(b + plan).padStart(3)}  ${bar.slice(0, 26)}`);
+console.log(`├─ Coverage by track (built / total · conversion priority) ─`);
+for (const t of (M.tracks || [])) {
+  const tp = M.pages.filter((p) => p.track === t.id);
+  const b = tp.filter((p) => p.status === 'built').length;
+  const bar = '█'.repeat(b) + '·'.repeat(Math.min(tp.length - b, 30));
+  console.log(`│ ${('P' + t.priority + ' ' + t.id).padEnd(15)} ${String(b).padStart(3)}/${String(tp.length).padStart(3)}  ${bar.slice(0, 30)}`);
 }
-const master = built.filter((p) => p.pillar === 'master').length;
+const totBuilt = M.pages.filter((p) => p.status === 'built').length;
 console.log(`├──────────────────────────────────────────────`);
-console.log(`│ TOTAL ${tBuilt + master} built · ${tPlan} planned · ${M.pages.length} in registry`);
+console.log(`│ TOTAL ${totBuilt} built · ${M.pages.length - totBuilt} planned · ${M.pages.length} in registry`);
 console.log(`└──────────────────────────────────────────────`);
