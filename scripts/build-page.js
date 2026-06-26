@@ -222,6 +222,14 @@ const STYLE = `
 .lst-tk-l{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dk);display:block;margin-bottom:.55rem}
 .lst-takeaways ul{margin:0;padding-left:1.15rem}
 .lst-takeaways li{margin-bottom:.4rem;color:#384450;line-height:1.55}
+/* related guides — auto internal-linking mesh */
+.lst-related{padding:3.2rem 0;background:var(--cream)}
+.lst-related h2{font-family:var(--ff-head);font-weight:700;font-size:clamp(1.4rem,2.6vw,2rem);margin:.5rem 0 1.1rem}
+.lst-related ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 2rem}
+.lst-related li{border-bottom:1px solid var(--line)}
+.lst-related a{display:block;padding:.95rem .2rem;color:var(--ink);text-decoration:none;font-family:var(--ff-head);font-size:1.06rem;line-height:1.3;transition:color .2s,padding .2s var(--ease)}
+.lst-related a:hover{color:var(--navy);padding-left:.5rem}
+@media(max-width:640px){.lst-related ul{grid-template-columns:1fr}}
 /* interactive tool / calculator */
 .calc{background:#fff;border:1px solid var(--line);border-radius:8px;padding:1.6rem 1.7rem;margin:1.7rem 0 .6rem}
 .calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
@@ -298,6 +306,32 @@ function pageGraph(spec, url, crumbs) {
   const f = faqSchema(spec.faq); if (f) g.push(f);
   return g;
 }
+// auto internal-linking: link every page to siblings + its track hub, drawn
+// from the registry, so nothing is orphaned and authority flows (scales to 1,500)
+function relatedGuides(spec) {
+  const me = MANIFEST.pages.find((p) => p.slug === spec.slug);
+  if (!me) return '';
+  const exists = (s) => s !== spec.slug && slugExists(s);
+  const pool = MANIFEST.pages.filter((p) => p.type !== 'hub' && exists(p.slug));
+  const samePillar = pool.filter((p) => p.pillar === me.pillar);
+  const sameTrack = pool.filter((p) => p.track === me.track && p.pillar !== me.pillar);
+  const crossTrack = pool.filter((p) => p.track !== me.track);
+  const links = [];
+  const hub = (MANIFEST.tracks || []).find((t) => t.id === me.track);
+  if (hub && exists(hub.hub)) links.push({ slug: hub.hub, title: hub.title });
+  for (const p of [...samePillar, ...sameTrack, ...crossTrack]) {
+    if (links.length >= 6) break;
+    if (!links.some((l) => l.slug === p.slug)) links.push({ slug: p.slug, title: p.title });
+  }
+  if (links.length < 2) return '';
+  return `
+<section class="lst-related"><div class="lst-narrow">
+  <p class="lst-kicker">Keep reading</p>
+  <h2>Related guides</h2>
+  <ul>${links.map((l) => `<li><a href="${l.slug}.html">${esc(l.title)}</a></li>`).join('\n    ')}</ul>
+</div></section>`;
+}
+
 // on-page: liftable answer + key takeaways + freshness byline
 function aeoTop(spec) {
   const out = [`<p class="lst-updated">Updated ${esc(spec.updatedLabel || UPDATED_LABEL)} · Reviewed by Adams, Cameron &amp; Co.</p>`];
@@ -403,6 +437,7 @@ ${spec.pullQuote ? `
   ${spec.pullQuoteCite ? `<cite>${esc(spec.pullQuoteCite)}</cite>` : ''}
 </div></section>` : ''}
 
+${relatedGuides(spec)}
 ${faqHtml(spec)}
 ${offerHtml(spec)}`;
 
@@ -439,6 +474,7 @@ ${crumbHtml}
   ${spec.hub ? `<a class="lst-back" href="${spec.hub.slug}.html">&larr; Back to ${esc(spec.hub.name)}</a>` : ''}
 </article>
 
+${relatedGuides(spec)}
 ${faqHtml(spec)}
 ${offerHtml(spec)}`;
 
@@ -489,6 +525,7 @@ ${crumbHtml}
   ${spec.hub ? `<a class="lst-back" href="${spec.hub.slug}.html">&larr; Back to ${esc(spec.hub.name)}</a>` : ''}
 </article>
 
+${relatedGuides(spec)}
 ${faqHtml(spec)}
 ${offerHtml(spec)}`;
 
