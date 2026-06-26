@@ -207,6 +207,21 @@ const STYLE = `
 .cmp thead .c-win{color:var(--gold-dk);border-bottom-color:var(--gold)}
 .cmp tbody tr:first-child .c-win{border-top:2px solid var(--gold)}
 .cmp-note{font-size:.82rem;color:var(--mute);font-style:italic;margin:.4rem 0 1.5rem}
+/* data snapshot (Otto data-callout — real local numbers win citations) */
+.lst-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;margin:1.8rem 0 .5rem;overflow:hidden}
+.lst-stat{background:#fff;padding:1.15rem 1.25rem}
+.lst-stat-n{font-family:var(--ff-head);font-weight:700;font-size:1.65rem;color:var(--navy);line-height:1}
+.lst-stat-l{font-size:.78rem;color:var(--mute);margin-top:.4rem;line-height:1.35}
+.lst-src{font-family:var(--mono);font-size:.7rem;color:var(--mute);margin:.3rem 0 1.8rem}
+/* AEO blocks — engineered to be the lifted answer */
+.lst-updated{font-family:var(--mono);font-size:.7rem;letter-spacing:.04em;color:var(--mute);margin:0 0 1.4rem}
+.lst-answer{background:var(--navy-dk);color:#fff;border-radius:6px;padding:1.5rem 1.7rem;margin-bottom:1.5rem}
+.lst-answer-l{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-lt,#e8c96b);display:block;margin-bottom:.55rem}
+.lst-answer p{margin:0;font-size:1.13rem;line-height:1.55;color:#fff}
+.lst-takeaways{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:4px;padding:1.2rem 1.5rem;margin-bottom:2rem}
+.lst-tk-l{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dk);display:block;margin-bottom:.55rem}
+.lst-takeaways ul{margin:0;padding-left:1.15rem}
+.lst-takeaways li{margin-bottom:.4rem;color:#384450;line-height:1.55}
 
 .lst a:focus-visible,.lst summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
 @keyframes lstRise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
@@ -242,6 +257,45 @@ const offerHtml = (spec) => `
 </div></section>`;
 
 const SCRIPTS = '\n<script src="js/shared.js"></script>\n</body>\n</html>\n';
+
+// ── AEO: schema + on-page blocks engineered for AI citation ──────────────────
+const stripTags = (s) => String(s).replace(/<[^>]+>/g, '');
+const UPDATED_LABEL = 'June 2026';
+const UPDATED_ISO = '2026-06-01';
+
+function articleNode(spec, url) {
+  const iso = spec.updated || UPDATED_ISO;
+  return {
+    '@type': 'Article', '@id': `${url}#article`,
+    headline: stripTags(spec.h1), description: spec.metaDesc, url,
+    datePublished: iso, dateModified: iso, inLanguage: 'en-US',
+    author: { '@id': `${SITE}/#organization` }, publisher: { '@id': `${SITE}/#organization` },
+    mainEntityOfPage: url, about: spec.about || 'Real estate careers in Volusia and Flagler County, Florida',
+    ...(spec.answer ? { abstract: spec.answer } : {}),
+    speakable: { '@type': 'SpeakableSpecification', cssSelector: ['.lst-answer', '.lst-takeaways'] },
+  };
+}
+function howToNode(spec, url) {
+  if (!spec.howto || !spec.howto.length) return null;
+  return { '@type': 'HowTo', '@id': `${url}#howto`, name: spec.howtoName || stripTags(spec.h1), description: spec.metaDesc,
+    step: spec.howto.map((s, i) => ({ '@type': 'HowToStep', position: i + 1, name: s.name, text: s.text })) };
+}
+// full page graph: org + site + dated article + breadcrumb + howto? + faq?
+function pageGraph(spec, url, crumbs) {
+  const g = [ORG, WEBSITE, articleNode(spec, url), breadcrumb(crumbs)];
+  const h = howToNode(spec, url); if (h) g.push(h);
+  const f = faqSchema(spec.faq); if (f) g.push(f);
+  return g;
+}
+// on-page: liftable answer + key takeaways + freshness byline
+function aeoTop(spec) {
+  const out = [`<p class="lst-updated">Updated ${esc(spec.updatedLabel || UPDATED_LABEL)} · Reviewed by Adams, Cameron &amp; Co.</p>`];
+  const answer = spec.answer || spec.tldr;
+  if (answer) out.push(`<div class="lst-answer"><span class="lst-answer-l">Quick answer</span><p>${answer}</p></div>`);
+  if (spec.takeaways && spec.takeaways.length)
+    out.push(`<div class="lst-takeaways"><span class="lst-tk-l">Key takeaways</span><ul>${spec.takeaways.map((t) => `<li>${t}</li>`).join('')}</ul></div>`);
+  return out.join('\n  ');
+}
 
 // Hub clusters: use hand-listed spec.clusters, else auto-build from the registry
 // (this track's pillars × their pages) so a hub always reflects the manifest.
@@ -351,9 +405,7 @@ function renderArticle(spec) {
   if (spec.hub) crumbs.push({ name: spec.hub.name, url: `${SITE}/${spec.hub.slug}` });
   crumbs.push({ name: spec.crumb || spec.h1, url });
 
-  const article = { '@type': 'Article', '@id': `${url}#article`, headline: spec.h1, description: spec.metaDesc, url, inLanguage: 'en-US', author: { '@id': `${SITE}/#organization` }, publisher: { '@id': `${SITE}/#organization` }, mainEntityOfPage: url, about: spec.about || 'Real estate careers in Volusia and Flagler County, Florida' };
-  const graph = [ORG, WEBSITE, article, breadcrumb(crumbs)];
-  const fq = faqSchema(spec.faq); if (fq) graph.push(fq);
+  const graph = pageGraph(spec, url, crumbs);
 
   const crumbHtml = `<div class="lst-crumb"><div class="lst-wrap"><a href="index.html">Home</a><span>&rsaquo;</span>${spec.hub ? `<a href="${spec.hub.slug}.html">${esc(spec.hub.name)}</a><span>&rsaquo;</span>` : ''}${esc(spec.crumb || spec.h1)}</div></div>`;
 
@@ -371,7 +423,7 @@ function renderArticle(spec) {
 ${crumbHtml}
 
 <article class="lst-art">
-  ${spec.tldr ? `<div class="lst-facts"><span class="lst-facts-l">The short answer</span><p>${spec.tldr}</p></div>` : ''}
+  ${aeoTop(spec)}
   ${spec.body}
   ${spec.hub ? `<a class="lst-back" href="${spec.hub.slug}.html">&larr; Back to ${esc(spec.hub.name)}</a>` : ''}
 </article>
@@ -395,9 +447,7 @@ function renderComparison(spec) {
   const thead = `<tr><th class="c-crit"></th>${c.columns.map((col, i) => `<th${i === hi ? ' class="c-win"' : ''}>${esc(col)}</th>`).join('')}</tr>`;
   const tbody = c.rows.map((r) => `<tr><th class="c-crit">${esc(r.label)}</th>${r.values.map((v, i) => `<td${i === hi ? ' class="c-win"' : ''}>${v}</td>`).join('')}</tr>`).join('\n      ');
 
-  const article = { '@type': 'Article', '@id': `${url}#article`, headline: spec.h1, description: spec.metaDesc, url, inLanguage: 'en-US', author: { '@id': `${SITE}/#organization` }, publisher: { '@id': `${SITE}/#organization` }, mainEntityOfPage: url, about: spec.about || 'Comparing real estate brokerages in Volusia and Flagler County, Florida' };
-  const graph = [ORG, WEBSITE, article, breadcrumb(crumbs)];
-  const fq = faqSchema(spec.faq); if (fq) graph.push(fq);
+  const graph = pageGraph(spec, url, crumbs);
 
   const crumbHtml = `<div class="lst-crumb"><div class="lst-wrap"><a href="index.html">Home</a><span>&rsaquo;</span>${spec.hub ? `<a href="${spec.hub.slug}.html">${esc(spec.hub.name)}</a><span>&rsaquo;</span>` : ''}${esc(spec.crumb || spec.h1)}</div></div>`;
 
@@ -415,7 +465,7 @@ function renderComparison(spec) {
 ${crumbHtml}
 
 <article class="lst-art lst-art-wide">
-  ${spec.tldr ? `<div class="lst-facts"><span class="lst-facts-l">The short answer</span><p>${spec.tldr}</p></div>` : ''}
+  ${aeoTop(spec)}
   ${spec.intro || ''}
   <div class="cmp-wrap"><table class="cmp">
     <thead>${thead}</thead>
