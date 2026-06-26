@@ -90,30 +90,33 @@ const STYLE = `
 .lst-narrow{max-width:760px;margin:0 auto;padding:0 1.6rem}
 .lst-kicker{font-family:var(--mono);font-size:.72rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dk)}
 
-/* ── HERO: the feature listing ── */
-.lst-hero{position:relative;min-height:92vh;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;overflow:hidden;background:var(--navy-dk)}
-.lst-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
-.lst-hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,22,30,.30) 0%,rgba(12,22,30,.12) 40%,rgba(12,22,30,.78) 100%)}
-.lst-hero-inner{position:relative;z-index:2;max-width:1080px;width:100%;margin:0 auto;padding:0 1.6rem 2.4rem;animation:lstRise .9s var(--ease) both}
-.lst-status{display:inline-flex;align-items:center;gap:.7rem;font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:2px;padding:.4rem .8rem;margin-bottom:1.6rem;backdrop-filter:blur(4px)}
-.lst-status::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,.35)}
-.lst-hero h1{font-family:var(--ff-head);font-weight:800;font-size:clamp(2.6rem,7vw,5.4rem);line-height:.98;letter-spacing:-.01em;margin:0 0 1.3rem;max-width:16ch;text-shadow:0 2px 30px rgba(0,0,0,.25)}
-.lst-hero h1 em{font-style:italic;font-weight:700;color:var(--gold)}
-.lst-hero-sub{font-size:clamp(1.05rem,1.6vw,1.3rem);line-height:1.55;color:rgba(255,255,255,.9);max-width:52ch;font-weight:300}
-.lst-hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
-.lst-btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--ff-body);font-weight:600;font-size:.86rem;letter-spacing:.04em;padding:.95rem 1.8rem;border-radius:2px;text-decoration:none;transition:transform .25s var(--ease),background .25s,color .25s}
+/* ── HERO: the career, laid out like a property listing ── */
+.lst-hero{position:relative;display:grid;grid-template-columns:minmax(440px,1fr) 1.3fr;min-height:90vh;background:var(--ink);color:#fff;overflow:hidden}
+.lst-hero-photo{position:relative;overflow:hidden;order:2}
+.lst-hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center;animation:lstZoom 14s var(--ease) both}
+.lst-photo-tag{position:absolute;left:1.2rem;bottom:1.2rem;font-family:var(--mono);font-size:.66rem;letter-spacing:.13em;color:#fff;background:rgba(18,28,36,.55);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.28);padding:.4rem .75rem;border-radius:2px}
+.lst-hero-panel{display:flex;flex-direction:column;justify-content:center;padding:clamp(2.2rem,4.5vw,4.6rem);order:1;animation:lstRise .9s var(--ease) both}
+.lst-status{display:inline-flex;align-items:center;gap:.6rem;align-self:flex-start;font-family:var(--mono);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-lt,#e8c96b);margin-bottom:1.5rem}
+.lst-status::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,.3)}
+.lst-hero-panel h1{font-family:var(--ff-head);font-weight:800;font-size:clamp(2.2rem,3.9vw,3.7rem);line-height:1.0;letter-spacing:-.01em;margin:0 0 1.1rem;max-width:13ch}
+.lst-hero-panel h1 em{font-style:italic;font-weight:700;color:var(--gold-lt,#e8c96b)}
+.lst-hero-sub{font-size:1.05rem;line-height:1.6;color:rgba(255,255,255,.8);font-weight:300;max-width:44ch;margin-bottom:2.1rem}
+.lst-hero-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:.3rem}
+.lst-btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--ff-body);font-weight:600;font-size:.86rem;letter-spacing:.04em;padding:.92rem 1.7rem;border-radius:2px;text-decoration:none;transition:transform .25s var(--ease),background .25s,color .25s}
 .lst-btn.solid{background:var(--gold);color:var(--ink)}
 .lst-btn.solid:hover{transform:translateY(-2px);background:#d9bb63}
-.lst-btn.ghost{border:1px solid rgba(255,255,255,.55);color:#fff}
+.lst-btn.ghost{border:1px solid rgba(255,255,255,.5);color:#fff}
 .lst-btn.ghost:hover{background:#fff;color:var(--ink)}
 
-/* ── SPEC RAIL: the MLS data strip (signature) ── */
-.lst-spec{position:relative;z-index:2;background:var(--ink);color:#fff}
-.lst-spec-grid{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
-.lst-spec-item{padding:1.5rem 1.6rem;border-right:1px solid rgba(255,255,255,.12)}
-.lst-spec-item:last-child{border-right:none}
-.lst-spec-n{font-family:var(--ff-head);font-weight:700;font-size:clamp(1.5rem,2.6vw,2.1rem);color:var(--gold);line-height:1}
-.lst-spec-l{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.62);margin-top:.5rem}
+/* spec rail = the listing's data sheet (signature), inside the panel */
+.lst-spec-grid{display:grid;grid-template-columns:1fr 1fr;border:1px solid rgba(255,255,255,.16);border-radius:3px;margin-bottom:2rem}
+.lst-spec-item{padding:1.05rem 1.3rem;border-right:1px solid rgba(255,255,255,.13);border-bottom:1px solid rgba(255,255,255,.13)}
+.lst-spec-item:nth-child(2n){border-right:none}
+.lst-spec-item:nth-last-child(-n+2){border-bottom:none}
+.lst-spec-n{font-family:var(--ff-head);font-weight:700;font-size:1.7rem;color:var(--gold-lt,#e8c96b);line-height:1}
+.lst-spec-l{font-family:var(--mono);font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:.4rem}
+.lst-more{font-family:var(--mono);font-size:.74rem;letter-spacing:.04em;color:var(--gold-dk);padding:1.1rem .3rem;border-bottom:1px solid var(--line)}
+.lst-more::before{content:'+ ';opacity:.7}
 
 /* ── breadcrumb (own, quiet) ── */
 .lst-crumb{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);padding:1.1rem 0;border-bottom:1px solid var(--line)}
@@ -183,13 +186,13 @@ const STYLE = `
 
 .lst a:focus-visible,.lst summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
 @keyframes lstRise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
-@media(max-width:760px){
-  .lst-spec-grid{grid-template-columns:1fr 1fr}
-  .lst-spec-item:nth-child(2){border-right:none}
-  .lst-spec-item{border-bottom:1px solid rgba(255,255,255,.12)}
+@keyframes lstZoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+@media(max-width:860px){
+  .lst-hero{grid-template-columns:1fr;min-height:auto}
+  .lst-hero-photo{order:0;height:40vh}
+  .lst-hero-panel{order:1;padding:2.6rem 1.6rem 3rem}
   .lst-stop{grid-template-columns:1fr;gap:1.2rem}
   .lst-offer-inner{grid-template-columns:1fr;gap:2rem}
-  .lst-hero{min-height:88vh}
 }
 @media(prefers-reduced-motion:reduce){.lst *{animation:none!important;transition:none!important}}
 </style>`;
@@ -225,17 +228,20 @@ function renderHub(spec) {
   const n = spec.clusters.length;
 
   const stops = spec.clusters.map((cl, ci) => {
-    let rn = 0;
-    const rows = cl.spokes.map((sp) => {
-      const live = slugExists(sp.slug);
-      rn++;
-      const num = String(rn).padStart(2, '0');
-      if (live) {
-        itemList.itemListElement.push({ '@type': 'ListItem', position: ++pos, url: `${SITE}/${sp.slug}`, name: sp.title });
-        return `<li class="lst-row"><a href="${sp.slug}.html"><span class="lst-row-no">${num}</span><span class="lst-row-t">${esc(sp.title)}</span><span class="lst-row-arr">&rarr;</span></a></li>`;
-      }
-      return `<li class="lst-row"><div class="soon"><span class="lst-row-no">${num}</span><span class="lst-row-t">${esc(sp.title)}</span><span class="lst-row-tag">In the library</span></div></li>`;
+    // Feature the published guides as live rows; fold the rest into a single
+    // quiet "+N more publishing soon" line so the page never looks unfinished.
+    const liveSpokes = cl.spokes.filter((sp) => slugExists(sp.slug));
+    const comingCount = cl.spokes.length - liveSpokes.length;
+    let rows = liveSpokes.map((sp, i) => {
+      itemList.itemListElement.push({ '@type': 'ListItem', position: ++pos, url: `${SITE}/${sp.slug}`, name: sp.title });
+      const num = String(i + 1).padStart(2, '0');
+      return `<li class="lst-row"><a href="${sp.slug}.html"><span class="lst-row-no">${num}</span><span class="lst-row-t">${esc(sp.title)}</span><span class="lst-row-arr">&rarr;</span></a></li>`;
     }).join('\n      ');
+    if (comingCount) {
+      const label = liveSpokes.length ? `${comingCount} more guide${comingCount > 1 ? 's' : ''} in this stop &middot; publishing soon`
+        : `${comingCount} guide${comingCount > 1 ? 's' : ''} publishing soon`;
+      rows += `\n      <li class="lst-row"><div class="lst-more">${label}</div></li>`;
+    }
     const j = (spec.journey && spec.journey[ci]) || {};
     return `<section class="lst-stop">
   <div class="lst-stop-head">
@@ -259,19 +265,21 @@ function renderHub(spec) {
 <body data-page="${spec.slug}" class="lst">
 
 <header class="lst-hero">
-  <img class="lst-hero-bg" src="${spec.heroImg}" alt="" />
-  <div class="lst-hero-scrim"></div>
-  <div class="lst-hero-inner">
-    <span class="lst-status">${esc(spec.heroStatus || 'Now showing')}</span>
+  <div class="lst-hero-photo">
+    <img src="${spec.heroImg}" alt="A coastal Florida community" />
+    <span class="lst-photo-tag">${esc(spec.photoTag || 'Listing № 1963 · Volusia–Flagler Co., FL')}</span>
+  </div>
+  <div class="lst-hero-panel">
+    <span class="lst-status">${esc(spec.heroStatus || 'Now accepting · for the right person')}</span>
     <h1>${spec.h1}</h1>
     <p class="lst-hero-sub">${spec.lede}</p>
+    <div class="lst-spec-grid">${spec4}</div>
     <div class="lst-hero-actions">
-      <a href="#tour" class="lst-btn solid">Tour the path &darr;</a>
+      <a href="#tour" class="lst-btn solid">See the path &darr;</a>
       <a href="join.html" class="lst-btn ghost">Talk to a manager</a>
     </div>
   </div>
 </header>
-<div class="lst-spec"><div class="lst-spec-grid">${spec4}</div></div>
 
 <div class="lst-crumb"><div class="lst-wrap"><a href="index.html">Home</a><span>&rsaquo;</span>${esc(spec.crumb || 'Become an Agent')}</div></div>
 

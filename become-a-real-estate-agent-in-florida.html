@@ -11,11 +11,11 @@
 <meta property="og:title" content="How to Become a Real Estate Agent in Florida (2026 Guide) | Adams, Cameron &amp; Co." />
 <meta property="og:description" content="The complete, step-by-step path to becoming a real estate agent in Volusia and Flagler County, Florida — decide if it's right for you, get licensed, choose a brokerage, and build your business with Adams, Cameron &amp; Co., the area's largest brokerage since 1963." />
 <meta property="og:url" content="https://floridarealtorcareers.com/become-a-real-estate-agent-in-florida" />
-<meta property="og:image" content="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600&q=80&fit=crop" />
+<meta property="og:image" content="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1500&q=80&fit=crop" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="How to Become a Real Estate Agent in Florida (2026 Guide) | Adams, Cameron &amp; Co." />
 <meta name="twitter:description" content="The complete, step-by-step path to becoming a real estate agent in Volusia and Flagler County, Florida — decide if it's right for you, get licensed, choose a brokerage, and build your business with Adams, Cameron &amp; Co., the area's largest brokerage since 1963." />
-<meta name="twitter:image" content="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600&q=80&fit=crop" />
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1500&q=80&fit=crop" />
 <link rel="icon" type="image/png" href="favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -177,30 +177,33 @@
 .lst-narrow{max-width:760px;margin:0 auto;padding:0 1.6rem}
 .lst-kicker{font-family:var(--mono);font-size:.72rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dk)}
 
-/* ── HERO: the feature listing ── */
-.lst-hero{position:relative;min-height:92vh;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;overflow:hidden;background:var(--navy-dk)}
-.lst-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
-.lst-hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,22,30,.30) 0%,rgba(12,22,30,.12) 40%,rgba(12,22,30,.78) 100%)}
-.lst-hero-inner{position:relative;z-index:2;max-width:1080px;width:100%;margin:0 auto;padding:0 1.6rem 2.4rem;animation:lstRise .9s var(--ease) both}
-.lst-status{display:inline-flex;align-items:center;gap:.7rem;font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:2px;padding:.4rem .8rem;margin-bottom:1.6rem;backdrop-filter:blur(4px)}
-.lst-status::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,.35)}
-.lst-hero h1{font-family:var(--ff-head);font-weight:800;font-size:clamp(2.6rem,7vw,5.4rem);line-height:.98;letter-spacing:-.01em;margin:0 0 1.3rem;max-width:16ch;text-shadow:0 2px 30px rgba(0,0,0,.25)}
-.lst-hero h1 em{font-style:italic;font-weight:700;color:var(--gold)}
-.lst-hero-sub{font-size:clamp(1.05rem,1.6vw,1.3rem);line-height:1.55;color:rgba(255,255,255,.9);max-width:52ch;font-weight:300}
-.lst-hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
-.lst-btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--ff-body);font-weight:600;font-size:.86rem;letter-spacing:.04em;padding:.95rem 1.8rem;border-radius:2px;text-decoration:none;transition:transform .25s var(--ease),background .25s,color .25s}
+/* ── HERO: the career, laid out like a property listing ── */
+.lst-hero{position:relative;display:grid;grid-template-columns:minmax(440px,1fr) 1.3fr;min-height:90vh;background:var(--ink);color:#fff;overflow:hidden}
+.lst-hero-photo{position:relative;overflow:hidden;order:2}
+.lst-hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center;animation:lstZoom 14s var(--ease) both}
+.lst-photo-tag{position:absolute;left:1.2rem;bottom:1.2rem;font-family:var(--mono);font-size:.66rem;letter-spacing:.13em;color:#fff;background:rgba(18,28,36,.55);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.28);padding:.4rem .75rem;border-radius:2px}
+.lst-hero-panel{display:flex;flex-direction:column;justify-content:center;padding:clamp(2.2rem,4.5vw,4.6rem);order:1;animation:lstRise .9s var(--ease) both}
+.lst-status{display:inline-flex;align-items:center;gap:.6rem;align-self:flex-start;font-family:var(--mono);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-lt,#e8c96b);margin-bottom:1.5rem}
+.lst-status::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,.3)}
+.lst-hero-panel h1{font-family:var(--ff-head);font-weight:800;font-size:clamp(2.2rem,3.9vw,3.7rem);line-height:1.0;letter-spacing:-.01em;margin:0 0 1.1rem;max-width:13ch}
+.lst-hero-panel h1 em{font-style:italic;font-weight:700;color:var(--gold-lt,#e8c96b)}
+.lst-hero-sub{font-size:1.05rem;line-height:1.6;color:rgba(255,255,255,.8);font-weight:300;max-width:44ch;margin-bottom:2.1rem}
+.lst-hero-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:.3rem}
+.lst-btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--ff-body);font-weight:600;font-size:.86rem;letter-spacing:.04em;padding:.92rem 1.7rem;border-radius:2px;text-decoration:none;transition:transform .25s var(--ease),background .25s,color .25s}
 .lst-btn.solid{background:var(--gold);color:var(--ink)}
 .lst-btn.solid:hover{transform:translateY(-2px);background:#d9bb63}
-.lst-btn.ghost{border:1px solid rgba(255,255,255,.55);color:#fff}
+.lst-btn.ghost{border:1px solid rgba(255,255,255,.5);color:#fff}
 .lst-btn.ghost:hover{background:#fff;color:var(--ink)}
 
-/* ── SPEC RAIL: the MLS data strip (signature) ── */
-.lst-spec{position:relative;z-index:2;background:var(--ink);color:#fff}
-.lst-spec-grid{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
-.lst-spec-item{padding:1.5rem 1.6rem;border-right:1px solid rgba(255,255,255,.12)}
-.lst-spec-item:last-child{border-right:none}
-.lst-spec-n{font-family:var(--ff-head);font-weight:700;font-size:clamp(1.5rem,2.6vw,2.1rem);color:var(--gold);line-height:1}
-.lst-spec-l{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.62);margin-top:.5rem}
+/* spec rail = the listing's data sheet (signature), inside the panel */
+.lst-spec-grid{display:grid;grid-template-columns:1fr 1fr;border:1px solid rgba(255,255,255,.16);border-radius:3px;margin-bottom:2rem}
+.lst-spec-item{padding:1.05rem 1.3rem;border-right:1px solid rgba(255,255,255,.13);border-bottom:1px solid rgba(255,255,255,.13)}
+.lst-spec-item:nth-child(2n){border-right:none}
+.lst-spec-item:nth-last-child(-n+2){border-bottom:none}
+.lst-spec-n{font-family:var(--ff-head);font-weight:700;font-size:1.7rem;color:var(--gold-lt,#e8c96b);line-height:1}
+.lst-spec-l{font-family:var(--mono);font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:.4rem}
+.lst-more{font-family:var(--mono);font-size:.74rem;letter-spacing:.04em;color:var(--gold-dk);padding:1.1rem .3rem;border-bottom:1px solid var(--line)}
+.lst-more::before{content:'+ ';opacity:.7}
 
 /* ── breadcrumb (own, quiet) ── */
 .lst-crumb{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);padding:1.1rem 0;border-bottom:1px solid var(--line)}
@@ -270,32 +273,34 @@
 
 .lst a:focus-visible,.lst summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
 @keyframes lstRise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
-@media(max-width:760px){
-  .lst-spec-grid{grid-template-columns:1fr 1fr}
-  .lst-spec-item:nth-child(2){border-right:none}
-  .lst-spec-item{border-bottom:1px solid rgba(255,255,255,.12)}
+@keyframes lstZoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+@media(max-width:860px){
+  .lst-hero{grid-template-columns:1fr;min-height:auto}
+  .lst-hero-photo{order:0;height:40vh}
+  .lst-hero-panel{order:1;padding:2.6rem 1.6rem 3rem}
   .lst-stop{grid-template-columns:1fr;gap:1.2rem}
   .lst-offer-inner{grid-template-columns:1fr;gap:2rem}
-  .lst-hero{min-height:88vh}
 }
 @media(prefers-reduced-motion:reduce){.lst *{animation:none!important;transition:none!important}}
 </style>
 <body data-page="become-a-real-estate-agent-in-florida" class="lst">
 
 <header class="lst-hero">
-  <img class="lst-hero-bg" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600&q=80&fit=crop" alt="" />
-  <div class="lst-hero-scrim"></div>
-  <div class="lst-hero-inner">
-    <span class="lst-status">Now showing · A career in real estate · Volusia &amp; Flagler Co.</span>
-    <h1>Become a Real Estate Agent<br/>on Florida&rsquo;s <em>Coast</em>.</h1>
+  <div class="lst-hero-photo">
+    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1500&q=80&fit=crop" alt="A coastal Florida community" />
+    <span class="lst-photo-tag">Listing № 1963 · Volusia–Flagler Co., FL</span>
+  </div>
+  <div class="lst-hero-panel">
+    <span class="lst-status">Now accepting · for the right person</span>
+    <h1>Become a Real Estate Agent on Florida&rsquo;s <em>Coast</em>.</h1>
     <p class="lst-hero-sub">The most-launched real estate career at the area&rsquo;s largest brokerage since 1963. Here&rsquo;s the whole path &mdash; and the people who walk it with you.</p>
+    <div class="lst-spec-grid"><div class="lst-spec-item"><div class="lst-spec-n">63 hrs</div><div class="lst-spec-l">to your license</div></div><div class="lst-spec-item"><div class="lst-spec-n">7</div><div class="lst-spec-l">local offices</div></div><div class="lst-spec-item"><div class="lst-spec-n">Est. 1963</div><div class="lst-spec-l">area's largest brokerage</div></div><div class="lst-spec-item"><div class="lst-spec-n">$0</div><div class="lst-spec-l">tools &amp; marketing</div></div></div>
     <div class="lst-hero-actions">
-      <a href="#tour" class="lst-btn solid">Tour the path &darr;</a>
+      <a href="#tour" class="lst-btn solid">See the path &darr;</a>
       <a href="join.html" class="lst-btn ghost">Talk to a manager</a>
     </div>
   </div>
 </header>
-<div class="lst-spec"><div class="lst-spec-grid"><div class="lst-spec-item"><div class="lst-spec-n">63 hrs</div><div class="lst-spec-l">to your license</div></div><div class="lst-spec-item"><div class="lst-spec-n">7</div><div class="lst-spec-l">local offices</div></div><div class="lst-spec-item"><div class="lst-spec-n">Est. 1963</div><div class="lst-spec-l">area's largest brokerage</div></div><div class="lst-spec-item"><div class="lst-spec-n">$0</div><div class="lst-spec-l">tools &amp; marketing</div></div></div></div>
 
 <div class="lst-crumb"><div class="lst-wrap"><a href="index.html">Home</a><span>&rsaquo;</span>Become a Real Estate Agent</div></div>
 
@@ -313,10 +318,8 @@
     <p>Be honest about the income, the schedule, and the kind of work it really is &mdash; before you spend a dollar on a course.</p>
   </div>
   <ol class="lst-list">
-      <li class="lst-row"><div class="soon"><span class="lst-row-no">01</span><span class="lst-row-t">Is Real Estate a Good Career in Volusia County in 2026?</span><span class="lst-row-tag">In the library</span></div></li>
-      <li class="lst-row"><div class="soon"><span class="lst-row-no">02</span><span class="lst-row-t">How Much Do Real Estate Agents Make in Volusia County?</span><span class="lst-row-tag">In the library</span></div></li>
-      <li class="lst-row"><div class="soon"><span class="lst-row-no">03</span><span class="lst-row-t">A Day in the Life of a Daytona Beach Real Estate Agent</span><span class="lst-row-tag">In the library</span></div></li>
-      <li class="lst-row"><div class="soon"><span class="lst-row-no">04</span><span class="lst-row-t">Real Estate Agent vs. Broker in Florida: What's the Difference?</span><span class="lst-row-tag">In the library</span></div></li>
+      
+      <li class="lst-row"><div class="lst-more">4 guides publishing soon</div></li>
   </ol>
 </section>
 <section class="lst-stop">
@@ -327,9 +330,7 @@
   </div>
   <ol class="lst-list">
       <li class="lst-row"><a href="florida-real-estate-license-guide.html"><span class="lst-row-no">01</span><span class="lst-row-t">How to Get Your Florida Real Estate License: Step-by-Step</span><span class="lst-row-arr">&rarr;</span></a></li>
-      <li class="lst-row"><div class="soon"><span class="lst-row-no">02</span><span class="lst-row-t">How Much Does a Florida Real Estate License Cost?</span><span class="lst-row-tag">In the library</span></div></li>
-      <li class="lst-row"><div class="soon"><span class="lst-row-no">03</span><span class="lst-row-t">How Long Does It Take to Get Licensed in Florida?</span><span class="lst-row-tag">In the library</span></div></li>
-      <li class="lst-row"><div class="soon"><span class="lst-row-no">04</span><span class="lst-row-t">How to Pass the Florida Real Estate Exam</span><span class="lst-row-tag">In the library</span></div></li>
+      <li class="lst-row"><div class="lst-more">3 more guides in this stop &middot; publishing soon</div></li>
   </ol>
 </section>
 <section class="lst-stop">
@@ -339,9 +340,8 @@
     <p>Where you hang your license decides your training, your splits, and whether you survive year one. Choose deliberately.</p>
   </div>
   <ol class="lst-list">
-      <li class="lst-row"><div class="soon"><span class="lst-row-no">01</span><span class="lst-row-t">How to Choose a Brokerage as a New Agent in Daytona Beach</span><span class="lst-row-tag">In the library</span></div></li>
-      <li class="lst-row"><div class="soon"><span class="lst-row-no">02</span><span class="lst-row-t">Commission Splits Explained for New Florida Agents</span><span class="lst-row-tag">In the library</span></div></li>
-      <li class="lst-row"><div class="soon"><span class="lst-row-no">03</span><span class="lst-row-t">Best Brokerage for New Agents in Volusia &amp; Flagler</span><span class="lst-row-tag">In the library</span></div></li>
+      
+      <li class="lst-row"><div class="lst-more">3 guides publishing soon</div></li>
   </ol>
 </section>
 <section class="lst-stop">
@@ -352,9 +352,7 @@
   </div>
   <ol class="lst-list">
       <li class="lst-row"><a href="become-a-real-estate-agent-daytona-beach.html"><span class="lst-row-no">01</span><span class="lst-row-t">How to Become a Real Estate Agent in Daytona Beach, FL</span><span class="lst-row-arr">&rarr;</span></a></li>
-      <li class="lst-row"><div class="soon"><span class="lst-row-no">02</span><span class="lst-row-t">How to Become a Real Estate Agent in Ormond Beach, FL</span><span class="lst-row-tag">In the library</span></div></li>
-      <li class="lst-row"><div class="soon"><span class="lst-row-no">03</span><span class="lst-row-t">How to Become a Real Estate Agent in Port Orange, FL</span><span class="lst-row-tag">In the library</span></div></li>
-      <li class="lst-row"><div class="soon"><span class="lst-row-no">04</span><span class="lst-row-t">How to Become a Real Estate Agent in Palm Coast, FL</span><span class="lst-row-tag">In the library</span></div></li>
+      <li class="lst-row"><div class="lst-more">3 more guides in this stop &middot; publishing soon</div></li>
   </ol>
 </section>
 </div></div>
