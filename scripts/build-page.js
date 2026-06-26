@@ -404,7 +404,7 @@ function renderHub(spec) {
 
 <header class="lst-hero">
   <div class="lst-hero-photo">
-    <img src="${spec.heroImg}" alt="A coastal Florida community" />
+    <img src="${spec.heroImg}" alt="${esc(spec.heroAlt || 'Volusia and Flagler County, Florida coast')}" fetchpriority="high" width="1500" height="1000" />
     <span class="lst-photo-tag">${esc(spec.photoTag || 'Listing № 1963 · Volusia–Flagler Co., FL')}</span>
   </div>
   <div class="lst-hero-panel">
@@ -459,7 +459,7 @@ function renderArticle(spec) {
 <body data-page="${spec.slug}" class="lst">
 
 <header class="lst-art-head">
-  <img class="lst-hero-bg" src="${spec.heroImg}" alt="" />
+  <img class="lst-hero-bg" src="${spec.heroImg}" alt="${esc(spec.heroAlt || (spec.place ? spec.place + ', Florida coastline' : 'Volusia and Flagler County, Florida coast'))}" fetchpriority="high" width="1500" height="900" />
   <div class="lst-hero-scrim"></div>
   <div class="lst-art-head-inner">
     <span class="lst-kicker" style="color:var(--gold)">${esc(spec.eyebrow)}</span>
@@ -502,7 +502,7 @@ function renderComparison(spec) {
 <body data-page="${spec.slug}" class="lst">
 
 <header class="lst-art-head">
-  <img class="lst-hero-bg" src="${spec.heroImg}" alt="" />
+  <img class="lst-hero-bg" src="${spec.heroImg}" alt="${esc(spec.heroAlt || (spec.place ? spec.place + ', Florida coastline' : 'Volusia and Flagler County, Florida coast'))}" fetchpriority="high" width="1500" height="900" />
   <div class="lst-hero-scrim"></div>
   <div class="lst-art-head-inner">
     <span class="lst-kicker" style="color:var(--gold)">${esc(spec.eyebrow || 'The honest comparison')}</span>
