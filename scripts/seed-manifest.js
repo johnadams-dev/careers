@@ -102,6 +102,9 @@ const BUILT = {
   'best-real-estate-brokerage-to-join-volusia-county':     { spec: 'content/best-real-estate-brokerage-to-join-volusia-county.json' },
   'become-a-real-estate-agent-ormond-beach':               { spec: 'content/become-a-real-estate-agent-ormond-beach.json' },
   'become-a-real-estate-agent-palm-coast':                 { spec: 'content/become-a-real-estate-agent-palm-coast.json' },
+  'become-a-real-estate-agent-port-orange':                { spec: 'content/become-a-real-estate-agent-port-orange.json' },
+  'become-a-real-estate-agent-new-smyrna-beach':           { spec: 'content/become-a-real-estate-agent-new-smyrna-beach.json' },
+  'become-a-real-estate-agent-deland':                     { spec: 'content/become-a-real-estate-agent-deland.json' },
 };
 const EVERGREEN_SLUG_OVERRIDE = { 'How to Get Your Florida Real Estate License: Step-by-Step': 'florida-real-estate-license-guide' };
 

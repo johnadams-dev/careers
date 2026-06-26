@@ -502,7 +502,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, US Realty Training",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/become-a-real-estate-agent-port-orange.json"
   },
   {
     "slug": "become-a-real-estate-agent-new-smyrna-beach",
@@ -516,7 +517,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, US Realty Training",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/become-a-real-estate-agent-new-smyrna-beach.json"
   },
   {
     "slug": "become-a-real-estate-agent-deland",
@@ -530,7 +532,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, US Realty Training",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/become-a-real-estate-agent-deland.json"
   },
   {
     "slug": "become-a-real-estate-agent-deltona",
