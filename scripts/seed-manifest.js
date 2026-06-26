@@ -1,210 +1,145 @@
 #!/usr/bin/env node
 /*
- * seed-manifest.js — generates content/manifest.js (the site registry).
+ * seed-manifest.js — generates content/manifest.js, DEMAND-FIRST.
  *
- * Structured around the THREE recruiting paths Adams Cameron's own homepage
- * defines, weighted the way the business actually converts:
- *   1. EXPERIENCED agents — switch & scale (licensed; the money recruits)   [primary]
- *   2. REFERRAL — keep your license working without selling (licensed/inactive)
- *   3. ASPIRING / NEW agents — launch your career (not yet licensed)        [top-of-funnel volume]
+ * Every page = a real, unbranded, decision-stage query a prospect asks BEFORE
+ * choosing a brokerage, localized to our markets, scored against the competitor
+ * it displaces (audit leaderboard: Gold Coast Schools, US Realty Training,
+ * Indeed, FastExpert, daytonarealtors, Yelp…).
  *
- * Track 3 is seeded from the audited content plan; tracks 1 & 2 are authored
- * here (the audit only covered the aspiring funnel). Re-run to re-seed.
+ * Scale engine = GEOGRAPHY × DECISION (each query × each market = one localized
+ * winnable page). Plus the Otto FORMAT system — each query renders in its
+ * highest-citation format:
+ *   guide · article · comparison · tool · faq
+ * (comparison + tool are the formats that win AI citations; "best/vs" queries
+ * become comparisons, "how much/cost" queries become interactive tools.)
  */
 const fs = require('fs');
 const path = require('path');
 
-const PLAN = '/Users/mattg/ai-visibility-engine/audits/florida-real-estate-careers/data.json';
-
-const slugify = (s) => s.toLowerCase()
-  .replace(/&/g, ' and ').replace(/['’.,?:()"]/g, '').replace(/[^a-z0-9]+/g, '-')
-  .replace(/^-+|-+$/g, '').replace(/-+/g, '-').slice(0, 80);
+const slugify = (s) => s.toLowerCase().replace(/&/g, ' and ').replace(/['’.,?:()"]/g, '')
+  .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').replace(/-+/g, '-');
 
 const TRACKS = [
-  { id: 'experienced', title: 'Experienced Agents — Switch & Scale', hub: 'switch-real-estate-brokerage-florida', audience: 'Licensed agents who want a better brokerage', priority: 1 },
+  { id: 'experienced', title: 'Experienced Agents — Switch & Scale', hub: 'best-brokerage-for-experienced-agents-volusia-flagler', audience: 'Licensed agents choosing where to hang their license', priority: 1 },
   { id: 'referral',    title: 'Referral — Keep Your License Working', hub: 'real-estate-referral-program-florida', audience: 'Licensed but not actively selling', priority: 2 },
-  { id: 'aspiring',    title: 'New & Aspiring Agents — Launch Your Career', hub: 'become-a-real-estate-agent-in-florida', audience: 'Not yet licensed / brand new', priority: 3 },
+  { id: 'aspiring',    title: 'New & Aspiring Agents — Launch Your Career', hub: 'become-a-real-estate-agent-in-florida', audience: 'Deciding to get in / getting licensed / picking a first brokerage', priority: 3 },
 ];
 
-// ── TRACK 1: EXPERIENCED (authored — the primary conversion play) ────────────
-const EXPERIENCED = {
-  'switch': {
-    title: 'Switch Your Brokerage', track: 'experienced',
-    titles: [
-      'Best Real Estate Brokerage for Experienced Agents in Volusia & Flagler County',
-      'How to Switch Real Estate Brokerages in Florida: A Step-by-Step Guide',
-      'How to Transfer Your Florida Real Estate License to a New Broker',
-      '10 Questions to Ask Before Switching Real Estate Brokerages',
-      "Signs It's Time to Leave Your Real Estate Brokerage",
-      'Switching Brokerages Mid-Transaction: What Happens to Your Pending Deals in Florida',
-      "How to Tell Your Broker You're Leaving Without Burning Bridges",
-      'What Happens to Your Listings When You Change Brokerages in Florida',
-      'Changing Brokerages as a Top Producer: What to Negotiate',
-      'Moving to Adams Cameron: What to Expect in Your First 30 Days',
-    ],
-  },
-  'economics': {
-    title: 'Commissions, Splits & the Real Math', track: 'experienced',
-    titles: [
-      'Real Estate Commission Splits Explained for Experienced Florida Agents',
-      'Commission Splits vs. Caps: Which Is Better for a Producing Agent?',
-      'The Real Cost of Desk Fees, Tech Fees, and Hidden Brokerage Charges',
-      '100% Commission vs. Full-Service Brokerage: The Honest Math',
-      'What Should a Top-Producing Agent Negotiate With a Brokerage?',
-      'How Much Do Experienced Real Estate Agents Make in Volusia County?',
-      'Is Your Brokerage Worth Its Split? How to Run the Numbers',
-    ],
-  },
-  'scale': {
-    title: 'Tools & Support That Scale You', track: 'experienced',
-    titles: [
-      'The Marketing Tools That Actually Grow a Real Estate Business',
-      'Why a Non-Competing Manager Changes Everything for a Busy Agent',
-      'The Best CRM and Transaction Tools for Florida Real Estate Agents',
-      'How a Referral Network Like Leading RE Sends You Business',
-      'Stop Doing Your Own Marketing: What a Full-Service Brokerage Handles',
-      "How Adams Cameron's Support Ecosystem Frees Up Your Selling Hours",
-    ],
-  },
-  'grow': {
-    title: 'Teams, Leadership & Advancement', track: 'experienced',
-    titles: [
-      'How to Start a Real Estate Team in Florida',
-      'Solo Agent vs. Real Estate Team: Which Path Fits You?',
-      'How to Get Your Florida Real Estate Broker License',
-      'Florida Broker Associate License: Is It Worth It for Experienced Agents?',
-      'When Should You Upgrade From Sales Associate to Broker in Florida?',
-      'Becoming a Mentor or Team Leader at Your Brokerage',
-    ],
-  },
-};
+const PILLARS = [
+  { id: 'choose-new', track: 'aspiring',    title: 'Which Brokerage to Join', hub: 'best-real-estate-brokerage-to-join-volusia-county' },
+  { id: 'license',    track: 'aspiring',    title: 'Get Licensed Locally',    hub: 'florida-real-estate-license' },
+  { id: 'decide',     track: 'aspiring',    title: 'Is It Right for You',      hub: 'is-real-estate-a-good-career-florida' },
+  { id: 'compare',    track: 'aspiring',    title: 'Compare the Options',      hub: 'best-real-estate-companies-to-work-for-volusia' },
+  { id: 'switch-exp', track: 'experienced', title: 'Switch Your Brokerage',    hub: 'best-brokerage-for-experienced-agents-volusia-flagler' },
+  { id: 'economics',  track: 'experienced', title: 'Splits & the Real Math',   hub: 'real-estate-commission-splits-florida' },
+  { id: 'scale',      track: 'experienced', title: 'Tools That Scale You',     hub: 'real-estate-agent-tools-support-florida' },
+  { id: 'grow',       track: 'experienced', title: 'Teams & Advancement',      hub: 'real-estate-broker-license-teams-florida' },
+  { id: 'referral',   track: 'referral',    title: 'The Referral Path',        hub: 'real-estate-referral-program-florida' },
+  { id: 'park',       track: 'referral',    title: 'Keep Your License Active', hub: 'keep-florida-real-estate-license-active' },
+];
 
-// ── TRACK 2: REFERRAL / INACTIVE LICENSE (authored — was missing entirely) ───
-const REFERRAL = {
-  'referral': {
-    title: 'How the Referral Program Works', track: 'referral',
-    titles: [
-      'How a Real Estate Referral Company Works in Florida',
-      'How to Earn Referral Income Without Actively Selling Real Estate',
-      'Real Estate Referral Fees in Florida: How Much Can You Earn?',
-      'Joining a Referral Brokerage: What to Look For',
-      'How to Refer a Client and Get Paid as a Florida Agent',
-    ],
-  },
-  'park': {
-    title: 'Keep Your License Active', track: 'referral',
-    titles: [
-      'How to Keep Your Florida Real Estate License Active Without Selling',
-      "Active vs. Inactive Real Estate License in Florida: What's the Difference?",
-      'What to Do With Your Real Estate License If You Stop Selling',
-      'How to "Park" Your Real Estate License in Florida',
-      'Referral Company vs. Going Inactive: Which Keeps Your License Working?',
-    ],
-  },
-  'life': {
-    title: 'Life Changes & Your License', track: 'referral',
-    titles: [
-      'Keeping Your Real Estate License After You Move Out of the Area',
-      'Selling Real Estate Part-Time in Florida: Is It Worth It?',
-      'Retiring From Real Estate but Keeping Your License Working',
-      'Going Back to Real Estate After Time Away: Reactivating in Florida',
-    ],
-  },
-};
+const MARKETS = [
+  { place: 'Daytona Beach', slug: 'daytona-beach', county: 'Volusia' },
+  { place: 'Ormond Beach', slug: 'ormond-beach', county: 'Volusia' },
+  { place: 'Port Orange', slug: 'port-orange', county: 'Volusia' },
+  { place: 'New Smyrna Beach', slug: 'new-smyrna-beach', county: 'Volusia' },
+  { place: 'DeLand', slug: 'deland', county: 'Volusia' },
+  { place: 'Deltona', slug: 'deltona', county: 'Volusia' },
+  { place: 'Palm Coast', slug: 'palm-coast', county: 'Flagler' },
+  { place: 'Flagler Beach', slug: 'flagler-beach', county: 'Flagler' },
+  { place: 'Volusia County', slug: 'volusia-county', county: 'Volusia' },
+  { place: 'Flagler County', slug: 'flagler-county', county: 'Flagler' },
+];
 
-// ── TRACK 3: ASPIRING / NEW (from the audited content plan) ──────────────────
-const ASPIRING_PILLARS = {
-  'Local Area Pages':                                              { id: 'local',       title: 'Real Estate Careers by City',   hub: 'real-estate-careers-volusia-flagler' },
-  'Getting Your Florida Real Estate License':                      { id: 'license',     title: 'Get Your Florida License',       hub: 'florida-real-estate-license' },
-  "Is a Real Estate Career Right for You?":                        { id: 'decide',      title: "Decide If It's Right for You",   hub: 'is-real-estate-career-right-for-you' },
-  'Choosing the Right Brokerage in Volusia & Flagler County':      { id: 'first-brokerage', title: 'Choosing Your First Brokerage', hub: 'choosing-first-real-estate-brokerage' },
-  'Building Your Real Estate Business in Volusia & Flagler County': { id: 'startup',    title: 'Start Your Business',            hub: 'building-your-real-estate-business' },
-  'Understanding the Volusia & Flagler County Real Estate Market':  { id: 'market',     title: 'Know the Local Market',          hub: 'volusia-flagler-real-estate-market' },
-  'New Agent Training, Tools & Resources':                         { id: 'training',    title: 'New-Agent Training',             hub: 'new-agent-training' },
-  'Costs, Income & Financial Reality of Real Estate Careers':      { id: 'income',      title: 'Income, Costs & Tools',          hub: 'real-estate-agent-income-florida' },
-  'Local Career Stories, Culture & Community':                     { id: 'stories',     title: 'Stories, Culture & Community',    hub: 'real-estate-agent-stories-daytona' },
-  // 'Agent Career Advancement & Licensing Upgrades' is folded into TRACK 1 'grow'
-};
+// decision query × {place} → one localized page, in its best Otto format
+const TEMPLATES = [
+  { pillar: 'choose-new', format: 'comparison', tier: 1, beat: 'FastExpert, Indeed',      title: (p) => `Best Real Estate Brokerage to Join in ${p}`,      slug: (s) => `best-real-estate-brokerage-to-join-${s}`,    query: (p) => `What is the best real estate brokerage to join in ${p}?` },
+  { pillar: 'choose-new', format: 'comparison', tier: 1, beat: 'Indeed, daytonarealtors', title: (p) => `Best Real Estate Company for New Agents in ${p}`, slug: (s) => `best-real-estate-company-new-agents-${s}`,   query: (p) => `Which real estate company is best for new agents in ${p}?` },
+  { pillar: 'license',    format: 'guide',      tier: 1, beat: 'Gold Coast Schools, US Realty Training', title: (p) => `How to Become a Real Estate Agent in ${p}`, slug: (s) => `become-a-real-estate-agent-${s}`,    query: (p) => `How do I become a real estate agent in ${p}?` },
+  { pillar: 'license',    format: 'guide',      tier: 2, beat: 'Gold Coast Schools, myfloridalicense', title: (p) => `How to Get Your Florida Real Estate License in ${p}`, slug: (s) => `florida-real-estate-license-${s}`, query: (p) => `How do I get my Florida real estate license in ${p}?` },
+  { pillar: 'decide',     format: 'article',    tier: 2, beat: 'Indeed, Reddit',          title: (p) => `Is Real Estate a Good Career in ${p}?`,          slug: (s) => `is-real-estate-a-good-career-${s}`,          query: (p) => `Is real estate a good career in ${p}?` },
+  { pillar: 'decide',     format: 'tool',       tier: 2, beat: 'Indeed, Glassdoor',       title: (p) => `How Much Do Real Estate Agents Make in ${p}?`,    slug: (s) => `how-much-do-real-estate-agents-make-${s}`,   query: (p) => `How much do real estate agents make in ${p}?` },
+  { pillar: 'switch-exp', format: 'comparison', tier: 1, beat: 'FastExpert, Glassdoor',   title: (p) => `Best Brokerage for Experienced Agents in ${p}`,  slug: (s) => `best-brokerage-experienced-agents-${s}`,     query: (p) => `What is the best brokerage for experienced agents in ${p}?` },
+  { pillar: 'switch-exp', format: 'comparison', tier: 2, beat: 'Indeed, Glassdoor',       title: (p) => `Best Real Estate Company to Work For in ${p}`,   slug: (s) => `best-real-estate-company-to-work-for-${s}`,  query: (p) => `What is the best real estate company to work for in ${p}?` },
+  { pillar: 'compare',    format: 'comparison', tier: 2, beat: 'Yelp, Indeed',            title: (p) => `Top Real Estate Companies to Work For in ${p}`,  slug: (s) => `top-real-estate-companies-to-work-for-${s}`, query: (p) => `What are the top real estate companies to work for in ${p}?` },
+];
+
+// evergreen "how" pages (non-geo) — each in its best format
+const EVERGREEN = [
+  { pillar: 'license',    format: 'guide',      title: 'How to Get Your Florida Real Estate License: Step-by-Step', query: 'What are the steps to get a real estate license in Florida and how long does it take?', beat: 'Gold Coast Schools' },
+  { pillar: 'decide',     format: 'article',    title: 'Is a Real Estate Career Right for You? An Honest Look',      query: 'Should I become a real estate agent?', beat: 'Indeed, Reddit' },
+  { pillar: 'switch-exp', format: 'guide',      title: 'How to Switch Real Estate Brokerages in Florida: Step-by-Step', query: 'How do I switch real estate brokerages in Florida?', beat: 'FastExpert' },
+  { pillar: 'switch-exp', format: 'guide',      title: 'How to Transfer Your Florida Real Estate License to a New Broker', query: 'How do I transfer my Florida real estate license to a new broker?', beat: 'myfloridalicense' },
+  { pillar: 'switch-exp', format: 'faq',        title: '10 Questions to Ask Before Switching Real Estate Brokerages', query: 'What should I ask before switching real estate brokerages?', beat: 'Reddit' },
+  { pillar: 'economics',  format: 'comparison', title: 'Real Estate Commission Splits vs. Caps: Which Is Better?',    query: 'Commission split vs cap — which is better for a real estate agent?', beat: 'Reddit, Inman' },
+  { pillar: 'economics',  format: 'article',    title: 'The Real Cost of Desk Fees and Hidden Brokerage Charges',     query: 'What are typical real estate desk fees and hidden brokerage costs?', beat: 'Reddit' },
+  { pillar: 'economics',  format: 'comparison', title: '100% Commission vs. Full-Service Brokerage: The Honest Math', query: 'Is a 100% commission brokerage better than full service?', beat: 'Reddit' },
+  { pillar: 'scale',      format: 'article',    title: 'Why a Non-Competing Manager Changes Everything for a Busy Agent', query: 'What is a non-competing manager and why does it matter?', beat: 'Inman' },
+  { pillar: 'scale',      format: 'article',    title: 'Real Estate Marketing Tools That Actually Grow Your Business', query: 'What marketing tools do real estate agents actually need?', beat: 'Inman' },
+  { pillar: 'grow',       format: 'guide',      title: 'How to Get Your Florida Real Estate Broker License',          query: 'How do I get my Florida real estate broker license?', beat: 'Gold Coast Schools' },
+  { pillar: 'grow',       format: 'guide',      title: 'How to Start a Real Estate Team in Florida',                  query: 'How do I start a real estate team in Florida?', beat: 'Inman' },
+  { pillar: 'referral',   format: 'faq',        title: 'How a Real Estate Referral Company Works in Florida',         query: 'How does a real estate referral company work in Florida?', beat: 'Reddit' },
+  { pillar: 'referral',   format: 'article',    title: 'How to Earn Referral Income Without Actively Selling Real Estate', query: 'How can I earn real estate referral income without selling?', beat: 'Reddit' },
+  { pillar: 'park',       format: 'guide',      title: 'How to Keep Your Florida Real Estate License Active Without Selling', query: 'How do I keep my Florida real estate license active without selling?', beat: 'myfloridalicense' },
+  { pillar: 'park',       format: 'comparison', title: 'Active vs. Inactive Real Estate License in Florida: The Difference', query: "What's the difference between an active and inactive real estate license in Florida?", beat: 'myfloridalicense' },
+];
+
+// interactive tools (the Otto "tool" format — high citation value)
+const TOOLS = [
+  { pillar: 'economics', title: 'Real Estate Commission Split Calculator',            query: 'How much will I actually take home at different commission splits?' },
+  { pillar: 'decide',    title: 'Florida Real Estate Agent Income Estimator',          query: 'How much can I make as a real estate agent in Florida?' },
+  { pillar: 'license',   title: 'Florida Real Estate License Cost Calculator',         query: 'How much does it cost to get a Florida real estate license?' },
+  { pillar: 'economics', title: 'Brokerage Fee Comparison Calculator (Splits, Caps & Desk Fees)', query: 'Which brokerage costs me less — splits vs caps vs desk fees?' },
+];
 
 const BUILT = {
-  'become-a-real-estate-agent-in-florida':    { type: 'hub',     track: 'aspiring', pillar: 'master',  title: 'How to Become a Real Estate Agent in Florida', spec: 'content/become-a-real-estate-agent-in-florida.json' },
-  'florida-real-estate-license-guide':        { type: 'article', track: 'aspiring', pillar: 'license', title: 'How to Get Your Florida Real Estate License: Step-by-Step', spec: 'content/florida-real-estate-license-guide.json' },
-  'become-a-real-estate-agent-daytona-beach': { type: 'article', track: 'aspiring', pillar: 'local',   title: 'How to Become a Real Estate Agent in Daytona Beach, FL', spec: 'content/become-a-real-estate-agent-daytona-beach.json' },
+  'become-a-real-estate-agent-in-florida':    { spec: 'content/become-a-real-estate-agent-in-florida.json' },
+  'florida-real-estate-license-guide':        { spec: 'content/florida-real-estate-license-guide.json' },
+  'become-a-real-estate-agent-daytona-beach': { spec: 'content/become-a-real-estate-agent-daytona-beach.json' },
 };
+const EVERGREEN_SLUG_OVERRIDE = { 'How to Get Your Florida Real Estate License: Step-by-Step': 'florida-real-estate-license-guide' };
 
-const pillars = [];
+const trackOf = (pillarId) => (PILLARS.find((p) => p.id === pillarId) || {}).track;
 const pages = [];
 const seen = new Set();
+const add = (p) => { if (seen.has(p.slug)) return; seen.add(p.slug); const b = BUILT[p.slug]; pages.push({ ...p, status: b ? 'built' : 'planned', ...(b ? { spec: b.spec } : {}) }); };
 
-const addPage = (p) => { if (seen.has(p.slug)) return; seen.add(p.slug); pages.push(p); };
+for (const t of TRACKS) add({ slug: t.hub, type: 'hub', format: 'hub', track: t.id, pillar: 'master', title: t.title });
 
-// master hubs (one per track)
-for (const t of TRACKS) {
-  const b = BUILT[t.hub];
-  addPage({ slug: t.hub, type: 'hub', track: t.id, pillar: 'master', title: t.title, status: b ? 'built' : 'planned', ...(b ? { spec: b.spec } : {}) });
-}
+for (const tpl of TEMPLATES) for (const m of MARKETS)
+  add({ slug: tpl.slug(m.slug), type: 'page', format: tpl.format, track: trackOf(tpl.pillar), pillar: tpl.pillar, title: tpl.title(m.place), query: tpl.query(m.place), place: m.place, competitor: tpl.beat, tier: tpl.tier, winnable: true });
 
-// authored tracks 1 & 2
-for (const set of [EXPERIENCED, REFERRAL]) {
-  for (const [id, p] of Object.entries(set)) {
-    const hub = slugify(p.title);
-    pillars.push({ id, track: p.track, title: p.title, hub });
-    addPage({ slug: hub, type: 'hub', track: p.track, pillar: id, title: p.title, status: 'planned' });
-    for (const title of p.titles) {
-      let slug = slugify(title);
-      if (seen.has(slug)) slug = `${slug}-${id}`;
-      const b = BUILT[slug];
-      addPage({ slug, type: b ? b.type : 'article', track: p.track, pillar: id, title, status: b ? 'built' : 'planned', ...(b ? { spec: b.spec } : {}) });
-    }
-  }
-}
+for (const e of EVERGREEN)
+  add({ slug: EVERGREEN_SLUG_OVERRIDE[e.title] || slugify(e.title), type: 'page', format: e.format, track: trackOf(e.pillar), pillar: e.pillar, title: e.title, query: e.query, competitor: e.beat, evergreen: true, winnable: true });
 
-// track 3 from the audit plan
-const plan = JSON.parse(fs.readFileSync(PLAN, 'utf8')).contentPlan;
-for (const u of plan.universes) {
-  const p = ASPIRING_PILLARS[u.name];
-  if (!p) continue; // advancement universe intentionally skipped (folded into TRACK 1)
-  pillars.push({ id: p.id, track: 'aspiring', title: p.title, hub: p.hub, format: u.type, planned: u.count });
-  addPage({ slug: p.hub, type: 'hub', track: 'aspiring', pillar: p.id, title: p.title, status: 'planned' });
-  for (const title of (u.titles || [])) {
-    let slug = slugify(title);
-    if (seen.has(slug)) slug = `${slug}-${p.id}`;
-    const b = BUILT[slug];
-    addPage({ slug, type: b ? b.type : 'article', track: 'aspiring', pillar: p.id, title, status: b ? 'built' : 'planned', ...(b ? { spec: b.spec } : {}) });
-  }
-}
+for (const t of TOOLS)
+  add({ slug: slugify(t.title), type: 'page', format: 'tool', track: trackOf(t.pillar), pillar: t.pillar, title: t.title, query: t.query, winnable: true });
 
-// guarantee every built page is in the registry, even if its slug didn't match
-// an authored/audited title
-for (const [slug, b] of Object.entries(BUILT)) {
-  if (!seen.has(slug)) addPage({ slug, type: b.type, track: b.track, pillar: b.pillar, title: b.title || slug, status: 'built', spec: b.spec });
-}
+const formatCounts = pages.reduce((a, p) => { a[p.format] = (a[p.format] || 0) + 1; return a; }, {});
 
 const out = `/*
- * manifest.js — THE SITE REGISTRY (single source of truth).
+ * manifest.js — THE SITE REGISTRY (single source of truth), DEMAND-FIRST.
  *
- * Organized by the three recruiting paths Adams Cameron's homepage defines —
- * experienced (switch & scale), referral (keep your license working), and
- * aspiring (launch your career) — weighted toward who actually converts.
- * The build reads this to render pages and auto-generate sitemap.xml, llms.txt,
- * navigation, and a coverage report. Add a page = add a row. Flip 'planned' →
- * 'built' as pages ship.
+ * Each page targets a real decision-stage query (.query) scored against the
+ * competitor it displaces (.competitor), rendered in its best Otto format
+ * (.format: guide | article | comparison | tool | faq). Geography × decision is
+ * the scale engine. The build renders pages and auto-generates sitemap.xml,
+ * llms.txt, nav, and a coverage report. Add a page = add a row.
  *
- * Generated by scripts/seed-manifest.js · ${pages.length} pages · ${pillars.length} pillars · ${TRACKS.length} tracks.
+ * Generated by scripts/seed-manifest.js · ${pages.length} pages.
  */
 module.exports = {
   site: 'https://floridarealtorcareers.com',
   brand: 'Florida Realtor Careers — Adams, Cameron & Co., Realtors',
   tracks: ${JSON.stringify(TRACKS, null, 2)},
-  pillars: ${JSON.stringify(pillars, null, 2)},
+  pillars: ${JSON.stringify(PILLARS, null, 2)},
+  markets: ${JSON.stringify(MARKETS, null, 2)},
   pages: ${JSON.stringify(pages, null, 2)},
 };
 `;
 fs.writeFileSync(path.join(__dirname, '..', 'content', 'manifest.js'), out);
 
-const byTrack = (id) => pages.filter((p) => p.track === id);
-console.log(`✓ manifest.js: ${pages.length} pages · ${pillars.length} pillars · ${TRACKS.length} tracks`);
-for (const t of TRACKS) {
-  const tp = byTrack(t.id);
-  console.log(`  · ${t.id.padEnd(12)} ${String(tp.length).padStart(3)} pages (${tp.filter((p) => p.status === 'built').length} built)`);
-}
+console.log(`✓ manifest.js: ${pages.length} pages · ${MARKETS.length} markets · ${TEMPLATES.length} templates + ${EVERGREEN.length} evergreen + ${TOOLS.length} tools`);
+console.log('  by track:  ' + TRACKS.map((t) => `${t.id} ${pages.filter((p) => p.track === t.id).length}`).join(' · '));
+console.log('  by format: ' + Object.entries(formatCounts).map(([k, v]) => `${k} ${v}`).join(' · '));
