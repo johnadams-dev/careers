@@ -11,11 +11,11 @@
 <meta property="og:title" content="How to Become a Real Estate Agent in Florida (2026 Guide) | Adams, Cameron &amp; Co." />
 <meta property="og:description" content="The complete, step-by-step path to becoming a real estate agent in Volusia and Flagler County, Florida — decide if it's right for you, get licensed, choose a brokerage, and build your business with Adams, Cameron &amp; Co., the area's largest brokerage since 1963." />
 <meta property="og:url" content="https://floridarealtorcareers.com/become-a-real-estate-agent-in-florida" />
-<meta property="og:image" content="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1500&q=80&fit=crop" />
+<meta property="og:image" content="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=1500&q=80&fit=crop" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="How to Become a Real Estate Agent in Florida (2026 Guide) | Adams, Cameron &amp; Co." />
 <meta name="twitter:description" content="The complete, step-by-step path to becoming a real estate agent in Volusia and Flagler County, Florida — decide if it's right for you, get licensed, choose a brokerage, and build your business with Adams, Cameron &amp; Co., the area's largest brokerage since 1963." />
-<meta name="twitter:image" content="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1500&q=80&fit=crop" />
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=1500&q=80&fit=crop" />
 <link rel="icon" type="image/png" href="favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -215,12 +215,14 @@
 .lst-lead h2{font-family:var(--ff-head);font-weight:700;font-size:clamp(1.7rem,3.2vw,2.6rem);line-height:1.12;margin:.9rem 0 0;max-width:20ch}
 .lst-lead p{color:var(--mute);font-size:1.08rem;line-height:1.7;max-width:60ch;margin-top:1.1rem}
 
-/* ── THE TOUR: stops + reading lists ── */
+/* ── THE TOUR: a guided showing with stops ── */
 .lst-tour{padding:2.5rem 0 1rem}
-.lst-stop{padding:2.6rem 0;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(220px,300px) 1fr;gap:2.4rem;align-items:start}
-.lst-stop-no{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;color:var(--gold-dk)}
-.lst-stop-head h3{font-family:var(--ff-head);font-weight:700;font-size:clamp(1.4rem,2.6vw,1.95rem);line-height:1.1;margin:.6rem 0 .6rem}
-.lst-stop-head p{color:var(--mute);font-size:.96rem;line-height:1.6}
+.lst-stop{padding:3rem 0;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(230px,320px) 1fr;gap:2.8rem;align-items:start;position:relative}
+.lst-stop-head{position:relative}
+.lst-stop-fig{font-family:var(--ff-head);font-weight:700;font-size:4.2rem;line-height:.8;color:transparent;-webkit-text-stroke:1.5px var(--gold);letter-spacing:-.02em;margin-bottom:.6rem;display:block;opacity:.85}
+.lst-stop-no{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-dk)}
+.lst-stop-head h3{font-family:var(--ff-head);font-weight:700;font-size:clamp(1.4rem,2.6vw,1.95rem);line-height:1.08;margin:.45rem 0 .65rem}
+.lst-stop-head p{color:var(--mute);font-size:.98rem;line-height:1.65;max-width:34ch}
 .lst-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 .lst-row{border-bottom:1px solid var(--line)}
 .lst-row a,.lst-row .soon{display:flex;align-items:baseline;gap:1.1rem;padding:1.05rem .3rem;text-decoration:none;transition:padding .25s var(--ease),background .25s}
@@ -232,6 +234,14 @@
 .lst-row a:hover .lst-row-arr{opacity:1;transform:translateX(0)}
 .lst-row .soon .lst-row-t{color:var(--mute);font-weight:400}
 .lst-row-tag{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);border:1px solid var(--line);border-radius:2px;padding:.2rem .5rem;align-self:center}
+
+/* ── PULL-QUOTE: a confident editorial moment ── */
+.lst-quote{background:var(--ink);color:#fff;padding:clamp(4rem,8vw,6.5rem) 0;position:relative;overflow:hidden}
+.lst-quote::before{content:'\201C';position:absolute;top:-.1em;left:.1em;font-family:var(--ff-head);font-size:18rem;line-height:1;color:rgba(201,168,76,.12);pointer-events:none}
+.lst-quote .lst-narrow{position:relative}
+.lst-quote .lst-kicker{color:var(--gold-lt,#e8c96b)}
+.lst-quote blockquote{font-family:var(--ff-head);font-weight:600;font-style:italic;font-size:clamp(1.7rem,3.6vw,2.9rem);line-height:1.2;margin:1.2rem 0 1.4rem;max-width:24ch;color:#fff}
+.lst-quote cite{font-family:var(--mono);font-style:normal;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.6)}
 
 /* ── FAQ ── */
 .lst-faq{padding:4rem 0}
@@ -287,14 +297,14 @@
 
 <header class="lst-hero">
   <div class="lst-hero-photo">
-    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1500&q=80&fit=crop" alt="A coastal Florida community" />
+    <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=1500&q=80&fit=crop" alt="A coastal Florida community" />
     <span class="lst-photo-tag">Listing № 1963 · Volusia–Flagler Co., FL</span>
   </div>
   <div class="lst-hero-panel">
     <span class="lst-status">Now accepting · for the right person</span>
     <h1>Become a Real Estate Agent on Florida&rsquo;s <em>Coast</em>.</h1>
     <p class="lst-hero-sub">The most-launched real estate career at the area&rsquo;s largest brokerage since 1963. Here&rsquo;s the whole path &mdash; and the people who walk it with you.</p>
-    <div class="lst-spec-grid"><div class="lst-spec-item"><div class="lst-spec-n">63 hrs</div><div class="lst-spec-l">to your license</div></div><div class="lst-spec-item"><div class="lst-spec-n">7</div><div class="lst-spec-l">local offices</div></div><div class="lst-spec-item"><div class="lst-spec-n">Est. 1963</div><div class="lst-spec-l">area's largest brokerage</div></div><div class="lst-spec-item"><div class="lst-spec-n">$0</div><div class="lst-spec-l">tools &amp; marketing</div></div></div>
+    <div class="lst-spec-grid"><div class="lst-spec-item"><div class="lst-spec-n">63 hrs</div><div class="lst-spec-l">to your license</div></div><div class="lst-spec-item"><div class="lst-spec-n">7</div><div class="lst-spec-l">local offices</div></div><div class="lst-spec-item"><div class="lst-spec-n">Est. 1963</div><div class="lst-spec-l">area's largest brokerage</div></div><div class="lst-spec-item"><div class="lst-spec-n">Included</div><div class="lst-spec-l">tools &amp; marketing</div></div></div>
     <div class="lst-hero-actions">
       <a href="#tour" class="lst-btn solid">See the path &darr;</a>
       <a href="join.html" class="lst-btn ghost">Talk to a manager</a>
@@ -313,7 +323,8 @@
 <div class="lst-tour"><div class="lst-wrap">
 <section class="lst-stop">
   <div class="lst-stop-head">
-    <span class="lst-stop-no">STOP 01 / 04</span>
+    <span class="lst-stop-fig">01</span>
+    <span class="lst-stop-no">Stop 01 of 04</span>
     <h3>Decide</h3>
     <p>Be honest about the income, the schedule, and the kind of work it really is &mdash; before you spend a dollar on a course.</p>
   </div>
@@ -324,7 +335,8 @@
 </section>
 <section class="lst-stop">
   <div class="lst-stop-head">
-    <span class="lst-stop-no">STOP 02 / 04</span>
+    <span class="lst-stop-fig">02</span>
+    <span class="lst-stop-no">Stop 02 of 04</span>
     <h3>Get Licensed</h3>
     <p>Complete Florida's 63-hour course, pass the state exam, and clear your background check. We map every step.</p>
   </div>
@@ -335,7 +347,8 @@
 </section>
 <section class="lst-stop">
   <div class="lst-stop-head">
-    <span class="lst-stop-no">STOP 03 / 04</span>
+    <span class="lst-stop-fig">03</span>
+    <span class="lst-stop-no">Stop 03 of 04</span>
     <h3>Choose a Brokerage</h3>
     <p>Where you hang your license decides your training, your splits, and whether you survive year one. Choose deliberately.</p>
   </div>
@@ -346,7 +359,8 @@
 </section>
 <section class="lst-stop">
   <div class="lst-stop-head">
-    <span class="lst-stop-no">STOP 04 / 04</span>
+    <span class="lst-stop-fig">04</span>
+    <span class="lst-stop-no">Stop 04 of 04</span>
     <h3>Build Your Business</h3>
     <p>Generate leads, run a sphere, and lean on real support so you're never figuring it out alone.</p>
   </div>
@@ -356,6 +370,12 @@
   </ol>
 </section>
 </div></div>
+
+<section class="lst-quote"><div class="lst-narrow">
+  <p class="lst-kicker">The culture you’re joining</p>
+  <blockquote>A real estate culture where high performance and a high quality of life go hand in hand.</blockquote>
+  <cite>Adams, Cameron &amp; Co. — building careers here since 1963</cite>
+</div></section>
 
 
 
