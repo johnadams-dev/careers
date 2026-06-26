@@ -303,7 +303,8 @@ module.exports = {
     "competitor": "FastExpert, Indeed",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-brokerage-to-join-volusia-county.json"
   },
   {
     "slug": "best-real-estate-brokerage-to-join-flagler-county",
@@ -486,7 +487,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, US Realty Training",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/become-a-real-estate-agent-ormond-beach.json"
   },
   {
     "slug": "become-a-real-estate-agent-port-orange",
@@ -556,7 +558,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, US Realty Training",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/become-a-real-estate-agent-palm-coast.json"
   },
   {
     "slug": "become-a-real-estate-agent-flagler-beach",
