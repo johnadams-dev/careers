@@ -1667,7 +1667,8 @@ module.exports = {
     "title": "Real Estate Commission Split Calculator",
     "query": "How much will I actually take home at different commission splits?",
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/real-estate-commission-split-calculator.json"
   },
   {
     "slug": "florida-real-estate-agent-income-estimator",
