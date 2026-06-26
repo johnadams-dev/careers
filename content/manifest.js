@@ -1180,7 +1180,8 @@ module.exports = {
     "competitor": "Indeed, Glassdoor",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-to-work-for-daytona-beach.json"
   },
   {
     "slug": "best-real-estate-company-to-work-for-ormond-beach",
@@ -1679,7 +1680,8 @@ module.exports = {
     "title": "Florida Real Estate Agent Income Estimator",
     "query": "How much can I make as a real estate agent in Florida?",
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/florida-real-estate-agent-income-estimator.json"
   },
   {
     "slug": "florida-real-estate-license-cost-calculator",

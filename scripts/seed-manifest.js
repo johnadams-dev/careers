@@ -108,6 +108,8 @@ const BUILT = {
   'real-estate-referral-program-florida':                  { spec: 'content/real-estate-referral-program-florida.json' },
   'how-a-real-estate-referral-company-works-in-florida':   { spec: 'content/how-a-real-estate-referral-company-works-in-florida.json' },
   'real-estate-commission-split-calculator':               { spec: 'content/real-estate-commission-split-calculator.json' },
+  'florida-real-estate-agent-income-estimator':            { spec: 'content/florida-real-estate-agent-income-estimator.json' },
+  'best-real-estate-company-to-work-for-daytona-beach':    { spec: 'content/best-real-estate-company-to-work-for-daytona-beach.json' },
 };
 const EVERGREEN_SLUG_OVERRIDE = { 'How to Get Your Florida Real Estate License: Step-by-Step': 'florida-real-estate-license-guide' };
 
