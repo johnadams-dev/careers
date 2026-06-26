@@ -110,6 +110,9 @@ const BUILT = {
   'real-estate-commission-split-calculator':               { spec: 'content/real-estate-commission-split-calculator.json' },
   'florida-real-estate-agent-income-estimator':            { spec: 'content/florida-real-estate-agent-income-estimator.json' },
   'best-real-estate-company-to-work-for-daytona-beach':    { spec: 'content/best-real-estate-company-to-work-for-daytona-beach.json' },
+  'how-to-switch-real-estate-brokerages-in-florida-step-by-step': { spec: 'content/how-to-switch-real-estate-brokerages-in-florida-step-by-step.json' },
+  'become-a-real-estate-agent-deltona':                    { spec: 'content/become-a-real-estate-agent-deltona.json' },
+  'become-a-real-estate-agent-flagler-beach':              { spec: 'content/become-a-real-estate-agent-flagler-beach.json' },
 };
 const EVERGREEN_SLUG_OVERRIDE = { 'How to Get Your Florida Real Estate License: Step-by-Step': 'florida-real-estate-license-guide' };
 

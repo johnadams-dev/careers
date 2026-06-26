@@ -548,7 +548,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, US Realty Training",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/become-a-real-estate-agent-deltona.json"
   },
   {
     "slug": "become-a-real-estate-agent-palm-coast",
@@ -577,7 +578,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, US Realty Training",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/become-a-real-estate-agent-flagler-beach.json"
   },
   {
     "slug": "become-a-real-estate-agent-volusia-county",
@@ -1487,7 +1489,8 @@ module.exports = {
     "competitor": "FastExpert",
     "evergreen": true,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/how-to-switch-real-estate-brokerages-in-florida-step-by-step.json"
   },
   {
     "slug": "how-to-transfer-your-florida-real-estate-license-to-a-new-broker",
