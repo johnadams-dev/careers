@@ -342,7 +342,8 @@ module.exports = {
     "competitor": "Indeed, daytonarealtors",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-new-agents-daytona-beach.json"
   },
   {
     "slug": "best-real-estate-company-new-agents-ormond-beach",
@@ -356,7 +357,8 @@ module.exports = {
     "competitor": "Indeed, daytonarealtors",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-new-agents-ormond-beach.json"
   },
   {
     "slug": "best-real-estate-company-new-agents-port-orange",
@@ -370,7 +372,8 @@ module.exports = {
     "competitor": "Indeed, daytonarealtors",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-new-agents-port-orange.json"
   },
   {
     "slug": "best-real-estate-company-new-agents-new-smyrna-beach",
@@ -384,7 +387,8 @@ module.exports = {
     "competitor": "Indeed, daytonarealtors",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-new-agents-new-smyrna-beach.json"
   },
   {
     "slug": "best-real-estate-company-new-agents-deland",
@@ -398,7 +402,8 @@ module.exports = {
     "competitor": "Indeed, daytonarealtors",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-new-agents-deland.json"
   },
   {
     "slug": "best-real-estate-company-new-agents-deltona",
@@ -412,7 +417,8 @@ module.exports = {
     "competitor": "Indeed, daytonarealtors",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-new-agents-deltona.json"
   },
   {
     "slug": "best-real-estate-company-new-agents-palm-coast",
@@ -426,7 +432,8 @@ module.exports = {
     "competitor": "Indeed, daytonarealtors",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-new-agents-palm-coast.json"
   },
   {
     "slug": "best-real-estate-company-new-agents-flagler-beach",
@@ -440,7 +447,8 @@ module.exports = {
     "competitor": "Indeed, daytonarealtors",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-new-agents-flagler-beach.json"
   },
   {
     "slug": "best-real-estate-company-new-agents-volusia-county",
@@ -454,7 +462,8 @@ module.exports = {
     "competitor": "Indeed, daytonarealtors",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-new-agents-volusia-county.json"
   },
   {
     "slug": "best-real-estate-company-new-agents-flagler-county",
@@ -468,7 +477,8 @@ module.exports = {
     "competitor": "Indeed, daytonarealtors",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-new-agents-flagler-county.json"
   },
   {
     "slug": "become-a-real-estate-agent-daytona-beach",
@@ -1050,7 +1060,8 @@ module.exports = {
     "competitor": "FastExpert, Glassdoor",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-brokerage-experienced-agents-daytona-beach.json"
   },
   {
     "slug": "best-brokerage-experienced-agents-ormond-beach",
@@ -1064,7 +1075,8 @@ module.exports = {
     "competitor": "FastExpert, Glassdoor",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-brokerage-experienced-agents-ormond-beach.json"
   },
   {
     "slug": "best-brokerage-experienced-agents-port-orange",
@@ -1078,7 +1090,8 @@ module.exports = {
     "competitor": "FastExpert, Glassdoor",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-brokerage-experienced-agents-port-orange.json"
   },
   {
     "slug": "best-brokerage-experienced-agents-new-smyrna-beach",
@@ -1092,7 +1105,8 @@ module.exports = {
     "competitor": "FastExpert, Glassdoor",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-brokerage-experienced-agents-new-smyrna-beach.json"
   },
   {
     "slug": "best-brokerage-experienced-agents-deland",
@@ -1106,7 +1120,8 @@ module.exports = {
     "competitor": "FastExpert, Glassdoor",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-brokerage-experienced-agents-deland.json"
   },
   {
     "slug": "best-brokerage-experienced-agents-deltona",

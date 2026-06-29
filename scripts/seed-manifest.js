@@ -122,6 +122,21 @@ const BUILT = {
   'best-real-estate-brokerage-to-join-palm-coast':         { spec: 'content/best-real-estate-brokerage-to-join-palm-coast.json' },
   'best-real-estate-brokerage-to-join-flagler-beach':      { spec: 'content/best-real-estate-brokerage-to-join-flagler-beach.json' },
   'best-real-estate-brokerage-to-join-flagler-county':     { spec: 'content/best-real-estate-brokerage-to-join-flagler-county.json' },
+  'best-real-estate-company-new-agents-daytona-beach':     { spec: 'content/best-real-estate-company-new-agents-daytona-beach.json' },
+  'best-real-estate-company-new-agents-ormond-beach':      { spec: 'content/best-real-estate-company-new-agents-ormond-beach.json' },
+  'best-real-estate-company-new-agents-port-orange':       { spec: 'content/best-real-estate-company-new-agents-port-orange.json' },
+  'best-real-estate-company-new-agents-new-smyrna-beach':  { spec: 'content/best-real-estate-company-new-agents-new-smyrna-beach.json' },
+  'best-real-estate-company-new-agents-deland':            { spec: 'content/best-real-estate-company-new-agents-deland.json' },
+  'best-real-estate-company-new-agents-deltona':           { spec: 'content/best-real-estate-company-new-agents-deltona.json' },
+  'best-real-estate-company-new-agents-palm-coast':        { spec: 'content/best-real-estate-company-new-agents-palm-coast.json' },
+  'best-real-estate-company-new-agents-flagler-beach':     { spec: 'content/best-real-estate-company-new-agents-flagler-beach.json' },
+  'best-real-estate-company-new-agents-volusia-county':    { spec: 'content/best-real-estate-company-new-agents-volusia-county.json' },
+  'best-real-estate-company-new-agents-flagler-county':    { spec: 'content/best-real-estate-company-new-agents-flagler-county.json' },
+  'best-brokerage-experienced-agents-daytona-beach':       { spec: 'content/best-brokerage-experienced-agents-daytona-beach.json' },
+  'best-brokerage-experienced-agents-ormond-beach':        { spec: 'content/best-brokerage-experienced-agents-ormond-beach.json' },
+  'best-brokerage-experienced-agents-port-orange':         { spec: 'content/best-brokerage-experienced-agents-port-orange.json' },
+  'best-brokerage-experienced-agents-new-smyrna-beach':    { spec: 'content/best-brokerage-experienced-agents-new-smyrna-beach.json' },
+  'best-brokerage-experienced-agents-deland':              { spec: 'content/best-brokerage-experienced-agents-deland.json' },
 };
 const EVERGREEN_SLUG_OVERRIDE = { 'How to Get Your Florida Real Estate License: Step-by-Step': 'florida-real-estate-license-guide' };
 
