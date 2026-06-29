@@ -83,7 +83,7 @@ const breadcrumb = (crumbs) => ({ '@type': 'BreadcrumbList', itemListElement: cr
 // ── shared design system ───────────────────────────────────────────────────
 const STYLE = `
 <style>
-/* ════ "THE LISTING" — career sold like a property ════ */
+/* ════ "THE LISTING" - career sold like a property ════ */
 .lst{--ink:#1b2730;--paper:#faf8f3;--navy:#0168a1;--navy-dk:#013f63;--gold:#c9a84c;--gold-dk:#9a7d2c;--line:#e6e0d3;--mono:'DM Mono',ui-monospace,monospace;--mute:#6a7682}
 .lst{font-family:var(--ff-body);color:var(--ink);background:var(--paper)}
 .lst ::selection{background:var(--gold);color:#fff}
@@ -207,13 +207,13 @@ const STYLE = `
 .cmp thead .c-win{color:var(--gold-dk);border-bottom-color:var(--gold)}
 .cmp tbody tr:first-child .c-win{border-top:2px solid var(--gold)}
 .cmp-note{font-size:.82rem;color:var(--mute);font-style:italic;margin:.4rem 0 1.5rem}
-/* data snapshot (Otto data-callout — real local numbers win citations) */
+/* data snapshot (Otto data-callout - real local numbers win citations) */
 .lst-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;margin:1.8rem 0 .5rem;overflow:hidden}
 .lst-stat{background:#fff;padding:1.15rem 1.25rem}
 .lst-stat-n{font-family:var(--ff-head);font-weight:700;font-size:1.65rem;color:var(--navy);line-height:1}
 .lst-stat-l{font-size:.78rem;color:var(--mute);margin-top:.4rem;line-height:1.35}
 .lst-src{font-family:var(--mono);font-size:.7rem;color:var(--mute);margin:.3rem 0 1.8rem}
-/* AEO blocks — engineered to be the lifted answer */
+/* AEO blocks - engineered to be the lifted answer */
 .lst-updated{font-family:var(--mono);font-size:.7rem;letter-spacing:.04em;color:var(--mute);margin:0 0 1.4rem}
 .lst-answer{background:var(--navy-dk);color:#fff;border-radius:6px;padding:1.5rem 1.7rem;margin-bottom:1.5rem}
 .lst-answer-l{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-lt,#e8c96b);display:block;margin-bottom:.55rem}
@@ -222,7 +222,7 @@ const STYLE = `
 .lst-tk-l{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dk);display:block;margin-bottom:.55rem}
 .lst-takeaways ul{margin:0;padding-left:1.15rem}
 .lst-takeaways li{margin-bottom:.4rem;color:#384450;line-height:1.55}
-/* related guides — auto internal-linking mesh */
+/* related guides - auto internal-linking mesh */
 .lst-related{padding:3.2rem 0;background:var(--cream)}
 .lst-related h2{font-family:var(--ff-head);font-weight:700;font-size:clamp(1.4rem,2.6vw,2rem);margin:.5rem 0 1.1rem}
 .lst-related ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 2rem}
@@ -267,7 +267,7 @@ const offerHtml = (spec) => `
   <div>
     <p class="lst-kicker">${esc(spec.offerKicker || 'Make your move')}</p>
     <h2>${esc(spec.ctaHeading || 'Ready to start your real estate career?')}</h2>
-    <p>${spec.ctaSub || 'Have a real conversation with Adams, Cameron &amp; Co. about getting licensed and launching across Volusia and Flagler County. No pressure &mdash; just a clear picture of the path.'}</p>
+    <p>${spec.ctaSub || 'Have a real conversation with Adams, Cameron &amp; Co. about getting licensed and launching across Volusia and Flagler County. No pressure. Just a clear picture of the path.'}</p>
   </div>
   <div class="lst-offer-actions">
     <a href="join.html" class="lst-btn solid">Talk to a manager &rarr;</a>

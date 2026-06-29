@@ -21,9 +21,9 @@ const slugify = (s) => s.toLowerCase().replace(/&/g, ' and ').replace(/['’.,?:
   .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').replace(/-+/g, '-');
 
 const TRACKS = [
-  { id: 'experienced', title: 'Experienced Agents — Switch & Scale', hub: 'best-brokerage-for-experienced-agents-volusia-flagler', audience: 'Licensed agents choosing where to hang their license', priority: 1 },
-  { id: 'referral',    title: 'Referral — Keep Your License Working', hub: 'real-estate-referral-program-florida', audience: 'Licensed but not actively selling', priority: 2 },
-  { id: 'aspiring',    title: 'New & Aspiring Agents — Launch Your Career', hub: 'become-a-real-estate-agent-in-florida', audience: 'Deciding to get in / getting licensed / picking a first brokerage', priority: 3 },
+  { id: 'experienced', title: 'Experienced Agents: Switch & Scale', hub: 'best-brokerage-for-experienced-agents-volusia-flagler', audience: 'Licensed agents choosing where to hang their license', priority: 1 },
+  { id: 'referral',    title: 'Referral: Keep Your License Working', hub: 'real-estate-referral-program-florida', audience: 'Licensed but not actively selling', priority: 2 },
+  { id: 'aspiring',    title: 'New & Aspiring Agents: Launch Your Career', hub: 'become-a-real-estate-agent-in-florida', audience: 'Deciding to get in / getting licensed / picking a first brokerage', priority: 3 },
 ];
 
 const PILLARS = [
@@ -72,7 +72,7 @@ const EVERGREEN = [
   { pillar: 'switch-exp', format: 'guide',      title: 'How to Switch Real Estate Brokerages in Florida: Step-by-Step', query: 'How do I switch real estate brokerages in Florida?', beat: 'FastExpert' },
   { pillar: 'switch-exp', format: 'guide',      title: 'How to Transfer Your Florida Real Estate License to a New Broker', query: 'How do I transfer my Florida real estate license to a new broker?', beat: 'myfloridalicense' },
   { pillar: 'switch-exp', format: 'faq',        title: '10 Questions to Ask Before Switching Real Estate Brokerages', query: 'What should I ask before switching real estate brokerages?', beat: 'Reddit' },
-  { pillar: 'economics',  format: 'comparison', title: 'Real Estate Commission Splits vs. Caps: Which Is Better?',    query: 'Commission split vs cap — which is better for a real estate agent?', beat: 'Reddit, Inman' },
+  { pillar: 'economics',  format: 'comparison', title: 'Real Estate Commission Splits vs. Caps: Which Is Better?',    query: 'Commission split vs cap: which is better for a real estate agent?', beat: 'Reddit, Inman' },
   { pillar: 'economics',  format: 'article',    title: 'The Real Cost of Desk Fees and Hidden Brokerage Charges',     query: 'What are typical real estate desk fees and hidden brokerage costs?', beat: 'Reddit' },
   { pillar: 'economics',  format: 'comparison', title: '100% Commission vs. Full-Service Brokerage: The Honest Math', query: 'Is a 100% commission brokerage better than full service?', beat: 'Reddit' },
   { pillar: 'scale',      format: 'article',    title: 'Why a Non-Competing Manager Changes Everything for a Busy Agent', query: 'What is a non-competing manager and why does it matter?', beat: 'Inman' },
@@ -90,7 +90,7 @@ const TOOLS = [
   { pillar: 'economics', title: 'Real Estate Commission Split Calculator',            query: 'How much will I actually take home at different commission splits?' },
   { pillar: 'decide',    title: 'Florida Real Estate Agent Income Estimator',          query: 'How much can I make as a real estate agent in Florida?' },
   { pillar: 'license',   title: 'Florida Real Estate License Cost Calculator',         query: 'How much does it cost to get a Florida real estate license?' },
-  { pillar: 'economics', title: 'Brokerage Fee Comparison Calculator (Splits, Caps & Desk Fees)', query: 'Which brokerage costs me less — splits vs caps vs desk fees?' },
+  { pillar: 'economics', title: 'Brokerage Fee Comparison Calculator (Splits, Caps & Desk Fees)', query: 'Which brokerage costs me less: splits vs caps vs desk fees?' },
 ];
 
 const BUILT = {
@@ -113,6 +113,15 @@ const BUILT = {
   'how-to-switch-real-estate-brokerages-in-florida-step-by-step': { spec: 'content/how-to-switch-real-estate-brokerages-in-florida-step-by-step.json' },
   'become-a-real-estate-agent-deltona':                    { spec: 'content/become-a-real-estate-agent-deltona.json' },
   'become-a-real-estate-agent-flagler-beach':              { spec: 'content/become-a-real-estate-agent-flagler-beach.json' },
+  'best-real-estate-brokerage-to-join-daytona-beach':      { spec: 'content/best-real-estate-brokerage-to-join-daytona-beach.json' },
+  'best-real-estate-brokerage-to-join-ormond-beach':       { spec: 'content/best-real-estate-brokerage-to-join-ormond-beach.json' },
+  'best-real-estate-brokerage-to-join-port-orange':        { spec: 'content/best-real-estate-brokerage-to-join-port-orange.json' },
+  'best-real-estate-brokerage-to-join-new-smyrna-beach':   { spec: 'content/best-real-estate-brokerage-to-join-new-smyrna-beach.json' },
+  'best-real-estate-brokerage-to-join-deland':             { spec: 'content/best-real-estate-brokerage-to-join-deland.json' },
+  'best-real-estate-brokerage-to-join-deltona':            { spec: 'content/best-real-estate-brokerage-to-join-deltona.json' },
+  'best-real-estate-brokerage-to-join-palm-coast':         { spec: 'content/best-real-estate-brokerage-to-join-palm-coast.json' },
+  'best-real-estate-brokerage-to-join-flagler-beach':      { spec: 'content/best-real-estate-brokerage-to-join-flagler-beach.json' },
+  'best-real-estate-brokerage-to-join-flagler-county':     { spec: 'content/best-real-estate-brokerage-to-join-flagler-county.json' },
 };
 const EVERGREEN_SLUG_OVERRIDE = { 'How to Get Your Florida Real Estate License: Step-by-Step': 'florida-real-estate-license-guide' };
 

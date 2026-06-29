@@ -2,7 +2,7 @@
 
 const NAV_HTML = `
 <div class="topbar">
-  <span>Adams, Cameron &amp; Co., Realtors &mdash; The Area&rsquo;s Largest Brokerage Since 1963</span>
+  <span>Adams, Cameron &amp; Co., Realtors &middot; The Area&rsquo;s Largest Brokerage Since 1963</span>
   <a href="tel:3862439504">&#128222; (386) 243-9504</a>
 </div>
 <nav>
@@ -39,7 +39,7 @@ const FOOTER_HTML = `
   <div class="footer-main">
     <div class="footer-brand">
       <img src="images/ac-logo.png" onerror="this.src='https://www.floridarealtorcareers.com/images/layout/adams-cameron-logo-w-outline.png'" alt="Adams Cameron &amp; Co. Realtors" />
-      <p>Empowering real estate professionals with the systems and support they need to deliver the highest value to their clients &mdash; with the least amount of stress. Since 1963.</p>
+      <p>Empowering real estate professionals with the systems and support they need to deliver the highest value to their clients, with the least amount of stress. Since 1963.</p>
       <div class="footer-brand-socials">
         <a href="https://www.facebook.com/adamscameron" aria-label="Facebook">f</a>
         <a href="https://www.instagram.com/adamscameronrealtors/" aria-label="Instagram">&#9679;</a>

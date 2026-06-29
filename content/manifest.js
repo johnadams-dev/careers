@@ -15,21 +15,21 @@ module.exports = {
   tracks: [
   {
     "id": "experienced",
-    "title": "Experienced Agents — Switch & Scale",
+    "title": "Experienced Agents: Switch & Scale",
     "hub": "best-brokerage-for-experienced-agents-volusia-flagler",
     "audience": "Licensed agents choosing where to hang their license",
     "priority": 1
   },
   {
     "id": "referral",
-    "title": "Referral — Keep Your License Working",
+    "title": "Referral: Keep Your License Working",
     "hub": "real-estate-referral-program-florida",
     "audience": "Licensed but not actively selling",
     "priority": 2
   },
   {
     "id": "aspiring",
-    "title": "New & Aspiring Agents — Launch Your Career",
+    "title": "New & Aspiring Agents: Launch Your Career",
     "hub": "become-a-real-estate-agent-in-florida",
     "audience": "Deciding to get in / getting licensed / picking a first brokerage",
     "priority": 3
@@ -156,7 +156,7 @@ module.exports = {
     "format": "hub",
     "track": "experienced",
     "pillar": "master",
-    "title": "Experienced Agents — Switch & Scale",
+    "title": "Experienced Agents: Switch & Scale",
     "status": "built",
     "spec": "content/best-brokerage-for-experienced-agents-volusia-flagler.json"
   },
@@ -166,7 +166,7 @@ module.exports = {
     "format": "hub",
     "track": "referral",
     "pillar": "master",
-    "title": "Referral — Keep Your License Working",
+    "title": "Referral: Keep Your License Working",
     "status": "built",
     "spec": "content/real-estate-referral-program-florida.json"
   },
@@ -176,7 +176,7 @@ module.exports = {
     "format": "hub",
     "track": "aspiring",
     "pillar": "master",
-    "title": "New & Aspiring Agents — Launch Your Career",
+    "title": "New & Aspiring Agents: Launch Your Career",
     "status": "built",
     "spec": "content/become-a-real-estate-agent-in-florida.json"
   },
@@ -192,7 +192,8 @@ module.exports = {
     "competitor": "FastExpert, Indeed",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-brokerage-to-join-daytona-beach.json"
   },
   {
     "slug": "best-real-estate-brokerage-to-join-ormond-beach",
@@ -206,7 +207,8 @@ module.exports = {
     "competitor": "FastExpert, Indeed",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-brokerage-to-join-ormond-beach.json"
   },
   {
     "slug": "best-real-estate-brokerage-to-join-port-orange",
@@ -220,7 +222,8 @@ module.exports = {
     "competitor": "FastExpert, Indeed",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-brokerage-to-join-port-orange.json"
   },
   {
     "slug": "best-real-estate-brokerage-to-join-new-smyrna-beach",
@@ -234,7 +237,8 @@ module.exports = {
     "competitor": "FastExpert, Indeed",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-brokerage-to-join-new-smyrna-beach.json"
   },
   {
     "slug": "best-real-estate-brokerage-to-join-deland",
@@ -248,7 +252,8 @@ module.exports = {
     "competitor": "FastExpert, Indeed",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-brokerage-to-join-deland.json"
   },
   {
     "slug": "best-real-estate-brokerage-to-join-deltona",
@@ -262,7 +267,8 @@ module.exports = {
     "competitor": "FastExpert, Indeed",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-brokerage-to-join-deltona.json"
   },
   {
     "slug": "best-real-estate-brokerage-to-join-palm-coast",
@@ -276,7 +282,8 @@ module.exports = {
     "competitor": "FastExpert, Indeed",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-brokerage-to-join-palm-coast.json"
   },
   {
     "slug": "best-real-estate-brokerage-to-join-flagler-beach",
@@ -290,7 +297,8 @@ module.exports = {
     "competitor": "FastExpert, Indeed",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-brokerage-to-join-flagler-beach.json"
   },
   {
     "slug": "best-real-estate-brokerage-to-join-volusia-county",
@@ -319,7 +327,8 @@ module.exports = {
     "competitor": "FastExpert, Indeed",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-brokerage-to-join-flagler-county.json"
   },
   {
     "slug": "best-real-estate-company-new-agents-daytona-beach",
@@ -1525,7 +1534,7 @@ module.exports = {
     "track": "experienced",
     "pillar": "economics",
     "title": "Real Estate Commission Splits vs. Caps: Which Is Better?",
-    "query": "Commission split vs cap — which is better for a real estate agent?",
+    "query": "Commission split vs cap: which is better for a real estate agent?",
     "competitor": "Reddit, Inman",
     "evergreen": true,
     "winnable": true,
@@ -1704,7 +1713,7 @@ module.exports = {
     "track": "experienced",
     "pillar": "economics",
     "title": "Brokerage Fee Comparison Calculator (Splits, Caps & Desk Fees)",
-    "query": "Which brokerage costs me less — splits vs caps vs desk fees?",
+    "query": "Which brokerage costs me less: splits vs caps vs desk fees?",
     "winnable": true,
     "status": "planned"
   }
