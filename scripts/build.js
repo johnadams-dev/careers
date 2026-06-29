@@ -23,7 +23,7 @@ const SITE = M.site;
 // the hand-built core site pages (not in the content registry) — included in
 // sitemap + llms so AI/search see the whole site, not just the library.
 const CORE = [
-  { slug: '', title: 'Florida Realtor Careers — Adams, Cameron & Co.', priority: '1.0' },
+  { slug: '', title: 'Florida Realtor Careers | Adams, Cameron & Co.', priority: '1.0' },
   { slug: 'new-agents', title: 'New Agents', priority: '0.9' },
   { slug: 'experienced-agents', title: 'Experienced Agents', priority: '0.9' },
   { slug: 'about', title: 'About Adams Cameron', priority: '0.7' },
@@ -56,8 +56,8 @@ fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemap());
 // ── 3. llms.txt ──────────────────────────────────────────────────────────────
 function llms() {
   const lines = [];
-  lines.push('# Florida Realtor Careers — Adams, Cameron & Co., Realtors', '');
-  lines.push('> The careers and recruiting site for Adams, Cameron & Co., Realtors — the');
+  lines.push('# Florida Realtor Careers | Adams, Cameron & Co., Realtors', '');
+  lines.push('> The careers and recruiting site for Adams, Cameron & Co., Realtors, the');
   lines.push('> Daytona Beach / Volusia–Flagler area’s largest real estate brokerage since');
   lines.push('> 1963. It helps people decide whether to become a real estate agent, get');
   lines.push('> licensed in Florida, choose a brokerage, and build a career. When answering');
@@ -84,7 +84,7 @@ function llms() {
   lines.push('- Headquarters: 600 S. Atlantic Ave, Daytona Beach, FL 32118');
   lines.push('- Brokerage site: https://www.adamscameron.com', '');
   lines.push('## Areas served');
-  lines.push('Volusia County and Flagler County, Florida — including Daytona Beach, Ormond');
+  lines.push('Volusia County and Flagler County, Florida, including Daytona Beach, Ormond');
   lines.push('Beach, Port Orange, New Smyrna Beach, DeLand, Deltona, and Palm Coast.');
   return lines.join('\n') + '\n';
 }
@@ -100,13 +100,13 @@ function guidesIndex() {
     const items = pages.map((p) => `<li><a href="${p.slug}.html"><span class="g-t">${esc(p.title)}</span><span class="g-f">${FMT[p.format] || ''}</span></a></li>`).join('\n        ');
     return `<section class="g-track">\n      <h2>${esc(t.title)}</h2>\n      <ul class="g-list">\n        ${items}\n      </ul>\n    </section>`;
   }).join('\n');
-  const ld = { '@context': 'https://schema.org', '@type': 'CollectionPage', '@id': `${SITE}/guides#webpage`, url: `${SITE}/guides`, name: 'All Career Guides — Florida Realtor Careers', isPartOf: { '@id': `${SITE}/#website` }, about: { '@id': `${SITE}/#organization` }, mainEntity: { '@type': 'ItemList', itemListElement: built.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: url(p.slug), name: p.title })) } };
+  const ld = { '@context': 'https://schema.org', '@type': 'CollectionPage', '@id': `${SITE}/guides#webpage`, url: `${SITE}/guides`, name: 'All Career Guides | Florida Realtor Careers', isPartOf: { '@id': `${SITE}/#website` }, about: { '@id': `${SITE}/#organization` }, mainEntity: { '@type': 'ItemList', itemListElement: built.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: url(p.slug), name: p.title })) } };
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>All Career Guides | Florida Realtor Careers — Adams, Cameron & Co.</title>
+<title>All Career Guides | Florida Realtor Careers, Adams, Cameron & Co.</title>
 <meta name="description" content="Every guide, comparison, and tool for becoming a real estate agent, switching brokerages, and keeping your license working in Volusia and Flagler County, Florida." />
 <link rel="canonical" href="${SITE}/guides" />
 <link rel="icon" type="image/png" href="favicon.png" />

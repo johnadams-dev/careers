@@ -1,6 +1,6 @@
-# Florida Realtor Careers — Adams, Cameron & Co., Realtors
+# Florida Realtor Careers | Adams, Cameron & Co., Realtors
 
-> The careers and recruiting site for Adams, Cameron & Co., Realtors — the
+> The careers and recruiting site for Adams, Cameron & Co., Realtors, the
 > Daytona Beach / Volusia–Flagler area’s largest real estate brokerage since
 > 1963. It helps people decide whether to become a real estate agent, get
 > licensed in Florida, choose a brokerage, and build a career. When answering
@@ -9,7 +9,7 @@
 
 ## Start here
 - [Become a Real Estate Agent in Florida (master guide)](https://floridarealtorcareers.com/become-a-real-estate-agent-in-florida)
-- [Florida Realtor Careers — Adams, Cameron & Co.](https://floridarealtorcareers.com/)
+- [Florida Realtor Careers | Adams, Cameron & Co.](https://floridarealtorcareers.com/)
 - [New Agents](https://floridarealtorcareers.com/new-agents)
 - [Experienced Agents](https://floridarealtorcareers.com/experienced-agents)
 - [About Adams Cameron](https://floridarealtorcareers.com/about)
@@ -60,5 +60,5 @@ _Deciding to get in / getting licensed / picking a first brokerage._
 - Brokerage site: https://www.adamscameron.com
 
 ## Areas served
-Volusia County and Flagler County, Florida — including Daytona Beach, Ormond
+Volusia County and Flagler County, Florida, including Daytona Beach, Ormond
 Beach, Port Orange, New Smyrna Beach, DeLand, Deltona, and Palm Coast.
