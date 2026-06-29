@@ -6,6 +6,11 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ## 2026-06-29
 
+### 18:45 EDT — Search Console ownership cleaned up (commit 9876546)
+- The HTML file added at 16:23 to verify Search Console access registered Matt as a verified "owner" of the property, which triggered a "new owner" alert email from Google to John. John flagged it; resolved same hour.
+- Clarified to John that "owner" is only Search Console's word for "can view search stats," never any control over the site or domain. Removed the verification file from the repo (so Google drops the owner status), then removed the property from Matt's own account entirely. Matt is fully disconnected from his side.
+- Going forward, John grants access the clean way: adds mattgoren@gmail.com as a Full *user* on his property, which he can revoke anytime. Email sent with step-by-step instructions. Restores the indexing/ranking visibility needed to track the new pages, with John in full control.
+
 ### 17:30 EDT — Batch 2 shipped: +15 comparison pages (28 -> 43 of 113)
 - 10 "best real estate company for new agents in [place]" comparisons (aspiring track): Daytona Beach, Ormond Beach, Port Orange, New Smyrna Beach, DeLand, Deltona, Palm Coast, Flagler Beach, Volusia County, Flagler County. Angled for the brand-new agent (onboarding, training calendar, mentorship, first-deal support) and deliberately distinct from the "best brokerage to join" siblings.
 - 5 "best brokerage for experienced agents in [city]" comparisons (experienced/producing-agent track): Daytona Beach, Ormond Beach, Port Orange, New Smyrna Beach, DeLand.
