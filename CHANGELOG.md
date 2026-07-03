@@ -6,6 +6,11 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ## 2026-07-03
 
+### 17:45 EDT — Fixed broken Google Ads conversion tracking + lead-form spam protection
+- Found during a site audit: the conversion event on thank-you.html called `gtag()`, but the gtag.js loader script was never included anywhere on the site. Every lead form submission was silently invisible to Google Ads (the event call would throw "gtag is not defined" in the browser). Added the missing global site tag so the existing conversion snippet (AW-1070052512) now actually fires.
+- Added a Netlify honeypot field to both lead forms on the site (join.html, new-agents.html), so bot submissions get silently filtered by Netlify instead of landing in John's inbox as fake leads.
+- Verified live: gtag loader present on thank-you.html, honeypot field present on both forms.
+
 ### 17:15 EDT — Batch 7: final 25 pages + competitor-name scrub (90 -> 115 of 115, MANIFEST COMPLETE)
 - Shipped the last 25 pages: 10 "Top Companies to Work For" pages (a distinct reputation-signals angle from the existing economics-focused comparisons), 2 calculators (license cost estimator, brokerage fee comparison across split/cap/desk-fee models), and 13 evergreen singles across switching brokerages, commission economics, scaling up, broker/team advancement, and the referral track.
 - Matt flagged, twice and hard, that content must never name or recommend another company, even neutrally (review sites like Glassdoor/Indeed/Yelp, aggregator sites like Zippia). Audited the whole site: found the mistake in my own just-written "Top Companies" exemplar (caught and fixed before it shipped) and in 10 ALREADY-LIVE "best company to work for" pages that had named Zippia/Glassdoor in a footnote since batch 3. Scrubbed everything, site-wide, to generic "review sites" language. Verified zero competitor mentions across every content file and every rendered page, live.
