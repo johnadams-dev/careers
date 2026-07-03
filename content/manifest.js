@@ -1392,7 +1392,8 @@ module.exports = {
     "competitor": "Yelp, Indeed",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/top-real-estate-companies-to-work-for-daytona-beach.json"
   },
   {
     "slug": "top-real-estate-companies-to-work-for-ormond-beach",
@@ -1406,7 +1407,8 @@ module.exports = {
     "competitor": "Yelp, Indeed",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/top-real-estate-companies-to-work-for-ormond-beach.json"
   },
   {
     "slug": "top-real-estate-companies-to-work-for-port-orange",
@@ -1420,7 +1422,8 @@ module.exports = {
     "competitor": "Yelp, Indeed",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/top-real-estate-companies-to-work-for-port-orange.json"
   },
   {
     "slug": "top-real-estate-companies-to-work-for-new-smyrna-beach",
@@ -1434,7 +1437,8 @@ module.exports = {
     "competitor": "Yelp, Indeed",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/top-real-estate-companies-to-work-for-new-smyrna-beach.json"
   },
   {
     "slug": "top-real-estate-companies-to-work-for-deland",
@@ -1448,7 +1452,8 @@ module.exports = {
     "competitor": "Yelp, Indeed",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/top-real-estate-companies-to-work-for-deland.json"
   },
   {
     "slug": "top-real-estate-companies-to-work-for-deltona",
@@ -1462,7 +1467,8 @@ module.exports = {
     "competitor": "Yelp, Indeed",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/top-real-estate-companies-to-work-for-deltona.json"
   },
   {
     "slug": "top-real-estate-companies-to-work-for-palm-coast",
@@ -1476,7 +1482,8 @@ module.exports = {
     "competitor": "Yelp, Indeed",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/top-real-estate-companies-to-work-for-palm-coast.json"
   },
   {
     "slug": "top-real-estate-companies-to-work-for-flagler-beach",
@@ -1490,7 +1497,8 @@ module.exports = {
     "competitor": "Yelp, Indeed",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/top-real-estate-companies-to-work-for-flagler-beach.json"
   },
   {
     "slug": "top-real-estate-companies-to-work-for-volusia-county",
@@ -1504,7 +1512,8 @@ module.exports = {
     "competitor": "Yelp, Indeed",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/top-real-estate-companies-to-work-for-volusia-county.json"
   },
   {
     "slug": "top-real-estate-companies-to-work-for-flagler-county",
@@ -1518,7 +1527,8 @@ module.exports = {
     "competitor": "Yelp, Indeed",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/top-real-estate-companies-to-work-for-flagler-county.json"
   },
   {
     "slug": "florida-real-estate-license-guide",
@@ -1545,7 +1555,8 @@ module.exports = {
     "competitor": "Indeed, Reddit",
     "evergreen": true,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/is-a-real-estate-career-right-for-you-an-honest-look.json"
   },
   {
     "slug": "how-to-switch-real-estate-brokerages-in-florida-step-by-step",
@@ -1572,7 +1583,8 @@ module.exports = {
     "competitor": "myfloridalicense",
     "evergreen": true,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/how-to-transfer-your-florida-real-estate-license-to-a-new-broker.json"
   },
   {
     "slug": "10-questions-to-ask-before-switching-real-estate-brokerages",
@@ -1585,7 +1597,8 @@ module.exports = {
     "competitor": "Reddit",
     "evergreen": true,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/10-questions-to-ask-before-switching-real-estate-brokerages.json"
   },
   {
     "slug": "real-estate-commission-splits-vs-caps-which-is-better",
@@ -1598,7 +1611,8 @@ module.exports = {
     "competitor": "Reddit, Inman",
     "evergreen": true,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/real-estate-commission-splits-vs-caps-which-is-better.json"
   },
   {
     "slug": "the-real-cost-of-desk-fees-and-hidden-brokerage-charges",
@@ -1611,7 +1625,8 @@ module.exports = {
     "competitor": "Reddit",
     "evergreen": true,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/the-real-cost-of-desk-fees-and-hidden-brokerage-charges.json"
   },
   {
     "slug": "100-commission-vs-full-service-brokerage-the-honest-math",
@@ -1624,7 +1639,8 @@ module.exports = {
     "competitor": "Reddit",
     "evergreen": true,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/100-commission-vs-full-service-brokerage-the-honest-math.json"
   },
   {
     "slug": "why-a-non-competing-manager-changes-everything-for-a-busy-agent",
@@ -1637,7 +1653,8 @@ module.exports = {
     "competitor": "Inman",
     "evergreen": true,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/why-a-non-competing-manager-changes-everything-for-a-busy-agent.json"
   },
   {
     "slug": "real-estate-marketing-tools-that-actually-grow-your-business",
@@ -1650,7 +1667,8 @@ module.exports = {
     "competitor": "Inman",
     "evergreen": true,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/real-estate-marketing-tools-that-actually-grow-your-business.json"
   },
   {
     "slug": "how-to-get-your-florida-real-estate-broker-license",
@@ -1663,7 +1681,8 @@ module.exports = {
     "competitor": "Gold Coast Schools",
     "evergreen": true,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/how-to-get-your-florida-real-estate-broker-license.json"
   },
   {
     "slug": "how-to-start-a-real-estate-team-in-florida",
@@ -1676,7 +1695,8 @@ module.exports = {
     "competitor": "Inman",
     "evergreen": true,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/how-to-start-a-real-estate-team-in-florida.json"
   },
   {
     "slug": "how-a-real-estate-referral-company-works-in-florida",
@@ -1703,7 +1723,8 @@ module.exports = {
     "competitor": "Reddit",
     "evergreen": true,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/how-to-earn-referral-income-without-actively-selling-real-estate.json"
   },
   {
     "slug": "how-to-keep-your-florida-real-estate-license-active-without-selling",
@@ -1716,7 +1737,8 @@ module.exports = {
     "competitor": "myfloridalicense",
     "evergreen": true,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/how-to-keep-your-florida-real-estate-license-active-without-selling.json"
   },
   {
     "slug": "active-vs-inactive-real-estate-license-in-florida-the-difference",
@@ -1729,7 +1751,8 @@ module.exports = {
     "competitor": "myfloridalicense",
     "evergreen": true,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/active-vs-inactive-real-estate-license-in-florida-the-difference.json"
   },
   {
     "slug": "what-type-of-real-estate-agent-are-you",
@@ -1792,7 +1815,8 @@ module.exports = {
     "title": "Florida Real Estate License Cost Calculator",
     "query": "How much does it cost to get a Florida real estate license?",
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/florida-real-estate-license-cost-calculator.json"
   },
   {
     "slug": "brokerage-fee-comparison-calculator-splits-caps-and-desk-fees",
@@ -1803,7 +1827,8 @@ module.exports = {
     "title": "Brokerage Fee Comparison Calculator (Splits, Caps & Desk Fees)",
     "query": "Which brokerage costs me less: splits vs caps vs desk fees?",
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/brokerage-fee-comparison-calculator-splits-caps-and-desk-fees.json"
   }
 ],
 };
