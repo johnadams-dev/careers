@@ -6,6 +6,12 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ## 2026-07-03
 
+### 18:10 EDT — Fixed the main hub: was showing a stale page list from early in the project
+- Matt asked how the hub was set up. Checked instead of assuming: the flagship "become a real estate agent" hub was still showing 3 "coming soon" placeholders even with the full 115-page library built.
+- Root cause: the hub's content spec had a hardcoded page list written back when the site had ~15 pages, which completely bypassed the dynamic linking system built specifically so hubs stay current as pages ship. Several of the hardcoded slugs (day-in-the-life-real-estate-agent-daytona, florida-real-estate-exam-pass) were never actually built under those names. The underlying dynamic system was also silently broken (the hub's spec was missing a required "track" field), which is likely why someone hardcoded the list as a workaround in the first place rather than what was intended.
+- Fixed both: added the missing field, removed the stale hardcoded list, and reordered the 4 topic groups so the existing "Decide / Get Licensed / Choose a Brokerage / Build Your Business" journey labels correctly match their content.
+- Verified live: the hub now correctly lists all 76 real pages in the aspiring track, zero stale placeholders, in the right narrative order.
+
 ### 17:45 EDT — Fixed broken Google Ads conversion tracking + lead-form spam protection
 - Found during a site audit: the conversion event on thank-you.html called `gtag()`, but the gtag.js loader script was never included anywhere on the site. Every lead form submission was silently invisible to Google Ads (the event call would throw "gtag is not defined" in the browser). Added the missing global site tag so the existing conversion snippet (AW-1070052512) now actually fires.
 - Added a Netlify honeypot field to both lead forms on the site (join.html, new-agents.html), so bot submissions get silently filtered by Netlify instead of landing in John's inbox as fake leads.
