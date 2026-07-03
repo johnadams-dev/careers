@@ -83,6 +83,8 @@ const EVERGREEN = [
   { pillar: 'referral',   format: 'article',    title: 'How to Earn Referral Income Without Actively Selling Real Estate', query: 'How can I earn real estate referral income without selling?', beat: 'Reddit' },
   { pillar: 'park',       format: 'guide',      title: 'How to Keep Your Florida Real Estate License Active Without Selling', query: 'How do I keep my Florida real estate license active without selling?', beat: 'myfloridalicense' },
   { pillar: 'park',       format: 'comparison', title: 'Active vs. Inactive Real Estate License in Florida: The Difference', query: "What's the difference between an active and inactive real estate license in Florida?", beat: 'myfloridalicense' },
+  { pillar: 'decide',     format: 'article',    title: 'What Type of Real Estate Agent Are You?',                    query: 'What type of real estate agent are you?', beat: 'The Close, ReminderMedia, Aceable Agent' },
+  { pillar: 'decide',     format: 'article',    title: 'Do Real Estate Agents Have to Fit One Personality Type?',    query: 'Do real estate agents have to fit one personality type?', beat: 'The Close, HomeLight' },
 ];
 
 // interactive tools (the Otto "tool" format — high citation value)
@@ -172,6 +174,18 @@ const BUILT = {
   'florida-real-estate-license-flagler-beach':             { spec: 'content/florida-real-estate-license-flagler-beach.json' },
   'florida-real-estate-license-volusia-county':            { spec: 'content/florida-real-estate-license-volusia-county.json' },
   'florida-real-estate-license-flagler-county':            { spec: 'content/florida-real-estate-license-flagler-county.json' },
+  'how-much-do-real-estate-agents-make-daytona-beach':     { spec: 'content/how-much-do-real-estate-agents-make-daytona-beach.json' },
+  'how-much-do-real-estate-agents-make-ormond-beach':      { spec: 'content/how-much-do-real-estate-agents-make-ormond-beach.json' },
+  'how-much-do-real-estate-agents-make-port-orange':       { spec: 'content/how-much-do-real-estate-agents-make-port-orange.json' },
+  'how-much-do-real-estate-agents-make-new-smyrna-beach':  { spec: 'content/how-much-do-real-estate-agents-make-new-smyrna-beach.json' },
+  'how-much-do-real-estate-agents-make-deland':            { spec: 'content/how-much-do-real-estate-agents-make-deland.json' },
+  'how-much-do-real-estate-agents-make-deltona':           { spec: 'content/how-much-do-real-estate-agents-make-deltona.json' },
+  'how-much-do-real-estate-agents-make-palm-coast':        { spec: 'content/how-much-do-real-estate-agents-make-palm-coast.json' },
+  'how-much-do-real-estate-agents-make-flagler-beach':     { spec: 'content/how-much-do-real-estate-agents-make-flagler-beach.json' },
+  'how-much-do-real-estate-agents-make-volusia-county':    { spec: 'content/how-much-do-real-estate-agents-make-volusia-county.json' },
+  'how-much-do-real-estate-agents-make-flagler-county':    { spec: 'content/how-much-do-real-estate-agents-make-flagler-county.json' },
+  'what-type-of-real-estate-agent-are-you':                { spec: 'content/what-type-of-real-estate-agent-are-you.json' },
+  'do-real-estate-agents-have-to-fit-one-personality-type': { spec: 'content/do-real-estate-agents-have-to-fit-one-personality-type.json' },
 };
 const EVERGREEN_SLUG_OVERRIDE = { 'How to Get Your Florida Real Estate License: Step-by-Step': 'florida-real-estate-license-guide' };
 
