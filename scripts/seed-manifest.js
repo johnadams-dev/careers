@@ -160,6 +160,18 @@ const BUILT = {
   'is-real-estate-a-good-career-flagler-beach':            { spec: 'content/is-real-estate-a-good-career-flagler-beach.json' },
   'is-real-estate-a-good-career-volusia-county':           { spec: 'content/is-real-estate-a-good-career-volusia-county.json' },
   'is-real-estate-a-good-career-flagler-county':           { spec: 'content/is-real-estate-a-good-career-flagler-county.json' },
+  'become-a-real-estate-agent-volusia-county':             { spec: 'content/become-a-real-estate-agent-volusia-county.json' },
+  'become-a-real-estate-agent-flagler-county':             { spec: 'content/become-a-real-estate-agent-flagler-county.json' },
+  'florida-real-estate-license-daytona-beach':             { spec: 'content/florida-real-estate-license-daytona-beach.json' },
+  'florida-real-estate-license-ormond-beach':               { spec: 'content/florida-real-estate-license-ormond-beach.json' },
+  'florida-real-estate-license-port-orange':               { spec: 'content/florida-real-estate-license-port-orange.json' },
+  'florida-real-estate-license-new-smyrna-beach':          { spec: 'content/florida-real-estate-license-new-smyrna-beach.json' },
+  'florida-real-estate-license-deland':                    { spec: 'content/florida-real-estate-license-deland.json' },
+  'florida-real-estate-license-deltona':                   { spec: 'content/florida-real-estate-license-deltona.json' },
+  'florida-real-estate-license-palm-coast':                { spec: 'content/florida-real-estate-license-palm-coast.json' },
+  'florida-real-estate-license-flagler-beach':             { spec: 'content/florida-real-estate-license-flagler-beach.json' },
+  'florida-real-estate-license-volusia-county':            { spec: 'content/florida-real-estate-license-volusia-county.json' },
+  'florida-real-estate-license-flagler-county':            { spec: 'content/florida-real-estate-license-flagler-county.json' },
 };
 const EVERGREEN_SLUG_OVERRIDE = { 'How to Get Your Florida Real Estate License: Step-by-Step': 'florida-real-estate-license-guide' };
 

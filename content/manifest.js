@@ -612,7 +612,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, US Realty Training",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/become-a-real-estate-agent-volusia-county.json"
   },
   {
     "slug": "become-a-real-estate-agent-flagler-county",
@@ -626,7 +627,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, US Realty Training",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/become-a-real-estate-agent-flagler-county.json"
   },
   {
     "slug": "florida-real-estate-license-daytona-beach",
@@ -640,7 +642,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, myfloridalicense",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/florida-real-estate-license-daytona-beach.json"
   },
   {
     "slug": "florida-real-estate-license-ormond-beach",
@@ -654,7 +657,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, myfloridalicense",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/florida-real-estate-license-ormond-beach.json"
   },
   {
     "slug": "florida-real-estate-license-port-orange",
@@ -668,7 +672,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, myfloridalicense",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/florida-real-estate-license-port-orange.json"
   },
   {
     "slug": "florida-real-estate-license-new-smyrna-beach",
@@ -682,7 +687,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, myfloridalicense",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/florida-real-estate-license-new-smyrna-beach.json"
   },
   {
     "slug": "florida-real-estate-license-deland",
@@ -696,7 +702,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, myfloridalicense",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/florida-real-estate-license-deland.json"
   },
   {
     "slug": "florida-real-estate-license-deltona",
@@ -710,7 +717,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, myfloridalicense",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/florida-real-estate-license-deltona.json"
   },
   {
     "slug": "florida-real-estate-license-palm-coast",
@@ -724,7 +732,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, myfloridalicense",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/florida-real-estate-license-palm-coast.json"
   },
   {
     "slug": "florida-real-estate-license-flagler-beach",
@@ -738,7 +747,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, myfloridalicense",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/florida-real-estate-license-flagler-beach.json"
   },
   {
     "slug": "florida-real-estate-license-volusia-county",
@@ -752,7 +762,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, myfloridalicense",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/florida-real-estate-license-volusia-county.json"
   },
   {
     "slug": "florida-real-estate-license-flagler-county",
@@ -766,7 +777,8 @@ module.exports = {
     "competitor": "Gold Coast Schools, myfloridalicense",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/florida-real-estate-license-flagler-county.json"
   },
   {
     "slug": "is-real-estate-a-good-career-daytona-beach",
