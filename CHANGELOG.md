@@ -6,6 +6,12 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ## 2026-07-03
 
+### 14:50 EDT — Batch 5: +12 license guides (66 -> 78 of 113)
+- Wrote the 2 remaining county-wide "become an agent" guides (Volusia County, Flagler County) by hand, reusing the already-verified county-level stats (median prices, growth figures) rather than inventing anything new. Completes that pillar across all ten markets.
+- Shipped 10 localized "How to Get Your Florida Real Estate License in [market]" guides, one per city/county. Kept these tightly scoped to DBPR process mechanics (the 6-step path, exam structure, post-license renewal) so they read as genuinely different pages from their fuller "become an agent" siblings, not near-duplicates. No invented fees.
+- Site-wide em-dash grep still 0. Sitemap now 78 library URLs. Coverage: experienced 23/33, referral 2/5, aspiring 53/75.
+- Matt asked for a schema/meta audit mid-batch: confirmed live JSON-LD (Organization/WebSite/Article/BreadcrumbList/FAQPage/HowTo where applicable), canonical/OG/Twitter tags, and 0 duplicate titles or descriptions across all 76 content files. One real, longstanding gap found: every title exceeds 60 characters and every meta description exceeds 160, so Google likely truncates both in search snippets. Not new, not urgent, but flagged for a future pass.
+
 ### 14:05 EDT — Batch 4: +10 "Is Real Estate a Good Career" articles (56 -> 66 of 113)
 - One honest decide-stage article per market (all ten), answering "is real estate a good career" straight: self-employment reality, the actual day-to-day job, income framed honestly (linked to the income estimator tool instead of a made-up number), why the first year is the hardest, the local market as a real but partial advantage, and what separates agents who stick around.
 - Wrote the Daytona Beach piece by hand first to set the exact quality bar (Otto anti-AI-tells doctrine: no em dashes, no filler vocabulary, no throat-clearing openers, no fabricated stats), then had 3 parallel agents localize the remaining 9 off that exemplar, 3 cities per agent to cut subagent overhead versus one agent per page.
