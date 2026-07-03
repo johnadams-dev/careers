@@ -6,6 +6,12 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ## 2026-07-03
 
+### 15:35 EDT — Site-wide meta fix: evergreen titles, no truncated descriptions
+- Dropped the "(2026)" date stamp and the redundant "An Honest Look" phrase from every title (dead weight, and the year would look stale in 2027), shortened the brand suffix to "| Adams Cameron" across all 78 content files.
+- Trimmed every meta description over 160 characters to a complete sentence or clean clause. First pass had a bug (treated "vs." as a sentence end, leaving several descriptions cut off mid-list like "...national franchise vs."); caught it before it shipped, reverted, and rewrote the truncation logic to respect abbreviations and always land on a clean boundary. Manually reviewed every one of the 78 descriptions afterward to confirm no more mid-word or mid-phrase cutoffs.
+- Titles are intentionally still keyword-rich (most run past Google's soft ~60-character snippet cutoff) since gutting the local-market phrases to force a shorter title would undercut the geography x decision keyword strategy the whole site is built on. Flagged this tradeoff rather than silently forcing compliance.
+- Verified live, 0 em dashes site-wide, 0 duplicate titles/descriptions across all 78 files.
+
 ### 14:50 EDT — Batch 5: +12 license guides (66 -> 78 of 113)
 - Wrote the 2 remaining county-wide "become an agent" guides (Volusia County, Flagler County) by hand, reusing the already-verified county-level stats (median prices, growth figures) rather than inventing anything new. Completes that pillar across all ten markets.
 - Shipped 10 localized "How to Get Your Florida Real Estate License in [market]" guides, one per city/county. Kept these tightly scoped to DBPR process mechanics (the 6-step path, exam structure, post-license renewal) so they read as genuinely different pages from their fuller "become an agent" siblings, not near-duplicates. No invented fees.
