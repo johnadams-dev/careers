@@ -85,6 +85,16 @@ const EVERGREEN = [
   { pillar: 'park',       format: 'comparison', title: 'Active vs. Inactive Real Estate License in Florida: The Difference', query: "What's the difference between an active and inactive real estate license in Florida?", beat: 'myfloridalicense' },
   { pillar: 'decide',     format: 'article',    title: 'What Type of Real Estate Agent Are You?',                    query: 'What type of real estate agent are you?', beat: 'The Close, ReminderMedia, Aceable Agent' },
   { pillar: 'decide',     format: 'article',    title: 'Do Real Estate Agents Have to Fit One Personality Type?',    query: 'Do real estate agents have to fit one personality type?', beat: 'The Close, HomeLight' },
+  { pillar: 'license',    format: 'guide',      title: 'Can You Transfer Your Real Estate License to Florida?',      query: 'Can I transfer my real estate license to Florida?', beat: 'Gold Coast Schools, AceableAgent' },
+  { pillar: 'license',    format: 'guide',      title: 'Real Estate Agent vs. Broker in Florida',                    query: "What's the difference between a real estate agent and a broker in Florida?", beat: 'Gold Coast Schools' },
+  { pillar: 'license',    format: 'guide',      title: 'Florida Real Estate Continuing Education After First Renewal', query: 'What are Florida real estate continuing education requirements after the first renewal?', beat: 'myfloridalicense' },
+  { pillar: 'license',    format: 'guide',      title: "Real Estate Agent vs. Realtor: What's the Difference?",      query: "What's the difference between a real estate agent and a Realtor?", beat: 'NAR' },
+  { pillar: 'decide',     format: 'article',    title: 'Can You Be a Part-Time Real Estate Agent in Florida?',       query: 'Can you be a part-time real estate agent in Florida?', beat: 'Gold Coast Schools, JoinRealtyHub' },
+  { pillar: 'decide',     format: 'article',    title: 'How Many Hours Do Real Estate Agents Work?',                 query: 'How many hours do real estate agents actually work?', beat: 'Reddit' },
+  { pillar: 'decide',     format: 'article',    title: 'Can You Change Careers Into Real Estate in Florida?',        query: 'Can you change careers into real estate in Florida?', beat: 'Indeed, Reddit' },
+  { pillar: 'decide',     format: 'article',    title: 'Best Time of Year to Start a Real Estate Career in Florida', query: 'Is there a best time of year to start a real estate career in Florida?', beat: 'Reddit' },
+  { pillar: 'decide',     format: 'article',    title: 'Becoming a Real Estate Agent to Buy and Sell Your Own Investment Properties', query: 'Should I get my real estate license to buy and sell my own investment properties?', beat: 'BiggerPockets' },
+  { pillar: 'economics',  format: 'article',    title: 'What Does E&O Insurance Cost for Florida Real Estate Agents?', query: 'What does E&O insurance cost for real estate agents?', beat: 'Reddit' },
 ];
 
 // interactive tools (the Otto "tool" format — high citation value)
@@ -211,8 +221,21 @@ const BUILT = {
   'active-vs-inactive-real-estate-license-in-florida-the-difference': { spec: 'content/active-vs-inactive-real-estate-license-in-florida-the-difference.json' },
   'florida-real-estate-license-cost-calculator':            { spec: 'content/florida-real-estate-license-cost-calculator.json' },
   'brokerage-fee-comparison-calculator-splits-caps-and-desk-fees': { spec: 'content/brokerage-fee-comparison-calculator-splits-caps-and-desk-fees.json' },
+  'can-you-transfer-your-real-estate-license-to-florida':   { spec: 'content/can-you-transfer-your-real-estate-license-to-florida.json' },
+  'real-estate-agent-vs-broker-in-florida':                 { spec: 'content/real-estate-agent-vs-broker-in-florida.json' },
+  'florida-real-estate-continuing-education-after-first-renewal': { spec: 'content/florida-real-estate-continuing-education-after-first-renewal.json' },
+  'real-estate-agent-vs-realtor-whats-the-difference':      { spec: 'content/real-estate-agent-vs-realtor-whats-the-difference.json' },
+  'can-you-be-a-part-time-real-estate-agent-in-florida':    { spec: 'content/can-you-be-a-part-time-real-estate-agent-in-florida.json' },
+  'how-many-hours-do-real-estate-agents-work':              { spec: 'content/how-many-hours-do-real-estate-agents-work.json' },
+  'can-you-change-careers-into-real-estate-in-florida':     { spec: 'content/can-you-change-careers-into-real-estate-in-florida.json' },
+  'best-time-of-year-to-start-a-real-estate-career-in-florida': { spec: 'content/best-time-of-year-to-start-a-real-estate-career-in-florida.json' },
+  'becoming-a-real-estate-agent-to-buy-and-sell-your-own-investment-properties': { spec: 'content/becoming-a-real-estate-agent-to-buy-and-sell-your-own-investment-properties.json' },
+  'what-does-eo-insurance-cost-for-florida-real-estate-agents': { spec: 'content/what-does-eo-insurance-cost-for-florida-real-estate-agents.json' },
 };
-const EVERGREEN_SLUG_OVERRIDE = { 'How to Get Your Florida Real Estate License: Step-by-Step': 'florida-real-estate-license-guide' };
+const EVERGREEN_SLUG_OVERRIDE = {
+  'How to Get Your Florida Real Estate License: Step-by-Step': 'florida-real-estate-license-guide',
+  'What Does E&O Insurance Cost for Florida Real Estate Agents?': 'what-does-eo-insurance-cost-for-florida-real-estate-agents',
+};
 
 const trackOf = (pillarId) => (PILLARS.find((p) => p.id === pillarId) || {}).track;
 const pages = [];
