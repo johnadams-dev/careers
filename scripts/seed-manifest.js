@@ -27,9 +27,9 @@ const TRACKS = [
 ];
 
 const PILLARS = [
-  { id: 'choose-new', track: 'aspiring',    title: 'Which Brokerage to Join', hub: 'best-real-estate-brokerage-to-join-volusia-county' },
-  { id: 'license',    track: 'aspiring',    title: 'Get Licensed Locally',    hub: 'florida-real-estate-license' },
   { id: 'decide',     track: 'aspiring',    title: 'Is It Right for You',      hub: 'is-real-estate-a-good-career-florida' },
+  { id: 'license',    track: 'aspiring',    title: 'Get Licensed Locally',    hub: 'florida-real-estate-license' },
+  { id: 'choose-new', track: 'aspiring',    title: 'Which Brokerage to Join', hub: 'best-real-estate-brokerage-to-join-volusia-county' },
   { id: 'compare',    track: 'aspiring',    title: 'Compare the Options',      hub: 'best-real-estate-companies-to-work-for-volusia' },
   { id: 'switch-exp', track: 'experienced', title: 'Switch Your Brokerage',    hub: 'best-brokerage-for-experienced-agents-volusia-flagler' },
   { id: 'economics',  track: 'experienced', title: 'Splits & the Real Math',   hub: 'real-estate-commission-splits-florida' },

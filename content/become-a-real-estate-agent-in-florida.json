@@ -1,5 +1,6 @@
 {
   "type": "hub",
+  "track": "aspiring",
   "slug": "become-a-real-estate-agent-in-florida",
   "crumb": "Become a Real Estate Agent",
   "title": "How to Become a Real Estate Agent in Florida (2026 Guide) | Adams Cameron",
@@ -26,47 +27,6 @@
     { "title": "Get Licensed", "desc": "Complete Florida's 63-hour course, pass the state exam, and clear your background check. We map every step." },
     { "title": "Choose a Brokerage", "desc": "Where you hang your license decides your training, your splits, and whether you survive year one. Choose deliberately." },
     { "title": "Build Your Business", "desc": "Generate leads, run a sphere, and lean on real support so you're never figuring it out alone." }
-  ],
-  "clusters": [
-    {
-      "name": "First: Decide If It's Right for You",
-      "label": "Step 1 &middot; Decide",
-      "spokes": [
-        { "slug": "is-real-estate-a-good-career-volusia-county", "title": "Is Real Estate a Good Career in Volusia County in 2026?", "blurb": "An honest look at demand, competition, and what the job actually rewards in this market." },
-        { "slug": "how-much-do-real-estate-agents-make-volusia-county", "title": "How Much Do Real Estate Agents Make in Volusia County?", "blurb": "How commission income really works, and what separates the agents who last from the ones who quit." },
-        { "slug": "day-in-the-life-real-estate-agent-daytona", "title": "A Day in the Life of a Daytona Beach Real Estate Agent", "blurb": "What the hours, the rhythm, and the real work look like week to week." },
-        { "slug": "real-estate-agent-vs-broker-florida", "title": "Real Estate Agent vs. Broker in Florida: What's the Difference?", "blurb": "The two license levels, what each lets you do, and when to upgrade." }
-      ]
-    },
-    {
-      "name": "Next: Get Your Florida License",
-      "label": "Step 2 &middot; Get Licensed",
-      "spokes": [
-        { "slug": "florida-real-estate-license-guide", "title": "How to Get Your Florida Real Estate License: Step-by-Step", "blurb": "Every requirement, in order: the course, the exam, the background check, and activating your license." },
-        { "slug": "florida-real-estate-license-cost", "title": "How Much Does a Florida Real Estate License Cost?", "blurb": "The real all-in number: course, exam, application, fingerprints, and first-year fees." },
-        { "slug": "how-long-florida-real-estate-license", "title": "How Long Does It Take to Get Licensed in Florida?", "blurb": "A realistic timeline from enrolling to your first active day on the job." },
-        { "slug": "florida-real-estate-exam-pass", "title": "How to Pass the Florida Real Estate Exam", "blurb": "What's on it, the pass score, and how to study so you clear it the first time." }
-      ]
-    },
-    {
-      "name": "Then: Choose the Right Brokerage",
-      "label": "Step 3 &middot; Choose",
-      "spokes": [
-        { "slug": "how-to-choose-brokerage-new-agent-daytona", "title": "How to Choose a Brokerage as a New Agent in Daytona Beach", "blurb": "The questions that actually matter: training, mentorship, splits, and culture." },
-        { "slug": "real-estate-commission-splits-explained-florida", "title": "Commission Splits Explained for New Florida Agents", "blurb": "What to negotiate, what the numbers mean, and the hidden costs to ask about." },
-        { "slug": "best-brokerage-new-agents-volusia-flagler", "title": "Best Brokerage for New Agents in Volusia & Flagler", "blurb": "What a new agent should look for, and how Adams Cameron's support stacks up." }
-      ]
-    },
-    {
-      "name": "Where You'll Work: Volusia & Flagler",
-      "label": "Local &middot; Money Pages",
-      "spokes": [
-        { "slug": "become-a-real-estate-agent-daytona-beach", "title": "How to Become a Real Estate Agent in Daytona Beach, FL", "blurb": "The local path: market, offices, and what it takes to launch a career here." },
-        { "slug": "become-a-real-estate-agent-ormond-beach", "title": "How to Become a Real Estate Agent in Ormond Beach, FL", "blurb": "Launching a career in one of Volusia County's most established communities." },
-        { "slug": "become-a-real-estate-agent-port-orange", "title": "How to Become a Real Estate Agent in Port Orange, FL", "blurb": "Breaking into one of the area's fastest-growing residential markets." },
-        { "slug": "become-a-real-estate-agent-palm-coast", "title": "How to Become a Real Estate Agent in Palm Coast, FL", "blurb": "Building a real estate career in Flagler County's booming hub." }
-      ]
-    }
   ],
   "faq": [
     { "q": "How do I become a real estate agent in Florida?", "a": "You must be at least 18 with a high school diploma or equivalent, complete a Florida-approved 63-hour sales associate pre-license course, submit fingerprints for a background check, apply to the Florida Department of Business and Professional Regulation (DBPR), pass the Florida sales associate state exam, and then activate your license under a licensed broker. From there you can start working with clients. We walk you through each step." },

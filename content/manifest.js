@@ -37,10 +37,10 @@ module.exports = {
 ],
   pillars: [
   {
-    "id": "choose-new",
+    "id": "decide",
     "track": "aspiring",
-    "title": "Which Brokerage to Join",
-    "hub": "best-real-estate-brokerage-to-join-volusia-county"
+    "title": "Is It Right for You",
+    "hub": "is-real-estate-a-good-career-florida"
   },
   {
     "id": "license",
@@ -49,10 +49,10 @@ module.exports = {
     "hub": "florida-real-estate-license"
   },
   {
-    "id": "decide",
+    "id": "choose-new",
     "track": "aspiring",
-    "title": "Is It Right for You",
-    "hub": "is-real-estate-a-good-career-florida"
+    "title": "Which Brokerage to Join",
+    "hub": "best-real-estate-brokerage-to-join-volusia-county"
   },
   {
     "id": "compare",
