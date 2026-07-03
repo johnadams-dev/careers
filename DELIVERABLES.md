@@ -23,11 +23,17 @@ Each page targets a real question a prospect asks before choosing a brokerage, m
 - **"How to become an agent" guides** now complete across all ten markets (city and county level), plus a dedicated, localized "getting your Florida license" guide for each market focused purely on the state process.
 - **Income estimator calculators** localized for all ten markets, so a prospect sees real numbers for their own area.
 - **"What type of real estate agent are you?"** and a companion piece on how agent working styles combine — a new self-assessment angle for someone deciding if this career fits them.
+- **"Top companies to work for"** across all ten markets — how to honestly read online reputation, without naming or promoting any other company.
+- **Two new calculators**: total upfront cost to get licensed, and a side-by-side of commission structures (traditional split, cap, desk fee) using your own numbers.
+- **13 additional pages** rounding out every planned topic: switching brokerages, the real math on splits/caps/desk fees, what a non-competing manager means for a busy agent, growing into a broker license or a team, and the referral-income path.
 - Plus the earlier core set: the main "become an agent" hub, the Florida licensing guide, referral-program pages, the brokerage switch guide, and the commission-split calculator.
+
+**The full 115-page content library is now built and live.**
 
 ## Editorial quality
 - **A full copy-quality pass** removed automated-writing tells across the entire site, so every page reads as professionally written by a person, not by a machine. This covers both the new pages and the original site pages.
+- **No other company is named anywhere on the site.** Every page speaks only to what Adams, Cameron & Co. offers; reputation and comparison content is written generically (review sites, brokerage models) rather than naming any competitor or third-party platform.
 
 ## What's next
-- Continue building toward the full mapped library (one page per high-intent local question).
-- Re-measure how often the site is cited by AI assistants and search, to show the gain against the starting baseline.
+- Re-measure how often the site is cited by AI assistants and search, to show the gain against the starting baseline (due roughly early-to-mid August, 6-8 weeks from the June baseline).
+- Confirm Search Console access is fully handed to John as a Full user.
