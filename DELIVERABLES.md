@@ -19,6 +19,7 @@ Each page targets a real question a prospect asks before choosing a brokerage, m
 - **"Best company for new agents" comparisons** across the same markets (first-year-agent focus: training, mentorship, getting your first deal).
 - **"Best brokerage for experienced agents" comparisons** for the producing-agent recruit (keeping more commission, included tools, non-competing managers) — now complete across all ten local markets.
 - **"Best company to work for" comparisons** across all ten local markets, aimed at the general "where should I work" search.
+- **"Is real estate a good career" articles** for all ten markets — an honest, no-hype answer to the question people ask before they ever look at a brokerage, covering the realities of commission-only income and the slow first year, not just the upside.
 - Plus the earlier core set: the main "become an agent" hub, the Florida licensing guide, per-city "become an agent" guides, referral-program pages, the brokerage switch guide, and interactive tools (commission-split calculator, income estimator).
 
 ## Editorial quality
