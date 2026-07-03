@@ -1135,7 +1135,8 @@ module.exports = {
     "competitor": "FastExpert, Glassdoor",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-brokerage-experienced-agents-deltona.json"
   },
   {
     "slug": "best-brokerage-experienced-agents-palm-coast",
@@ -1149,7 +1150,8 @@ module.exports = {
     "competitor": "FastExpert, Glassdoor",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-brokerage-experienced-agents-palm-coast.json"
   },
   {
     "slug": "best-brokerage-experienced-agents-flagler-beach",
@@ -1163,7 +1165,8 @@ module.exports = {
     "competitor": "FastExpert, Glassdoor",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-brokerage-experienced-agents-flagler-beach.json"
   },
   {
     "slug": "best-brokerage-experienced-agents-volusia-county",
@@ -1192,7 +1195,8 @@ module.exports = {
     "competitor": "FastExpert, Glassdoor",
     "tier": 1,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-brokerage-experienced-agents-flagler-county.json"
   },
   {
     "slug": "best-real-estate-company-to-work-for-daytona-beach",
@@ -1221,7 +1225,8 @@ module.exports = {
     "competitor": "Indeed, Glassdoor",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-to-work-for-ormond-beach.json"
   },
   {
     "slug": "best-real-estate-company-to-work-for-port-orange",
@@ -1235,7 +1240,8 @@ module.exports = {
     "competitor": "Indeed, Glassdoor",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-to-work-for-port-orange.json"
   },
   {
     "slug": "best-real-estate-company-to-work-for-new-smyrna-beach",
@@ -1249,7 +1255,8 @@ module.exports = {
     "competitor": "Indeed, Glassdoor",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-to-work-for-new-smyrna-beach.json"
   },
   {
     "slug": "best-real-estate-company-to-work-for-deland",
@@ -1263,7 +1270,8 @@ module.exports = {
     "competitor": "Indeed, Glassdoor",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-to-work-for-deland.json"
   },
   {
     "slug": "best-real-estate-company-to-work-for-deltona",
@@ -1277,7 +1285,8 @@ module.exports = {
     "competitor": "Indeed, Glassdoor",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-to-work-for-deltona.json"
   },
   {
     "slug": "best-real-estate-company-to-work-for-palm-coast",
@@ -1291,7 +1300,8 @@ module.exports = {
     "competitor": "Indeed, Glassdoor",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-to-work-for-palm-coast.json"
   },
   {
     "slug": "best-real-estate-company-to-work-for-flagler-beach",
@@ -1305,7 +1315,8 @@ module.exports = {
     "competitor": "Indeed, Glassdoor",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-to-work-for-flagler-beach.json"
   },
   {
     "slug": "best-real-estate-company-to-work-for-volusia-county",
@@ -1319,7 +1330,8 @@ module.exports = {
     "competitor": "Indeed, Glassdoor",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-to-work-for-volusia-county.json"
   },
   {
     "slug": "best-real-estate-company-to-work-for-flagler-county",
@@ -1333,7 +1345,8 @@ module.exports = {
     "competitor": "Indeed, Glassdoor",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/best-real-estate-company-to-work-for-flagler-county.json"
   },
   {
     "slug": "top-real-estate-companies-to-work-for-daytona-beach",

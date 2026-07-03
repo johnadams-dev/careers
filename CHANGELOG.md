@@ -4,6 +4,15 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ---
 
+## 2026-07-03
+
+### 13:20 EDT — Batch 3: +13 experienced-track comparisons (43 -> 56 of 113)
+- Closed out the remaining experienced-agent "best brokerage" comparisons: Deltona, Palm Coast, Flagler Beach, Flagler County (long-form, ~1,500-1,600 words each, matching the Daytona Beach flagship template).
+- Shipped 9 "best real estate company to work for" comparisons (shorter AEO format): Ormond Beach, Port Orange, New Smyrna Beach, DeLand, Deltona, Palm Coast, Flagler Beach, Volusia County, Flagler County.
+- All grounded in real facts already verified in earlier local guides (no invented statistics): Deltona as Volusia's largest city by population, Palm Coast/Flagler as the 6th-fastest-growing county in FL with a ~$349K median, Flagler Beach as a quiet coastal town, DeLand as the historic county seat/home of Stetson University, Port Orange along the Dunlawton corridor, New Smyrna Beach's second-home/relocation market.
+- Generated via 13 parallel Sonnet agents, each self-verified (valid JSON, 0 em dashes) before handoff. Wired into `scripts/seed-manifest.js` BUILT map, reseeded, rebuilt. Site-wide em-dash grep still 0. Sitemap now 65 URLs.
+- Coverage by track: experienced 23/33, referral 2/5, aspiring 31/75. Next up per build order: remaining "decide" articles (Is Real Estate a Good Career in [city]) and city/county license guides, then the income-estimator tool pages.
+
 ## 2026-06-29
 
 ### 18:45 EDT — Search Console ownership cleaned up (commit 9876546)

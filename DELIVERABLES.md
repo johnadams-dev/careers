@@ -17,7 +17,8 @@ Each page targets a real question a prospect asks before choosing a brokerage, m
 
 - **"Best brokerage to join" comparisons** for Daytona Beach, Ormond Beach, Port Orange, New Smyrna Beach, DeLand, Deltona, Palm Coast, Flagler Beach, and Flagler County.
 - **"Best company for new agents" comparisons** across the same markets (first-year-agent focus: training, mentorship, getting your first deal).
-- **"Best brokerage for experienced agents" comparisons** for the producing-agent recruit (keeping more commission, included tools, non-competing managers).
+- **"Best brokerage for experienced agents" comparisons** for the producing-agent recruit (keeping more commission, included tools, non-competing managers) — now complete across all ten local markets.
+- **"Best company to work for" comparisons** across all ten local markets, aimed at the general "where should I work" search.
 - Plus the earlier core set: the main "become an agent" hub, the Florida licensing guide, per-city "become an agent" guides, referral-program pages, the brokerage switch guide, and interactive tools (commission-split calculator, income estimator).
 
 ## Editorial quality

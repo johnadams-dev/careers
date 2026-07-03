@@ -137,6 +137,19 @@ const BUILT = {
   'best-brokerage-experienced-agents-port-orange':         { spec: 'content/best-brokerage-experienced-agents-port-orange.json' },
   'best-brokerage-experienced-agents-new-smyrna-beach':    { spec: 'content/best-brokerage-experienced-agents-new-smyrna-beach.json' },
   'best-brokerage-experienced-agents-deland':              { spec: 'content/best-brokerage-experienced-agents-deland.json' },
+  'best-brokerage-experienced-agents-deltona':             { spec: 'content/best-brokerage-experienced-agents-deltona.json' },
+  'best-brokerage-experienced-agents-palm-coast':          { spec: 'content/best-brokerage-experienced-agents-palm-coast.json' },
+  'best-brokerage-experienced-agents-flagler-beach':       { spec: 'content/best-brokerage-experienced-agents-flagler-beach.json' },
+  'best-brokerage-experienced-agents-flagler-county':      { spec: 'content/best-brokerage-experienced-agents-flagler-county.json' },
+  'best-real-estate-company-to-work-for-ormond-beach':     { spec: 'content/best-real-estate-company-to-work-for-ormond-beach.json' },
+  'best-real-estate-company-to-work-for-port-orange':      { spec: 'content/best-real-estate-company-to-work-for-port-orange.json' },
+  'best-real-estate-company-to-work-for-new-smyrna-beach': { spec: 'content/best-real-estate-company-to-work-for-new-smyrna-beach.json' },
+  'best-real-estate-company-to-work-for-deland':           { spec: 'content/best-real-estate-company-to-work-for-deland.json' },
+  'best-real-estate-company-to-work-for-deltona':          { spec: 'content/best-real-estate-company-to-work-for-deltona.json' },
+  'best-real-estate-company-to-work-for-palm-coast':       { spec: 'content/best-real-estate-company-to-work-for-palm-coast.json' },
+  'best-real-estate-company-to-work-for-flagler-beach':    { spec: 'content/best-real-estate-company-to-work-for-flagler-beach.json' },
+  'best-real-estate-company-to-work-for-volusia-county':   { spec: 'content/best-real-estate-company-to-work-for-volusia-county.json' },
+  'best-real-estate-company-to-work-for-flagler-county':   { spec: 'content/best-real-estate-company-to-work-for-flagler-county.json' },
 };
 const EVERGREEN_SLUG_OVERRIDE = { 'How to Get Your Florida Real Estate License: Step-by-Step': 'florida-real-estate-license-guide' };
 
