@@ -780,7 +780,8 @@ module.exports = {
     "competitor": "Indeed, Reddit",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/is-real-estate-a-good-career-daytona-beach.json"
   },
   {
     "slug": "is-real-estate-a-good-career-ormond-beach",
@@ -794,7 +795,8 @@ module.exports = {
     "competitor": "Indeed, Reddit",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/is-real-estate-a-good-career-ormond-beach.json"
   },
   {
     "slug": "is-real-estate-a-good-career-port-orange",
@@ -808,7 +810,8 @@ module.exports = {
     "competitor": "Indeed, Reddit",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/is-real-estate-a-good-career-port-orange.json"
   },
   {
     "slug": "is-real-estate-a-good-career-new-smyrna-beach",
@@ -822,7 +825,8 @@ module.exports = {
     "competitor": "Indeed, Reddit",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/is-real-estate-a-good-career-new-smyrna-beach.json"
   },
   {
     "slug": "is-real-estate-a-good-career-deland",
@@ -836,7 +840,8 @@ module.exports = {
     "competitor": "Indeed, Reddit",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/is-real-estate-a-good-career-deland.json"
   },
   {
     "slug": "is-real-estate-a-good-career-deltona",
@@ -850,7 +855,8 @@ module.exports = {
     "competitor": "Indeed, Reddit",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/is-real-estate-a-good-career-deltona.json"
   },
   {
     "slug": "is-real-estate-a-good-career-palm-coast",
@@ -864,7 +870,8 @@ module.exports = {
     "competitor": "Indeed, Reddit",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/is-real-estate-a-good-career-palm-coast.json"
   },
   {
     "slug": "is-real-estate-a-good-career-flagler-beach",
@@ -878,7 +885,8 @@ module.exports = {
     "competitor": "Indeed, Reddit",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/is-real-estate-a-good-career-flagler-beach.json"
   },
   {
     "slug": "is-real-estate-a-good-career-volusia-county",
@@ -892,7 +900,8 @@ module.exports = {
     "competitor": "Indeed, Reddit",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/is-real-estate-a-good-career-volusia-county.json"
   },
   {
     "slug": "is-real-estate-a-good-career-flagler-county",
@@ -906,7 +915,8 @@ module.exports = {
     "competitor": "Indeed, Reddit",
     "tier": 2,
     "winnable": true,
-    "status": "planned"
+    "status": "built",
+    "spec": "content/is-real-estate-a-good-career-flagler-county.json"
   },
   {
     "slug": "how-much-do-real-estate-agents-make-daytona-beach",

@@ -150,6 +150,16 @@ const BUILT = {
   'best-real-estate-company-to-work-for-flagler-beach':    { spec: 'content/best-real-estate-company-to-work-for-flagler-beach.json' },
   'best-real-estate-company-to-work-for-volusia-county':   { spec: 'content/best-real-estate-company-to-work-for-volusia-county.json' },
   'best-real-estate-company-to-work-for-flagler-county':   { spec: 'content/best-real-estate-company-to-work-for-flagler-county.json' },
+  'is-real-estate-a-good-career-daytona-beach':            { spec: 'content/is-real-estate-a-good-career-daytona-beach.json' },
+  'is-real-estate-a-good-career-ormond-beach':             { spec: 'content/is-real-estate-a-good-career-ormond-beach.json' },
+  'is-real-estate-a-good-career-port-orange':              { spec: 'content/is-real-estate-a-good-career-port-orange.json' },
+  'is-real-estate-a-good-career-new-smyrna-beach':         { spec: 'content/is-real-estate-a-good-career-new-smyrna-beach.json' },
+  'is-real-estate-a-good-career-deland':                   { spec: 'content/is-real-estate-a-good-career-deland.json' },
+  'is-real-estate-a-good-career-deltona':                  { spec: 'content/is-real-estate-a-good-career-deltona.json' },
+  'is-real-estate-a-good-career-palm-coast':                { spec: 'content/is-real-estate-a-good-career-palm-coast.json' },
+  'is-real-estate-a-good-career-flagler-beach':            { spec: 'content/is-real-estate-a-good-career-flagler-beach.json' },
+  'is-real-estate-a-good-career-volusia-county':           { spec: 'content/is-real-estate-a-good-career-volusia-county.json' },
+  'is-real-estate-a-good-career-flagler-county':           { spec: 'content/is-real-estate-a-good-career-flagler-county.json' },
 };
 const EVERGREEN_SLUG_OVERRIDE = { 'How to Get Your Florida Real Estate License: Step-by-Step': 'florida-real-estate-license-guide' };
 
