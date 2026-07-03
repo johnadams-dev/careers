@@ -6,6 +6,12 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ## 2026-07-03
 
+### 18:55 EDT — Batch 8: +10 new evergreen articles (115 -> 125 pages)
+- Matt asked what the next 10 articles should be, then to build them. Rather than inventing topics, validated real search demand first on the strongest candidates (Florida license reciprocity, part-time agent viability) via live web search before committing to the list, consistent with the site's demand-first doctrine.
+- Shipped: license reciprocity for out-of-state agents, agent vs. broker, agent vs. Realtor, ongoing continuing-education requirements after the first renewal, part-time agent viability, realistic weekly hours, the career-changer path, seasonal timing for starting, the investor-agent licensing angle, and E&O insurance (deliberately no invented cost figure, framed as a question to ask any brokerage).
+- Facts grounded in verified research: Florida's 10-state mutual recognition list, the 40-question reciprocity exam, and the 14-hour biennial CE breakdown (3 core law + 3 ethics/business + 8 specialty) came from live searches, not invention.
+- Full verification: 0 em dashes, 0 competitor/brand mentions, 0 broken links across 1,755 internal links checked, hub correctly absorbed all 10 with zero stale placeholders. 125/125 built, verified live.
+
 ### 18:10 EDT — Fixed the main hub: was showing a stale page list from early in the project
 - Matt asked how the hub was set up. Checked instead of assuming: the flagship "become a real estate agent" hub was still showing 3 "coming soon" placeholders even with the full 115-page library built.
 - Root cause: the hub's content spec had a hardcoded page list written back when the site had ~15 pages, which completely bypassed the dynamic linking system built specifically so hubs stay current as pages ship. Several of the hardcoded slugs (day-in-the-life-real-estate-agent-daytona, florida-real-estate-exam-pass) were never actually built under those names. The underlying dynamic system was also silently broken (the hub's spec was missing a required "track" field), which is likely why someone hardcoded the list as a workaround in the first place rather than what was intended.
