@@ -6,6 +6,11 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ## 2026-07-03
 
+### 16:20 EDT — Batch 6: +10 income tools + 2 new personality/style articles (78 -> 90 of 115)
+- Shipped the last 10 "How Much Do Real Estate Agents Make in [market]" pages: the exact same interactive calculator already live on the evergreen income-estimator page, just localized (correct local median as the default price, links back to the matching city's become-an-agent guide).
+- New content idea from Matt: articles on real estate agent personality/working styles. Checked real search demand first (The Close, ReminderMedia, Aceable Agent, HomeLight, Mike Ferry, and others all already have similar quizzes/guides live), confirmed it's a real decision-stage topic and not an invented one, then scoped it to 2 evergreen articles in the existing 'decide' pillar: "What Type of Real Estate Agent Are You?" (the 4 working styles: Driver, Expressive, Amiable, Analytical) and a companion, "Do Real Estate Agents Have to Fit One Personality Type?" (how the styles blend in real working agents, per Matt's "combos" note).
+- Registry grew from 113 to 115 pages to fit the 2 new evergreen articles. 90/115 built. Sitemap now 90 library URLs, 0 em dashes.
+
 ### 15:35 EDT — Site-wide meta fix: evergreen titles, no truncated descriptions
 - Dropped the "(2026)" date stamp and the redundant "An Honest Look" phrase from every title (dead weight, and the year would look stale in 2027), shortened the brand suffix to "| Adams Cameron" across all 78 content files.
 - Trimmed every meta description over 160 characters to a complete sentence or clean clause. First pass had a bug (treated "vs." as a sentence end, leaving several descriptions cut off mid-list like "...national franchise vs."); caught it before it shipped, reverted, and rewrote the truncation logic to respect abbreviations and always land on a clean boundary. Manually reviewed every one of the 78 descriptions afterward to confirm no more mid-word or mid-phrase cutoffs.

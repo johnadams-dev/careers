@@ -21,7 +21,9 @@ Each page targets a real question a prospect asks before choosing a brokerage, m
 - **"Best company to work for" comparisons** across all ten local markets, aimed at the general "where should I work" search.
 - **"Is real estate a good career" articles** for all ten markets — an honest, no-hype answer to the question people ask before they ever look at a brokerage, covering the realities of commission-only income and the slow first year, not just the upside.
 - **"How to become an agent" guides** now complete across all ten markets (city and county level), plus a dedicated, localized "getting your Florida license" guide for each market focused purely on the state process.
-- Plus the earlier core set: the main "become an agent" hub, the Florida licensing guide, referral-program pages, the brokerage switch guide, and interactive tools (commission-split calculator, income estimator).
+- **Income estimator calculators** localized for all ten markets, so a prospect sees real numbers for their own area.
+- **"What type of real estate agent are you?"** and a companion piece on how agent working styles combine — a new self-assessment angle for someone deciding if this career fits them.
+- Plus the earlier core set: the main "become an agent" hub, the Florida licensing guide, referral-program pages, the brokerage switch guide, and the commission-split calculator.
 
 ## Editorial quality
 - **A full copy-quality pass** removed automated-writing tells across the entire site, so every page reads as professionally written by a person, not by a machine. This covers both the new pages and the original site pages.
