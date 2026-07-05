@@ -11,6 +11,7 @@ A running summary of work shipped on the Adams, Cameron & Co. careers site, writ
 ## Search and AI visibility
 - **Submitted to Google and Bing** for indexing. Bing also feeds AI assistants like ChatGPT and Copilot, which is central to getting the site cited in AI answers.
 - **Every page is built answer-first** with structured data (FAQ and article schema), so it is easy for both search engines and AI assistants to quote.
+- **A new original research page**: real, publicly-sourced statistics on the Volusia and Flagler real estate job market (licensed agent counts, income data, local market activity), built specifically as the kind of resource other local sites and blogs would want to link to, not just another page targeting a search term.
 
 ## Content library (growing toward the full plan)
 Each page targets a real question a prospect asks before choosing a brokerage, matched to the specific local market. Honest, model-level comparisons. No invented competitor numbers.

@@ -67,6 +67,7 @@ const TEMPLATES = [
 
 // evergreen "how" pages (non-geo) — each in its best format
 const EVERGREEN = [
+  { pillar: 'decide',     format: 'article',    title: 'State of Real Estate Careers in Volusia & Flagler County', query: 'What is the real estate job market like in Volusia and Flagler County, Florida?', beat: 'original data page' },
   { pillar: 'license',    format: 'guide',      title: 'How to Get Your Florida Real Estate License: Step-by-Step', query: 'What are the steps to get a real estate license in Florida and how long does it take?', beat: 'Gold Coast Schools' },
   { pillar: 'decide',     format: 'article',    title: 'Is a Real Estate Career Right for You? An Honest Look',      query: 'Should I become a real estate agent?', beat: 'Indeed, Reddit' },
   { pillar: 'switch-exp', format: 'guide',      title: 'How to Switch Real Estate Brokerages in Florida: Step-by-Step', query: 'How do I switch real estate brokerages in Florida?', beat: 'FastExpert' },
@@ -107,6 +108,7 @@ const TOOLS = [
 
 const BUILT = {
   'become-a-real-estate-agent-in-florida':    { spec: 'content/become-a-real-estate-agent-in-florida.json' },
+  'state-of-real-estate-careers-volusia-flagler': { spec: 'content/state-of-real-estate-careers-volusia-flagler.json' },
   'florida-real-estate-license-guide':        { spec: 'content/florida-real-estate-license-guide.json' },
   'become-a-real-estate-agent-daytona-beach': { spec: 'content/become-a-real-estate-agent-daytona-beach.json' },
   'best-brokerage-for-experienced-agents-volusia-flagler': { spec: 'content/best-brokerage-for-experienced-agents-volusia-flagler.json' },
@@ -233,6 +235,7 @@ const BUILT = {
   'what-does-eo-insurance-cost-for-florida-real-estate-agents': { spec: 'content/what-does-eo-insurance-cost-for-florida-real-estate-agents.json' },
 };
 const EVERGREEN_SLUG_OVERRIDE = {
+  'State of Real Estate Careers in Volusia & Flagler County': 'state-of-real-estate-careers-volusia-flagler',
   'How to Get Your Florida Real Estate License: Step-by-Step': 'florida-real-estate-license-guide',
   'What Does E&O Insurance Cost for Florida Real Estate Agents?': 'what-does-eo-insurance-cost-for-florida-real-estate-agents',
 };

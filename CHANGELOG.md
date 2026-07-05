@@ -4,6 +4,15 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ---
 
+## 2026-07-05
+
+### 16:40 EDT — New original data page: "State of Real Estate Careers in Volusia & Flagler County" (125 -> 126 pages)
+- Matt asked for something creative rather than another standard geography-query page. Rather than more content answering search queries, built a standalone data/citation asset: real, sourced public statistics on the local real estate job market, positioned as the kind of resource other sites would actually want to link to.
+- Every figure is real and sourced, nothing estimated or invented: licensed agent counts for Volusia (6,252) and Flagler (1,994) counted directly from Florida DBPR's public licensee database; income data from BLS/CareerOneStop federal wage statistics; market activity from the New Smyrna Beach Board of REALTORS' official Stellar MLS report; REALTOR association membership from Florida Realtors and the Daytona Beach Area Association of REALTORS. Where a current, verifiable figure couldn't be found (the exam pass rate), left it out rather than publish a guess or a stale number.
+- Deliberately did not name commercial real estate data portals in the visible copy, consistent with the standing no-competitor-names rule, even though citing them as data sources is a different context than recommending them as services. Leaned on official/regulatory/association sources instead, which are more authoritative anyway.
+- Also checked the Google Search Console "pages not indexed" email Matt flagged: audited every category it listed (noindex tags, canonical tags, redirects, 404s, server errors) against the live site. All 134 sitemap URLs return 200, canonical tags are clean and self-consistent, robots.txt is correct. No real, current issue found — the GSC report appears to reflect stale crawl history from earlier in the build, not the current live site.
+- Process note for future new pages: the hub's live-link list checks which page files already exist on disk at render time. A brand-new page added in the same build run as the hub doesn't show up until a second build pass, since the hub can render before the new page's file is written. Always run the build twice when adding a genuinely new page (existing-page edits don't need this).
+
 ## 2026-07-03
 
 ### 18:55 EDT — Batch 8: +10 new evergreen articles (115 -> 125 pages)
