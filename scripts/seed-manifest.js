@@ -126,6 +126,10 @@ const EVERGREEN = [
   { pillar: 'choose-new', format: 'guide',      title: 'How to Write a Real Estate Agent Business Plan',             query: 'How do I write a real estate agent business plan?', beat: 'The Close, HousingWire' },
   { pillar: 'decide',     format: 'article',    title: 'New Construction vs. Resale Real Estate Agent',              query: 'What is the difference between a new construction and resale real estate agent?', beat: 'HousingWire, HomeLight' },
   { pillar: 'choose-new', format: 'article',    title: 'How to Network for Real Estate Leads Beyond Your Sphere',    query: 'How do real estate agents network for leads beyond their sphere of influence?', beat: 'KapRE, Luxury Presence' },
+  { pillar: 'choose-new', format: 'article',    title: 'How to Get Your First Listing as a New Real Estate Agent',   query: 'How do new real estate agents get their first listing?', beat: 'The Close, HousingWire' },
+  { pillar: 'scale',      format: 'article',    title: 'What Is a Real Estate Transaction Coordinator?',             query: 'What is a real estate transaction coordinator and do I need one?', beat: 'Wise Pelican, US News' },
+  { pillar: 'economics',  format: 'guide',      title: 'Can a Real Estate Agent Sell Their Own Home?',               query: 'Can a licensed real estate agent sell their own home?', beat: 'NC Realtors, LegalClarity' },
+  { pillar: 'choose-new', format: 'article',    title: 'How to Farm a Neighborhood as a Real Estate Agent',          query: 'How do I farm a neighborhood as a real estate agent?', beat: 'The Close, HousingWire' },
 ];
 
 // interactive tools (the Otto "tool" format — high citation value)
@@ -282,6 +286,10 @@ const BUILT = {
   'how-to-write-a-real-estate-agent-business-plan':            { spec: 'content/how-to-write-a-real-estate-agent-business-plan.json' },
   'new-construction-vs-resale-real-estate-agent':              { spec: 'content/new-construction-vs-resale-real-estate-agent.json' },
   'how-to-network-for-real-estate-leads':                      { spec: 'content/how-to-network-for-real-estate-leads.json' },
+  'how-to-get-your-first-listing-as-a-new-agent':              { spec: 'content/how-to-get-your-first-listing-as-a-new-agent.json' },
+  'what-is-a-real-estate-transaction-coordinator':             { spec: 'content/what-is-a-real-estate-transaction-coordinator.json' },
+  'can-a-real-estate-agent-sell-their-own-home':               { spec: 'content/can-a-real-estate-agent-sell-their-own-home.json' },
+  'how-to-farm-a-neighborhood-as-a-real-estate-agent':         { spec: 'content/how-to-farm-a-neighborhood-as-a-real-estate-agent.json' },
   'become-a-real-estate-agent-daytona-beach-shores':         { spec: 'content/become-a-real-estate-agent-daytona-beach-shores.json' },
   'florida-real-estate-license-daytona-beach-shores':        { spec: 'content/florida-real-estate-license-daytona-beach-shores.json' },
   'is-real-estate-a-good-career-daytona-beach-shores':       { spec: 'content/is-real-estate-a-good-career-daytona-beach-shores.json' },
@@ -389,6 +397,7 @@ const EVERGREEN_SLUG_OVERRIDE = {
   'The Real First-Year Cost of Becoming a Real Estate Agent': 'real-first-year-cost-of-becoming-a-real-estate-agent',
   'A Day in the Life of a Florida Real Estate Agent': 'day-in-the-life-of-a-florida-real-estate-agent',
   'How to Network for Real Estate Leads Beyond Your Sphere': 'how-to-network-for-real-estate-leads',
+  'How to Get Your First Listing as a New Real Estate Agent': 'how-to-get-your-first-listing-as-a-new-agent',
 };
 
 const trackOf = (pillarId) => (PILLARS.find((p) => p.id === pillarId) || {}).track;
