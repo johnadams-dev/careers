@@ -130,6 +130,8 @@ const EVERGREEN = [
   { pillar: 'scale',      format: 'article',    title: 'What Is a Real Estate Transaction Coordinator?',             query: 'What is a real estate transaction coordinator and do I need one?', beat: 'Wise Pelican, US News' },
   { pillar: 'economics',  format: 'guide',      title: 'Can a Real Estate Agent Sell Their Own Home?',               query: 'Can a licensed real estate agent sell their own home?', beat: 'NC Realtors, LegalClarity' },
   { pillar: 'choose-new', format: 'article',    title: 'How to Farm a Neighborhood as a Real Estate Agent',          query: 'How do I farm a neighborhood as a real estate agent?', beat: 'The Close, HousingWire' },
+  { pillar: 'choose-new', format: 'article',    title: 'Best Parks in Daytona Beach, FL',                            query: 'What are the best parks in Daytona Beach, Florida?', beat: 'Tripadvisor, Wanderlog' },
+  { pillar: 'choose-new', format: 'article',    title: 'Best Neighborhoods to Know When Selling Real Estate in Daytona Beach', query: 'What are the best neighborhoods to know when selling real estate in Daytona Beach?', beat: 'UpHomes, BestNeighborhood.org' },
 ];
 
 // interactive tools (the Otto "tool" format — high citation value)
@@ -290,6 +292,8 @@ const BUILT = {
   'what-is-a-real-estate-transaction-coordinator':             { spec: 'content/what-is-a-real-estate-transaction-coordinator.json' },
   'can-a-real-estate-agent-sell-their-own-home':               { spec: 'content/can-a-real-estate-agent-sell-their-own-home.json' },
   'how-to-farm-a-neighborhood-as-a-real-estate-agent':         { spec: 'content/how-to-farm-a-neighborhood-as-a-real-estate-agent.json' },
+  'best-parks-in-daytona-beach':                               { spec: 'content/best-parks-in-daytona-beach.json' },
+  'best-neighborhoods-to-know-selling-real-estate-daytona-beach': { spec: 'content/best-neighborhoods-to-know-selling-real-estate-daytona-beach.json' },
   'become-a-real-estate-agent-daytona-beach-shores':         { spec: 'content/become-a-real-estate-agent-daytona-beach-shores.json' },
   'florida-real-estate-license-daytona-beach-shores':        { spec: 'content/florida-real-estate-license-daytona-beach-shores.json' },
   'is-real-estate-a-good-career-daytona-beach-shores':       { spec: 'content/is-real-estate-a-good-career-daytona-beach-shores.json' },
@@ -398,6 +402,8 @@ const EVERGREEN_SLUG_OVERRIDE = {
   'A Day in the Life of a Florida Real Estate Agent': 'day-in-the-life-of-a-florida-real-estate-agent',
   'How to Network for Real Estate Leads Beyond Your Sphere': 'how-to-network-for-real-estate-leads',
   'How to Get Your First Listing as a New Real Estate Agent': 'how-to-get-your-first-listing-as-a-new-agent',
+  'Best Parks in Daytona Beach, FL': 'best-parks-in-daytona-beach',
+  'Best Neighborhoods to Know When Selling Real Estate in Daytona Beach': 'best-neighborhoods-to-know-selling-real-estate-daytona-beach',
 };
 
 const trackOf = (pillarId) => (PILLARS.find((p) => p.id === pillarId) || {}).track;
