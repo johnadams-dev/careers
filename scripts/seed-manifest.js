@@ -101,6 +101,11 @@ const EVERGREEN = [
   { pillar: 'decide',     format: 'article',    title: 'The Real First-Year Cost of Becoming a Real Estate Agent',   query: 'How much does it cost to start working as a real estate agent besides the license?', beat: 'US Realty Training, The Close' },
   { pillar: 'decide',     format: 'guide',      title: 'How Real Estate Agent Taxes Work',                           query: 'How do real estate agent taxes work as a 1099 independent contractor?', beat: 'TurboTax, Reddit' },
   { pillar: 'decide',     format: 'article',    title: 'A Day in the Life of a Florida Real Estate Agent',           query: 'What does a day in the life of a real estate agent look like?', beat: 'Indeed, AceableAgent' },
+  { pillar: 'license',    format: 'guide',      title: 'Who Can Get a Florida Real Estate License?',                 query: 'Who is eligible to get a real estate license in Florida?', beat: 'StateRequirement, PassFloridaRealEstate' },
+  { pillar: 'license',    format: 'guide',      title: 'Can You Get a Florida Real Estate License With a Felony?',   query: 'Can you get a Florida real estate license with a felony or criminal record?', beat: 'Gold Coast Schools, AceableAgent' },
+  { pillar: 'license',    format: 'guide',      title: 'How to Renew Your Florida Real Estate License',              query: 'How do I renew my Florida real estate license?', beat: 'MLS Campus, McKissock' },
+  { pillar: 'choose-new', format: 'article',    title: 'How to Build Your Sphere of Influence as a New Real Estate Agent', query: 'How do I build a sphere of influence as a new real estate agent?', beat: 'The Close, HousingWire' },
+  { pillar: 'decide',     format: 'article',    title: 'How Long It Takes to Close Your First Real Estate Deal',     query: 'How long does it take a new real estate agent to close their first deal?', beat: 'AceableAgent, The Realty School' },
 ];
 
 // interactive tools (the Otto "tool" format — high citation value)
@@ -243,6 +248,11 @@ const BUILT = {
   'real-first-year-cost-of-becoming-a-real-estate-agent':    { spec: 'content/real-first-year-cost-of-becoming-a-real-estate-agent.json' },
   'how-real-estate-agent-taxes-work':                        { spec: 'content/how-real-estate-agent-taxes-work.json' },
   'day-in-the-life-of-a-florida-real-estate-agent':          { spec: 'content/day-in-the-life-of-a-florida-real-estate-agent.json' },
+  'who-can-get-a-florida-real-estate-license':                { spec: 'content/who-can-get-a-florida-real-estate-license.json' },
+  'can-you-get-a-florida-real-estate-license-with-a-felony':  { spec: 'content/can-you-get-a-florida-real-estate-license-with-a-felony.json' },
+  'how-to-renew-your-florida-real-estate-license':             { spec: 'content/how-to-renew-your-florida-real-estate-license.json' },
+  'how-to-build-your-sphere-of-influence-as-a-new-real-estate-agent': { spec: 'content/how-to-build-your-sphere-of-influence-as-a-new-real-estate-agent.json' },
+  'how-long-it-takes-to-close-your-first-real-estate-deal':    { spec: 'content/how-long-it-takes-to-close-your-first-real-estate-deal.json' },
 };
 const EVERGREEN_SLUG_OVERRIDE = {
   'State of Real Estate Careers in Volusia & Flagler County': 'state-of-real-estate-careers-volusia-flagler',
