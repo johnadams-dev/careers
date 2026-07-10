@@ -32,6 +32,11 @@
     { "q": "What parks are away from the beach in Daytona Beach?", "a": "Tuscawilla Park and Reed Canal Park are both inland green spaces, and the Riverfront Esplanade along the Halifax River offers a quieter, more local walking and gathering space away from the beach entirely." },
     { "q": "Is there a good park for young kids in Daytona Beach?", "a": "All Children's Park is a dedicated playground-focused park built specifically with young families in mind." }
   ],
-  "ctaHeading": "Get to Know the Market, Not Just the Beach",
-  "ctaSub": "Real local knowledge is part of what makes a great agent. Talk to Adams, Cameron &amp; Co. about building a career here."
+  "ctaHeading": "Part of Daytona Beach Since 1963",
+  "ctaSub": "Adams, Cameron &amp; Co. has called this community home for more than 60 years. Explore the neighborhoods and careers behind the name.",
+  "offerKicker": "About Adams, Cameron &amp; Co.",
+  "ctaBtn1Label": "Learn about our history",
+  "ctaBtn1Href": "about.html",
+  "ctaBtn2Label": "See real estate careers here",
+  "ctaBtn2Href": "become-a-real-estate-agent-in-florida.html"
 }

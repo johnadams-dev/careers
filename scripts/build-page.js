@@ -270,8 +270,8 @@ const offerHtml = (spec) => `
     <p>${spec.ctaSub || 'Have a real conversation with Adams, Cameron &amp; Co. about getting licensed and launching across Volusia and Flagler County. No pressure. Just a clear picture of the path.'}</p>
   </div>
   <div class="lst-offer-actions">
-    <a href="join.html" class="lst-btn solid">Talk to a manager &rarr;</a>
-    <a href="new-agents.html" class="lst-btn ghost">See the new-agent support</a>
+    <a href="${spec.ctaBtn1Href || 'join.html'}" class="lst-btn solid">${esc(spec.ctaBtn1Label || 'Talk to a manager')} &rarr;</a>
+    <a href="${spec.ctaBtn2Href || 'new-agents.html'}" class="lst-btn ghost">${esc(spec.ctaBtn2Label || 'See the new-agent support')}</a>
   </div>
 </div></section>`;
 
