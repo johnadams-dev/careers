@@ -6,6 +6,15 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ## 2026-07-10 (cont.)
 
+### Batch 11: +5 evergreen articles for the experienced & referral tracks (136 -> 141 pages)
+
+- Matt reinforced the demand-first strategy ("it's all about building for the queries we know we want to rank for") and to keep going without waiting on the citation re-measure. Batches 9 and 10 both mined the aspiring track exclusively, so this pass deliberately targeted the experienced and referral tracks, which hadn't had a fresh demand-mining pass since the original manifest.
+- Shipped: recruiting agents to grow a team (a distinct companion to the existing team-formation guide, covering sourcing and value proposition rather than initial structure), team-lead vs. solo-agent income (comparison format, honest early-career-favors-team vs. established-agent-favors-solo math), what a typical referral fee actually is (generic industry education, distinct from our own referral-program pages), negotiating a better commission split when switching brokerages, and which professional designations (GRI, CRS, ABR) are actually worth pursuing.
+- Research-first discipline caught two weak candidates before they got written: a "what happens to my listings when I switch brokerages" idea turned out to already be thoroughly covered inside the existing license-transfer guide, and a "how many transactions before switching pays off" angle returned no real-estate-specific demand at all, only unrelated stock-brokerage search results. Dropped both rather than force a page.
+- Verified: 0 em dashes, 0 competitor names, no broken internal links. Built twice. Hub confirmed linking all 5 correctly, split across the experienced-agent and referral-program hubs. Sitemap 145 -> 150 URLs.
+
+## 2026-07-10 (cont.)
+
 ### Batch 10: +5 more evergreen articles (131 -> 136 pages)
 
 - Matt said to keep building, no need to wait on the citation re-measure. Went looking for the next tier of real-demand gaps beyond batch 9's five topics.
