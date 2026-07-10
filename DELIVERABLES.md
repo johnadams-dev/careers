@@ -28,9 +28,9 @@ Each page targets a real question a prospect asks before choosing a brokerage, m
 - **Two new calculators**: total upfront cost to get licensed, and a side-by-side of commission structures (traditional split, cap, desk fee) using your own numbers.
 - **13 additional pages** rounding out every planned topic: switching brokerages, the real math on splits/caps/desk fees, what a non-competing manager means for a busy agent, growing into a broker license or a team, and the referral-income path.
 - Plus the earlier core set: the main "become an agent" hub, the Florida licensing guide, referral-program pages, the brokerage switch guide, and the commission-split calculator.
-- **5 newest additions**, aimed at real search demand beyond the original plan: how to pass the Florida state licensing exam, what to look for in a brokerage's mentorship program, the true first-year cost of starting out (beyond just the license), how a real estate agent's independent-contractor taxes work, and a day-in-the-life look at the job.
+- **10 newest additions**, aimed at real search demand beyond the original plan: how to pass the Florida state licensing exam, what to look for in a brokerage's mentorship program, the true first-year cost of starting out (beyond just the license), how a real estate agent's independent-contractor taxes work, a day-in-the-life look at the job, who's actually eligible for a license, getting licensed with a past felony or criminal record (handled carefully and honestly), how to renew an existing license, building a client network as a brand-new agent, and a realistic timeline for a first closing.
 
-**The original 115-page plan is complete, and the library has continued growing past it — 131 pages built and live.**
+**The original 115-page plan is complete, and the library has continued growing past it — 136 pages built and live.**
 
 ## Editorial quality
 - **A full copy-quality pass** removed automated-writing tells across the entire site, so every page reads as professionally written by a person, not by a machine. This covers both the new pages and the original site pages.

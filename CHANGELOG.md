@@ -4,6 +4,16 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ---
 
+## 2026-07-10 (cont.)
+
+### Batch 10: +5 more evergreen articles (131 -> 136 pages)
+
+- Matt said to keep building, no need to wait on the citation re-measure. Went looking for the next tier of real-demand gaps beyond batch 9's five topics.
+- Validated 5 more topics against live search demand: general license eligibility (age/education/background check), licensing with a felony or criminal record, license renewal mechanics, building a sphere of influence as a new agent, and a realistic first-deal timeline.
+- The felony/criminal-record page was written with extra care given the stakes: only facts corroborated across multiple independent sources (no blanket disqualification, FREC reviews case by case, moral-turpitude offenses draw the most scrutiny), a clear recommendation to confirm directly with DBPR before enrolling in a course, and an explicit not-legal-advice disclaimer rather than any implied guarantee.
+- The renewal page is deliberately scoped separately from the existing continuing-education page: renewal covers the full mechanics (deadline, portal, first-renewal 45-hour course, fees, what happens if you miss it), while the CE page covers just the 14-hour subsequent-renewal requirement in more depth. Cross-linked both ways so neither reads as a duplicate.
+- Verified: 0 em dashes, 0 competitor names, no broken internal links across all 5 new pages. Built twice (known hub lag on brand-new pages). Hub confirmed to link all 5. Pushed direct to main. Sitemap 140 -> 145 URLs.
+
 ## 2026-07-10
 
 ### Batch 9: +5 new evergreen articles (126 -> 131 pages)
