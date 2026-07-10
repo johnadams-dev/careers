@@ -4,6 +4,18 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ---
 
+## 2026-07-10
+
+### Batch 9: +5 new evergreen articles (126 -> 131 pages)
+
+- Matt asked to build more content targeting what we want to rank on. The geographic grid was already fully saturated (checked programmatically: 9 query templates x all 10 markets, zero gaps), so new ranking opportunity had to come from new topics rather than more geography.
+- Validated 5 candidate topics against real, current search demand via live web search before writing anything (same demand-first discipline as prior batches): how to pass the Florida real estate exam, what to look for in a mentorship program, the real first-year cost of becoming an agent beyond the license, how 1099 independent-contractor taxes work for agents, and a day in the life of a Florida agent.
+- The exam-prep guide deliberately omits any specific pass-rate percentage; the only figure found for that (a single real estate school's marketing blog) wasn't a verifiable, authoritative source, consistent with the standing no-invented-stats rule. Facts used (100 questions, 3.5 hours, 75/100 to pass, question-category breakdown) were corroborated across multiple independent sources.
+- The mentorship and first-year-cost pieces tie directly into Adams Cameron's real differentiators (non-competing managers, included marketing tools) rather than generic industry advice, and the cost piece cross-links to the two existing calculators instead of inventing new dollar figures.
+- The taxes page carries an explicit "not tax advice, talk to a CPA" disclaimer, matching the honesty pattern already used on the E&O insurance page.
+- The day-in-the-life page closes a real gap: an early hub spec once hardcoded a link to a Daytona-specific "day in the life" page that was never actually built. This evergreen, state-wide version fulfills that original intent properly through the manifest system instead of a stale hardcoded link.
+- Verified: 0 em dashes, 0 competitor names, 0 broken internal links across all 5 new pages. Ran the build twice (existing known lag: a brand-new page doesn't show up on the hub until a second pass). Hub confirmed to link all 5. Pushed direct to main, verified live: all 5 return HTTP 200, correct H1s, FAQPage schema present. Sitemap 134 -> 140 URLs.
+
 ## 2026-07-05
 
 ### 16:40 EDT — New original data page: "State of Real Estate Careers in Volusia & Flagler County" (125 -> 126 pages)
