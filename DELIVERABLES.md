@@ -38,6 +38,13 @@ Each page targets a real question a prospect asks before choosing a brokerage, m
 
 **The original 115-page plan is complete, the library has grown well past it, and every real town in Volusia and Flagler County is now covered — 248 pages built and live.**
 
+## Local authority content (new)
+- **A new content type: real, honest local guides**, distinct from the recruiting-funnel pages above. Two categories, both grounded in real research, not generic filler:
+  - **Best Parks** guides for every city that has real, documented public parks (19 pages), sourced from official city and county parks departments. A soft, natural tie-back to Adams, Cameron & Co.'s history in the area, not a hard career pitch.
+  - **Best Neighborhoods to Know When Selling Real Estate** guides (11 pages), the specific local knowledge an agent actually needs to serve a market well, for every city that has genuine, distinct, well-documented submarkets.
+- Smaller or more uniform towns were handled honestly: some got a shorter parks page reflecting real scale, and several didn't get a neighborhoods page at all, because they genuinely don't have distinct submarkets worth that treatment. Nothing was padded or invented to hit a page count.
+- **278 pages built and live.**
+
 ## Editorial quality
 - **A full copy-quality pass** removed automated-writing tells across the entire site, so every page reads as professionally written by a person, not by a machine. This covers both the new pages and the original site pages.
 - **No other company is named anywhere on the site.** Every page speaks only to what Adams, Cameron & Co. offers; reputation and comparison content is written generically (review sites, brokerage models) rather than naming any competitor or third-party platform.

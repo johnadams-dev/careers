@@ -6,6 +6,17 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ## 2026-07-10 (cont.)
 
+### Local-authority content, scaled to all of Volusia + Flagler (250 -> 278)
+
+- New content category for the site, piloted earlier today on Daytona Beach: two separate types, "Best Parks in [City]" (a general local guide, softened natural CTA tied to Adams Cameron's history rather than a career pitch) and "Best Neighborhoods to Know When Selling Real Estate in [City]" (agent market-knowledge angle, keeps the normal recruiting CTA). Added `ctaBtn1`/`ctaBtn2` override support to build-page.js's offer block so the soft CTA didn't need a new template, just spec-level overrides.
+- Scaled both to the remaining 18 Volusia/Flagler cities via 18 parallel agents, each required to do real web research (official city/county parks pages, independent real estate sources) before writing anything, matching the exact schema of the Daytona pilots.
+- Built 19 real parks pages total and 11 real neighborhoods pages, deliberately fewer than 18/18: small or undifferentiated towns (Daytona Beach Shores, Holly Hill, Lake Helen, Oak Hill, Pierson, Ponce Inlet, South Daytona, Bunnell) don't have genuine distinct real estate submarkets, and every agent correctly skipped that page rather than force content that doesn't exist.
+- Multiple agents independently caught and discarded cross-city contamination from AI search summaries before it reached a page: Orange City's first-pass results wrongly pulled in Orlando/DeBary/Apopka neighborhoods, Holly Hill's wrongly included parks actually in Deltona, Ormond Beach, and New Smyrna Beach, and DeBary excluded a neighborhood name that turned out to be a different place 50 miles away in Lake County. All caught and removed before the content shipped.
+- Independently re-verified everything after the agents finished: all 28 new files valid JSON with key-sets identical to the exemplars, 0 em dashes, 0 curly quotes, 0 competitor or source-site names in the copy, 0 broken links, all correctly hub-linked, and confirmed all 30 park/neighborhood pages (new + pilots) have genuinely unique body content, no duplication.
+- Sitemap 250 -> 278 URLs. Pushed direct to main.
+
+## 2026-07-10 (cont.)
+
 ### Batch 13: +4 more evergreen articles (244 -> 248)
 
 - Matt said "go." Continued the content pipeline with 4 more validated real-demand topics: how to get a first listing as a new agent (seller-side tactics, distinct from getting a first buyer client), what a real estate transaction coordinator does and when hiring one pays off, whether a licensed agent can sell their own home (disclosure and commission mechanics), and how to farm a neighborhood as a second pipeline beyond a personal sphere of influence.
