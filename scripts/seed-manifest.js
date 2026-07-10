@@ -96,6 +96,11 @@ const EVERGREEN = [
   { pillar: 'decide',     format: 'article',    title: 'Best Time of Year to Start a Real Estate Career in Florida', query: 'Is there a best time of year to start a real estate career in Florida?', beat: 'Reddit' },
   { pillar: 'decide',     format: 'article',    title: 'Becoming a Real Estate Agent to Buy and Sell Your Own Investment Properties', query: 'Should I get my real estate license to buy and sell my own investment properties?', beat: 'BiggerPockets' },
   { pillar: 'economics',  format: 'article',    title: 'What Does E&O Insurance Cost for Florida Real Estate Agents?', query: 'What does E&O insurance cost for real estate agents?', beat: 'Reddit' },
+  { pillar: 'license',    format: 'guide',      title: 'How to Pass the Florida Real Estate Exam',                   query: 'How do I pass the Florida real estate exam on my first try?', beat: 'Gold Coast Schools, AceableAgent' },
+  { pillar: 'choose-new', format: 'article',    title: 'What to Look for in a Real Estate Mentorship Program',       query: 'What should I look for in a real estate mentorship program?', beat: 'The Close, Gold Coast Schools' },
+  { pillar: 'decide',     format: 'article',    title: 'The Real First-Year Cost of Becoming a Real Estate Agent',   query: 'How much does it cost to start working as a real estate agent besides the license?', beat: 'US Realty Training, The Close' },
+  { pillar: 'decide',     format: 'guide',      title: 'How Real Estate Agent Taxes Work',                           query: 'How do real estate agent taxes work as a 1099 independent contractor?', beat: 'TurboTax, Reddit' },
+  { pillar: 'decide',     format: 'article',    title: 'A Day in the Life of a Florida Real Estate Agent',           query: 'What does a day in the life of a real estate agent look like?', beat: 'Indeed, AceableAgent' },
 ];
 
 // interactive tools (the Otto "tool" format — high citation value)
@@ -233,11 +238,18 @@ const BUILT = {
   'best-time-of-year-to-start-a-real-estate-career-in-florida': { spec: 'content/best-time-of-year-to-start-a-real-estate-career-in-florida.json' },
   'becoming-a-real-estate-agent-to-buy-and-sell-your-own-investment-properties': { spec: 'content/becoming-a-real-estate-agent-to-buy-and-sell-your-own-investment-properties.json' },
   'what-does-eo-insurance-cost-for-florida-real-estate-agents': { spec: 'content/what-does-eo-insurance-cost-for-florida-real-estate-agents.json' },
+  'how-to-pass-the-florida-real-estate-exam':                { spec: 'content/how-to-pass-the-florida-real-estate-exam.json' },
+  'what-to-look-for-in-a-real-estate-mentorship-program':    { spec: 'content/what-to-look-for-in-a-real-estate-mentorship-program.json' },
+  'real-first-year-cost-of-becoming-a-real-estate-agent':    { spec: 'content/real-first-year-cost-of-becoming-a-real-estate-agent.json' },
+  'how-real-estate-agent-taxes-work':                        { spec: 'content/how-real-estate-agent-taxes-work.json' },
+  'day-in-the-life-of-a-florida-real-estate-agent':          { spec: 'content/day-in-the-life-of-a-florida-real-estate-agent.json' },
 };
 const EVERGREEN_SLUG_OVERRIDE = {
   'State of Real Estate Careers in Volusia & Flagler County': 'state-of-real-estate-careers-volusia-flagler',
   'How to Get Your Florida Real Estate License: Step-by-Step': 'florida-real-estate-license-guide',
   'What Does E&O Insurance Cost for Florida Real Estate Agents?': 'what-does-eo-insurance-cost-for-florida-real-estate-agents',
+  'The Real First-Year Cost of Becoming a Real Estate Agent': 'real-first-year-cost-of-becoming-a-real-estate-agent',
+  'A Day in the Life of a Florida Real Estate Agent': 'day-in-the-life-of-a-florida-real-estate-agent',
 };
 
 const trackOf = (pillarId) => (PILLARS.find((p) => p.id === pillarId) || {}).track;
