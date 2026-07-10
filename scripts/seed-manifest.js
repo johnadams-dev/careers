@@ -60,6 +60,7 @@ const MARKETS = [
   { place: 'South Daytona', slug: 'south-daytona', county: 'Volusia' },
   { place: 'Pierson', slug: 'pierson', county: 'Volusia' },
   { place: 'Ponce Inlet', slug: 'ponce-inlet', county: 'Volusia' },
+  { place: 'Bunnell', slug: 'bunnell', county: 'Flagler' },
 ];
 
 // decision query × {place} → one localized page, in its best Otto format
@@ -363,6 +364,15 @@ const BUILT = {
   'best-brokerage-experienced-agents-ponce-inlet':           { spec: 'content/best-brokerage-experienced-agents-ponce-inlet.json' },
   'best-real-estate-company-to-work-for-ponce-inlet':        { spec: 'content/best-real-estate-company-to-work-for-ponce-inlet.json' },
   'top-real-estate-companies-to-work-for-ponce-inlet':       { spec: 'content/top-real-estate-companies-to-work-for-ponce-inlet.json' },
+  'become-a-real-estate-agent-bunnell':                      { spec: 'content/become-a-real-estate-agent-bunnell.json' },
+  'florida-real-estate-license-bunnell':                     { spec: 'content/florida-real-estate-license-bunnell.json' },
+  'is-real-estate-a-good-career-bunnell':                    { spec: 'content/is-real-estate-a-good-career-bunnell.json' },
+  'how-much-do-real-estate-agents-make-bunnell':             { spec: 'content/how-much-do-real-estate-agents-make-bunnell.json' },
+  'best-real-estate-brokerage-to-join-bunnell':              { spec: 'content/best-real-estate-brokerage-to-join-bunnell.json' },
+  'best-real-estate-company-new-agents-bunnell':             { spec: 'content/best-real-estate-company-new-agents-bunnell.json' },
+  'best-brokerage-experienced-agents-bunnell':               { spec: 'content/best-brokerage-experienced-agents-bunnell.json' },
+  'best-real-estate-company-to-work-for-bunnell':            { spec: 'content/best-real-estate-company-to-work-for-bunnell.json' },
+  'top-real-estate-companies-to-work-for-bunnell':           { spec: 'content/top-real-estate-companies-to-work-for-bunnell.json' },
 };
 const EVERGREEN_SLUG_OVERRIDE = {
   'State of Real Estate Careers in Volusia & Flagler County': 'state-of-real-estate-careers-volusia-flagler',
