@@ -13,9 +13,11 @@ A running summary of work shipped on the Adams, Cameron & Co. careers site, writ
 - **Every page is built answer-first** with structured data (FAQ and article schema), so it is easy for both search engines and AI assistants to quote.
 - **A new original research page**: real, publicly-sourced statistics on the Volusia and Flagler real estate job market (licensed agent counts, income data, local market activity), built specifically as the kind of resource other local sites and blogs would want to link to, not just another page targeting a search term.
 
-## Full Volusia County coverage
+## Full Volusia and Flagler County coverage
 - **Every one of Volusia County's 16 incorporated cities and towns is now covered**, not just the largest ones. Alongside the original core markets (Daytona Beach, Ormond Beach, Port Orange, New Smyrna Beach, DeLand, Deltona), the site now also covers Daytona Beach Shores, DeBary, Edgewater, Holly Hill, Lake Helen, Oak Hill, Orange City, South Daytona, Pierson, and Ponce Inlet, each with the full set of recruiting pages a prospect in that town would search for.
+- **Bunnell, the seat of Flagler County government, is now covered as well**, alongside Palm Coast and Flagler Beach. Flagler's two remaining, very small communities (well under a thousand residents combined) were left out as genuinely too small to be worth a page.
 - Smaller towns are handled honestly rather than oversold: a page for a town of 1,600 people reads like a page about a town of 1,600 people, not an inflated pitch. That honesty is itself part of what makes the content trustworthy to both readers and AI systems evaluating it.
+- Every comparison page across every market was individually checked, and rewritten anywhere it wasn't, so that no two towns share identical brokerage-comparison content. This was verified programmatically across all 21 markets, not just spot-checked.
 
 ## Content library (growing toward the full plan)
 Each page targets a real question a prospect asks before choosing a brokerage, matched to the specific local market. Honest, model-level comparisons. No invented competitor numbers.
@@ -34,7 +36,7 @@ Each page targets a real question a prospect asks before choosing a brokerage, m
 - Plus the earlier core set: the main "become an agent" hub, the Florida licensing guide, referral-program pages, the brokerage switch guide, and the commission-split calculator.
 - **15 additions aimed at real search demand beyond the original plan.** For new and aspiring agents: how to pass the Florida state licensing exam, what to look for in a brokerage's mentorship program, the true first-year cost of starting out (beyond just the license), how a real estate agent's independent-contractor taxes work, a day-in-the-life look at the job, who's actually eligible for a license, getting licensed with a past felony or criminal record (handled carefully and honestly), how to renew an existing license, building a client network as a brand-new agent, and a realistic timeline for a first closing. For experienced and producing agents: how to recruit agents to grow a team, the honest income math between joining a team and going solo, what a typical referral fee actually is, how to negotiate a better commission split when switching, and which professional designations are actually worth earning.
 
-**The original 115-page plan is complete, the library has grown well past it, and every city in Volusia County is now covered — 231 pages built and live.**
+**The original 115-page plan is complete, the library has grown well past it, and every real town in Volusia and Flagler County is now covered — 240 pages built and live.**
 
 ## Editorial quality
 - **A full copy-quality pass** removed automated-writing tells across the entire site, so every page reads as professionally written by a person, not by a machine. This covers both the new pages and the original site pages.

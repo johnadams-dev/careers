@@ -6,6 +6,17 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ## 2026-07-10 (cont.)
 
+### Bunnell added, the Flagler County seat (9 new pages, 231 -> 240)
+
+- Same coverage gap as the Volusia towns, this time in Flagler County. Bunnell (pop. ~3,200, incorporated 1913) is the county seat and had no page at all, despite Palm Coast and Flagler Beach already being covered. Flagler's remaining two towns, Beverly Beach (~500) and Marineland (~15), are too small to justify a page and weren't built.
+- Applied the full scrutiny from the Volusia comparison-table fix by construction this time, not as an after-the-fact correction: wrote all 9 pages directly, read all 9 Flagler Beach exemplars first (a noticeably longer, richer template than the Volusia originals), and independently wrote every one of the 5 comparison tables rather than reusing Flagler Beach's or Palm Coast's. Verified programmatically against all 20 other markets already on the site: all 5 Bunnell tables are genuinely unique, not just internally consistent with each other.
+- Bunnell is framed honestly: inland, government-centered, not a beach town, explicitly correcting for the coastal framing baked into the Flagler Beach template used as structural reference. Every page is upfront that a real business here means covering the wider county from a Bunnell base, since the city's own small population can't support a standalone pipeline.
+- Income tool uses the real $349,000 Flagler County median, not the $343,000 Volusia figure used on the Volusia town pages.
+- Verified before build (JSON valid, 0 em dashes, 0 curly quotes, 0 competitor names, correct slug field present on every file, so no repeat of the Oak Hill undefined.html bug) and after build (0 broken links, hub-linked correctly, visually screenshot-checked end to end, not just grepped).
+- Sitemap 231 -> 240 URLs. Pushed direct to main.
+
+## 2026-07-10 (cont.)
+
 ### Coverage fix: all 10 remaining Volusia County cities added (90 new pages, 141 -> 231)
 
 - Matt flagged directly that the site wasn't covering all the cities in Volusia County. He was right: Volusia County has 16 incorporated municipalities, and the site only had 6 built out (Daytona Beach, Ormond Beach, Port Orange, New Smyrna Beach, DeLand, Deltona) plus the county-wide rollup page. The earlier "geo grid is fully saturated" check only verified the 10 markets already in the manifest had every template built; it never checked whether the market list itself covered the actual county.
