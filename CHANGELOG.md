@@ -6,6 +6,14 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ## 2026-07-10 (cont.)
 
+### Batch 13: +4 more evergreen articles (244 -> 248)
+
+- Matt said "go." Continued the content pipeline with 4 more validated real-demand topics: how to get a first listing as a new agent (seller-side tactics, distinct from getting a first buyer client), what a real estate transaction coordinator does and when hiring one pays off, whether a licensed agent can sell their own home (disclosure and commission mechanics), and how to farm a neighborhood as a second pipeline beyond a personal sphere of influence.
+- Applied the now-standard corrected process throughout: drafted, immediately checked word count against the site's 768-1063-word precedent, found all 4 short again (521-661 words, the same pattern as the two prior batches), expanded before registering anything (final range 822-887 words), then registered, built, and verified. Not a new mistake this time, just consistent application of the fix already in place.
+- Verified: 0 em dashes, 0 curly quotes, 0 competitor names, no broken links, hub-linked correctly, no stray output files. Built twice. Sitemap 244 -> 248 URLs.
+
+## 2026-07-10 (cont.)
+
 ### Closed pre-existing debt + batch 12 (4 new articles): 240 -> 244
 
 - Matt said to build on today's fixes. Two pieces of work: (1) closed out debt flagged earlier today but not fixed at the time, and (2) continued the content pipeline with 4 more validated topics, applying every lesson from today's corrections up front this time.
