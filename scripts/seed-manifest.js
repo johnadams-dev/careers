@@ -122,6 +122,10 @@ const EVERGREEN = [
   { pillar: 'referral',   format: 'article',    title: 'What Is a Typical Real Estate Referral Fee?',                query: 'What is a typical real estate referral fee?', beat: 'HousingWire, Placester' },
   { pillar: 'switch-exp', format: 'article',    title: 'How to Negotiate a Better Commission Split When Switching Brokerages', query: 'How do I negotiate a better commission split when switching brokerages?', beat: 'The Close, Allied Schools' },
   { pillar: 'grow',       format: 'guide',      title: 'Real Estate Agent Designations Worth Getting',               query: 'Which real estate designations are worth getting, GRI, CRS, or ABR?', beat: 'AceableAgent' },
+  { pillar: 'decide',     format: 'article',    title: 'Why Do Most Real Estate Agents Quit?',                       query: 'Why do most real estate agents quit or fail?', beat: 'The Close, Landvoice' },
+  { pillar: 'choose-new', format: 'guide',      title: 'How to Write a Real Estate Agent Business Plan',             query: 'How do I write a real estate agent business plan?', beat: 'The Close, HousingWire' },
+  { pillar: 'decide',     format: 'article',    title: 'New Construction vs. Resale Real Estate Agent',              query: 'What is the difference between a new construction and resale real estate agent?', beat: 'HousingWire, HomeLight' },
+  { pillar: 'choose-new', format: 'article',    title: 'How to Network for Real Estate Leads Beyond Your Sphere',    query: 'How do real estate agents network for leads beyond their sphere of influence?', beat: 'KapRE, Luxury Presence' },
 ];
 
 // interactive tools (the Otto "tool" format — high citation value)
@@ -274,6 +278,10 @@ const BUILT = {
   'what-is-a-typical-real-estate-referral-fee':                { spec: 'content/what-is-a-typical-real-estate-referral-fee.json' },
   'how-to-negotiate-a-better-commission-split-when-switching-brokerages': { spec: 'content/how-to-negotiate-a-better-commission-split-when-switching-brokerages.json' },
   'real-estate-agent-designations-worth-getting':              { spec: 'content/real-estate-agent-designations-worth-getting.json' },
+  'why-do-most-real-estate-agents-quit':                       { spec: 'content/why-do-most-real-estate-agents-quit.json' },
+  'how-to-write-a-real-estate-agent-business-plan':            { spec: 'content/how-to-write-a-real-estate-agent-business-plan.json' },
+  'new-construction-vs-resale-real-estate-agent':              { spec: 'content/new-construction-vs-resale-real-estate-agent.json' },
+  'how-to-network-for-real-estate-leads':                      { spec: 'content/how-to-network-for-real-estate-leads.json' },
   'become-a-real-estate-agent-daytona-beach-shores':         { spec: 'content/become-a-real-estate-agent-daytona-beach-shores.json' },
   'florida-real-estate-license-daytona-beach-shores':        { spec: 'content/florida-real-estate-license-daytona-beach-shores.json' },
   'is-real-estate-a-good-career-daytona-beach-shores':       { spec: 'content/is-real-estate-a-good-career-daytona-beach-shores.json' },
@@ -380,6 +388,7 @@ const EVERGREEN_SLUG_OVERRIDE = {
   'What Does E&O Insurance Cost for Florida Real Estate Agents?': 'what-does-eo-insurance-cost-for-florida-real-estate-agents',
   'The Real First-Year Cost of Becoming a Real Estate Agent': 'real-first-year-cost-of-becoming-a-real-estate-agent',
   'A Day in the Life of a Florida Real Estate Agent': 'day-in-the-life-of-a-florida-real-estate-agent',
+  'How to Network for Real Estate Leads Beyond Your Sphere': 'how-to-network-for-real-estate-leads',
 };
 
 const trackOf = (pillarId) => (PILLARS.find((p) => p.id === pillarId) || {}).track;
