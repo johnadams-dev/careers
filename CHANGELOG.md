@@ -6,6 +6,18 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ## 2026-07-10 (cont.)
 
+### Coverage fix: all 10 remaining Volusia County cities added (90 new pages, 141 -> 231)
+
+- Matt flagged directly that the site wasn't covering all the cities in Volusia County. He was right: Volusia County has 16 incorporated municipalities, and the site only had 6 built out (Daytona Beach, Ormond Beach, Port Orange, New Smyrna Beach, DeLand, Deltona) plus the county-wide rollup page. The earlier "geo grid is fully saturated" check only verified the 10 markets already in the manifest had every template built; it never checked whether the market list itself covered the actual county.
+- Added the missing 10: Daytona Beach Shores, DeBary, Edgewater, Holly Hill, Lake Helen, Oak Hill, Orange City, South Daytona, Pierson, Ponce Inlet. Each got the full 9-page template set every other market has: become-an-agent guide, Florida license guide, is-it-a-good-career article, income calculator, and the 5 brokerage-comparison pages (join / new-agents / experienced / work-for / top-companies).
+- Built via 10 parallel agents (one per city), each localizing off the closest-matching existing market rather than starting from scratch: Edgewater and Ponce Inlet off New Smyrna Beach, Lake Helen/Orange City/Pierson off DeLand, Holly Hill/South Daytona off Port Orange, Oak Hill off Flagler Beach (with an explicit county correction, since Oak Hill is Volusia not Flagler), Daytona Beach Shores/DeBary off Deltona.
+- Comparison-page tables (Adams Cameron vs. national franchise vs. discount/100% model) reuse the same honest, model-level structure used everywhere on the site, not city-specific fabrication. Every income calculator uses the real, sourced Volusia County median ($343,000), never an invented per-city number.
+- Smaller towns are framed honestly rather than inflated: Pierson (~1,600, "Fern Capital of the World," genuinely rural) and Oak Hill (~2,100, southernmost Volusia city) explicitly describe themselves as small, low-volume markets an agent would work alongside neighboring cities, not as standalone busy markets they aren't.
+- Independently verified after the agents finished, not just trusting their self-reports: all 90 JSON files valid and key-set-identical to their exemplar templates, 0 em dashes, 0 curly Unicode quotes, 0 competitor names, 0 broken internal links, every page correctly linked from its track hub. Caught and fixed one real bug in verification: the Oak Hill experienced-agents comparison page was missing its `slug` field entirely, which made it silently render to a stray `undefined.html` instead of its real URL, invisible unless you checked for orphan output files.
+- Built twice (known lag: new pages don't show in the hub's live-link list until a second pass). Pushed direct to main. Sitemap 150 -> 231 URLs.
+
+## 2026-07-10 (cont.)
+
 ### Batch 11: +5 evergreen articles for the experienced & referral tracks (136 -> 141 pages)
 
 - Matt reinforced the demand-first strategy ("it's all about building for the queries we know we want to rank for") and to keep going without waiting on the citation re-measure. Batches 9 and 10 both mined the aspiring track exclusively, so this pass deliberately targeted the experienced and referral tracks, which hadn't had a fresh demand-mining pass since the original manifest.
