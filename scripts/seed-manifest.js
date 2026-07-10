@@ -106,6 +106,11 @@ const EVERGREEN = [
   { pillar: 'license',    format: 'guide',      title: 'How to Renew Your Florida Real Estate License',              query: 'How do I renew my Florida real estate license?', beat: 'MLS Campus, McKissock' },
   { pillar: 'choose-new', format: 'article',    title: 'How to Build Your Sphere of Influence as a New Real Estate Agent', query: 'How do I build a sphere of influence as a new real estate agent?', beat: 'The Close, HousingWire' },
   { pillar: 'decide',     format: 'article',    title: 'How Long It Takes to Close Your First Real Estate Deal',     query: 'How long does it take a new real estate agent to close their first deal?', beat: 'AceableAgent, The Realty School' },
+  { pillar: 'grow',       format: 'article',    title: 'How to Recruit Agents to Grow Your Real Estate Team',        query: 'How do I recruit agents to grow my real estate team?', beat: 'HousingWire, The Close' },
+  { pillar: 'grow',       format: 'comparison', title: 'Real Estate Team Lead vs. Solo Agent Income',                query: 'Do real estate agents make more money on a team or working solo?', beat: 'Colibri Real Estate, Allied Schools' },
+  { pillar: 'referral',   format: 'article',    title: 'What Is a Typical Real Estate Referral Fee?',                query: 'What is a typical real estate referral fee?', beat: 'HousingWire, Placester' },
+  { pillar: 'switch-exp', format: 'article',    title: 'How to Negotiate a Better Commission Split When Switching Brokerages', query: 'How do I negotiate a better commission split when switching brokerages?', beat: 'The Close, Allied Schools' },
+  { pillar: 'grow',       format: 'guide',      title: 'Real Estate Agent Designations Worth Getting',               query: 'Which real estate designations are worth getting, GRI, CRS, or ABR?', beat: 'AceableAgent' },
 ];
 
 // interactive tools (the Otto "tool" format — high citation value)
@@ -253,6 +258,11 @@ const BUILT = {
   'how-to-renew-your-florida-real-estate-license':             { spec: 'content/how-to-renew-your-florida-real-estate-license.json' },
   'how-to-build-your-sphere-of-influence-as-a-new-real-estate-agent': { spec: 'content/how-to-build-your-sphere-of-influence-as-a-new-real-estate-agent.json' },
   'how-long-it-takes-to-close-your-first-real-estate-deal':    { spec: 'content/how-long-it-takes-to-close-your-first-real-estate-deal.json' },
+  'how-to-recruit-agents-to-grow-your-real-estate-team':       { spec: 'content/how-to-recruit-agents-to-grow-your-real-estate-team.json' },
+  'real-estate-team-lead-vs-solo-agent-income':                { spec: 'content/real-estate-team-lead-vs-solo-agent-income.json' },
+  'what-is-a-typical-real-estate-referral-fee':                { spec: 'content/what-is-a-typical-real-estate-referral-fee.json' },
+  'how-to-negotiate-a-better-commission-split-when-switching-brokerages': { spec: 'content/how-to-negotiate-a-better-commission-split-when-switching-brokerages.json' },
+  'real-estate-agent-designations-worth-getting':              { spec: 'content/real-estate-agent-designations-worth-getting.json' },
 };
 const EVERGREEN_SLUG_OVERRIDE = {
   'State of Real Estate Careers in Volusia & Flagler County': 'state-of-real-estate-careers-volusia-flagler',

@@ -1,0 +1,47 @@
+{
+  "type": "article",
+  "format": "comparison",
+  "track": "experienced",
+  "pillar": "grow",
+  "slug": "real-estate-team-lead-vs-solo-agent-income",
+  "crumb": "Team vs. Solo Income",
+  "title": "Real Estate Team Lead vs. Solo Agent: Which Actually Earns More? | Adams Cameron",
+  "metaDesc": "Team agents often out-earn solo agents early on. Solo agents can pull ahead later. Here's honestly how the income math actually plays out.",
+  "eyebrow": "Teams &amp; Advancement &middot; The Honest Math",
+  "h1": "Team Lead vs. Solo Agent: Which Actually Earns More?",
+  "heroImg": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1500&q=80&fit=crop",
+  "about": "Comparing income outcomes for agents on a team versus working solo",
+  "updated": "2026-07-10",
+  "updatedLabel": "July 2026",
+  "hub": { "slug": "best-brokerage-for-experienced-agents-volusia-flagler", "name": "For Experienced Agents" },
+  "answer": "Early in a career, agents on a team typically out-earn solo agents, since better lead flow and shared systems tend to produce more closed transactions even at a smaller per-deal split. A team agent closing 15 deals at a smaller net per deal can out-earn a solo agent closing 5 deals at a bigger one. Later in a career, an established solo agent with their own lead generation, database, and reputation can often out-earn a team structure, since they keep a larger share of every transaction. Which path wins depends heavily on where you are in your career, not which model is objectively better.",
+  "takeaways": [
+    "Team agents commonly out-earn solo agents in their first one to two years, largely due to transaction volume from shared leads and systems.",
+    "Solo agents typically keep a higher percentage per deal, but need their own client pipeline to make that math work.",
+    "An experienced, established solo agent with real lead generation can out-earn a team structure over time.",
+    "The team-first, solo-later path, spending a year or two on a team before going independent, is a common and reasonable strategy, not a compromise.",
+    "The right choice depends on where you are: a brand-new agent without a network benefits differently from a team than an agent who already has one."
+  ],
+  "tldr": "There's no single answer to whether a team or solo path earns more, because the honest answer changes depending on where you are in your career. Here's how the actual math tends to play out at each stage, and why a lot of successful agents do both, in that order.",
+  "body": "<p>This question comes up constantly, and most of the content answering it picks a side. The honest answer is that it depends heavily on your stage of career, and the math looks genuinely different for a brand-new agent than it does for someone five years in.</p>\n\n  <h2>Early career: teams tend to win on total income</h2>\n  <p>A new agent without an established network is starting client acquisition from close to zero. A team offers built-in lead flow, shared systems, and often direct mentorship, which tends to translate into more closed transactions, even though each individual deal nets a smaller share after the team's split. The volume difference is usually large enough to offset the smaller per-deal cut: a team agent closing 15 deals at a smaller net each can out-earn a solo agent closing 5 deals at a bigger net each, simply on total dollars.</p>\n\n  <h2>The trade-off: what you're giving up for that volume</h2>\n  <p>A smaller per-deal split isn't free. You're trading some income per transaction for a lead source and a system you didn't have to build yourself. For a genuinely new agent, that trade is usually worth it, since the alternative to a smaller slice of team-generated business is often not having enough business to build a slice of anything at all.</p>\n\n  <h2>Later career: solo can pull ahead</h2>\n  <p>Once an agent has built their own database, referral pipeline, and reputation, the calculation shifts. An established solo agent keeps a much larger share of every transaction and no longer depends on someone else's lead system to generate business. At that point, the team structure that was valuable early on can start to look like it's taking a cut for infrastructure the agent no longer needs.</p>\n\n  <h2>Why a lot of successful agents do both, in order</h2>\n  <p>A common and genuinely sound strategy is spending the first year or two of a career on a team, building volume, learning the business, and developing a real client base with the team's support, then transitioning to independent, solo production once that foundation exists. Going straight to solo without an existing network can mean a long, slow ramp with no support structure. Staying on a team indefinitely after you no longer need the lead flow can mean leaving real money on the table. The agents who navigate this well treat it as a sequence, not a permanent choice made once at the start of a career.</p>\n\n  <h2>What actually determines the right call for you</h2>\n  <p>Do you already have a real network you can activate, the kind covered on our <a href=\"how-to-build-your-sphere-of-influence-as-a-new-real-estate-agent.html\">sphere of influence page</a>, or are you starting from close to zero? Do you value the higher per-deal income of solo work enough to build that pipeline yourself, or would you rather trade some income for structure and support while you're new? Neither answer is wrong. What's wrong is assuming one path is universally better without being honest about where you actually stand.</p>",
+  "compare": {
+    "columns": ["New agent, no existing network", "Established agent, own pipeline"],
+    "highlight": 0,
+    "rows": [
+      { "label": "Likely stronger path", "values": ["Team", "Solo, or team leadership"] },
+      { "label": "Why", "values": ["Built-in leads and systems offset a smaller split", "Own pipeline means a bigger split matters more"] },
+      { "label": "Main trade-off", "values": ["Smaller per-deal income for higher volume", "Full split, but you fund your own lead generation"] },
+      { "label": "Common strategy", "values": ["Build volume and skills on a team first", "Transition to solo once the pipeline is real"] }
+    ],
+    "note": "General patterns, not a guarantee. Individual results depend on the specific team, brokerage, and market."
+  },
+  "faq": [
+    { "q": "Do real estate agents on teams make more money than solo agents?", "a": "Often, early in a career. Better lead flow and shared systems tend to produce more closed transactions, which can offset a smaller per-deal split. This tends to shift as an agent builds their own network and pipeline." },
+    { "q": "When does going solo start to pay off more than being on a team?", "a": "Once an agent has their own database, referral pipeline, and reputation strong enough to generate consistent business without relying on a team's shared lead system." },
+    { "q": "Is it common to start on a team and go solo later?", "a": "Yes. Spending a year or two on a team to build volume and learn the business, then transitioning to independent production, is a common and reasonable strategy." },
+    { "q": "What's the main trade-off of joining a team versus working solo?", "a": "Teams typically offer a smaller share per deal in exchange for lead flow, systems, and support. Solo agents keep a larger share but need their own pipeline to generate business." },
+    { "q": "Is there one right answer for every agent?", "a": "No. The right path depends on whether you already have a real network and pipeline, or you're starting close to zero. Both team and solo paths are legitimate depending on where you are." }
+  ],
+  "ctaHeading": "Wherever You Are in That Path, Talk It Through",
+  "ctaSub": "Whether you're building your first pipeline or ready to lead your own team, Adams, Cameron &amp; Co. supports both. Talk to a non-competing manager about what fits your stage."
+}
