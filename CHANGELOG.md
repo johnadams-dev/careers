@@ -6,6 +6,16 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ## 2026-07-10 (cont.)
 
+### Closed pre-existing debt + batch 12 (4 new articles): 240 -> 244
+
+- Matt said to build on today's fixes. Two pieces of work: (1) closed out debt flagged earlier today but not fixed at the time, and (2) continued the content pipeline with 4 more validated topics, applying every lesson from today's corrections up front this time.
+- **Debt closed:** the "best real estate company to work for" comparison template had 9 of the original 10 markets sharing one byte-identical table, a problem that predated today's session entirely. Rewrote all 10 with genuinely distinct, city-grounded content. Verified programmatically across all 21 markets on the site: every comparison table, across all 5 templates, is now unique. No duplicate comparison content remains anywhere on the site.
+- **Batch 12:** why most agents actually quit (honest ~80%-two-year-turnover breakdown, not a scare piece), a practical one-page business-plan guide (working backward from an income goal to a monthly lead target, with a full worked example), new construction vs. resale as genuinely different specialties (who you actually represent, different contracts), and networking beyond your personal sphere (chamber of commerce, community boards, industry-adjacent events).
+- Applied the corrected process from the start this time: drafted, immediately checked word count against the established 768-1063-word precedent, found all 4 short exactly like the earlier batch, and expanded before registering anything rather than after. Caught and genericized one competitor-adjacent brand reference during the same pass.
+- Verified: 0 em dashes, 0 curly quotes, 0 competitor names, no broken links, hub-linked correctly, no stray output files, final range 860-931 words. Built twice. Sitemap 240 -> 244 URLs.
+
+## 2026-07-10 (cont.)
+
 ### Bunnell added, the Flagler County seat (9 new pages, 231 -> 240)
 
 - Same coverage gap as the Volusia towns, this time in Flagler County. Bunnell (pop. ~3,200, incorporated 1913) is the county seat and had no page at all, despite Palm Coast and Flagler Beach already being covered. Flagler's remaining two towns, Beverly Beach (~500) and Marineland (~15), are too small to justify a page and weren't built.
