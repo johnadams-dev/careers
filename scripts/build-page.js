@@ -423,7 +423,7 @@ function renderHub(spec) {
 
 <section class="lst-lead" id="tour"><div class="lst-wrap">
   <p class="lst-kicker">${esc(spec.tourKicker || 'The showing · four stops')}</p>
-  <h2>${esc(spec.tourTitle || 'From “thinking about it” to your first SOLD sign.')}</h2>
+  <h2>${esc(spec.tourTitle || 'From &ldquo;thinking about it&rdquo; to your first SOLD sign.')}</h2>
   <p>${spec.tourLede || ''}</p>
 </div></section>
 
@@ -432,7 +432,7 @@ ${stops}
 </div></div>
 ${spec.pullQuote ? `
 <section class="lst-quote"><div class="lst-narrow">
-  <p class="lst-kicker">${esc(spec.pullQuoteKicker || 'The culture you’re joining')}</p>
+  <p class="lst-kicker">${esc(spec.pullQuoteKicker || 'The culture you&rsquo;re joining')}</p>
   <blockquote>${esc(spec.pullQuote)}</blockquote>
   ${spec.pullQuoteCite ? `<cite>${esc(spec.pullQuoteCite)}</cite>` : ''}
 </div></section>` : ''}
