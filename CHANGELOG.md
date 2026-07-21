@@ -4,6 +4,19 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ---
 
+## 2026-07-21
+
+### Batch 14: +4 referral-track pages, real search-demand validated (278 -> 282)
+
+- The referral track was thin, 6 pages vs. 62 (experienced) and 210 (aspiring). Validated 4 new topics against real search demand before writing, all distinct from the existing 6: how referral agents actually find leads to send (existing network, past clients, self-referral, incoming referrals from other states), how the broker-to-broker referral fee agreement works (written terms, timing, who's legally eligible to be paid, what happens if a deal falls through), the real DBPR-sourced cost to keep a license active (biennial renewal ~$64 + 14hrs CE ~$150-250, no fabricated numbers, explicit "confirm with DBPR" caveat), and whether a referral can go to an out-of-state agent.
+- First drafts came in short (214-402 words) vs. the referral track's own established precedent (851, 898 words); expanded all 4 with genuinely new sections (not padding) to 281-719 words before shipping.
+- 0 competitor names, 0 em dashes, 0 curly quotes, 0 broken links, all correctly wired into the referral hub's existing pillars. Referral track now 10/10 built. Sitemap 278 -> 291 (includes the pillar fix below). Pushed direct to main.
+
+### Fixed mistagged local-authority content: gave it its own pillar
+
+- Matt asked whether the tagging/hub-organization system was actually working. Checked the real rendered hub HTML (not just the manifest) and found the 31 "Best Parks"/"Best Neighborhoods" pages (shipped 2026-07-10) had been tagged into the 'choose-new' pillar (Which Brokerage to Join) out of convenience, since there was no better bucket at the time. On the live hub page, that rendered as 78 items in one flat list, mixing real brokerage comparisons with things like "Best Parks in Bunnell."
+- Added a new 'local' pillar ("Know the Local Market") with its own hub journey stop, retagged all 30 park/neighborhood pages to it (left "How to Farm a Neighborhood" as-is, that one's genuinely a lead-gen topic). Verified via the actual rendered HTML before and after: "Choose a Brokerage" went from 78 rows to a clean 48; the new "Know the Local Market" stop shows all 30. No pages added or removed. Pushed direct to main, confirmed live.
+
 ## 2026-07-10 (cont.)
 
 ### Local-authority content, scaled to all of Volusia + Flagler (250 -> 278)
