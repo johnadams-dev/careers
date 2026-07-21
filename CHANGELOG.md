@@ -4,6 +4,20 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ---
 
+## 2026-07-21 (cont. x2)
+
+### Batch 16: +50 pages, real search-demand validated (325 -> 375)
+
+- Matt asked for 50 more. 50 more genuinely new, non-duplicate topics, validated before writing (not padded to hit the number):
+- Aspiring/decide (11): a demographic-transition mini-series backed by real, well-documented search patterns (teachers, nurses/healthcare workers, veterans, stay-at-home parents all commonly search this exact transition, confirmed via multiple existing real-estate-education sites already writing about it), plus honest career-fit pieces (health insurance, going full-time, cold-calling-averse, bad credit, best age, just relocated to Florida).
+- Aspiring/license (9): real DBPR facts not yet covered: broader disqualification factors beyond felony, licensing timeline, the fingerprinting process, fully-online path, the 63hr-vs-45hr course confusion, pre-activation restrictions, exam difficulty, MLS/board membership, minimum age (18).
+- Aspiring/choose-new + compare (7): big vs. boutique brokerage, new-agent split negotiation, lead-gen support, graduated splits, onboarding timelines, franchise vs. independent, marketing support.
+- Experienced/switch-exp (4), economics (5, incl. the real Florida rule on LLC/PA entities for agents), scale (6, incl. the real FAA Part 107 drone-license rule), grow (5).
+- Referral (3): running the business from outside Florida, referral payout mechanics, E&O for referral-only agents.
+- Three of the 50 agents misfired: two wrote the wrong (already-existing) topic instead of their assigned one, one skipped its topic entirely. Caught all three in the completeness check (verified every expected file exists and its internal slug field matches), no data lost, re-ran individually.
+- Applied the lesson from batch 15 proactively this time: ran the metaDesc-length check BEFORE shipping instead of after, caught 13 over 165 chars, trimmed all 13 before the commit.
+- Full site-wide verification: 0 broken links, 0 competitor names, 0 em dashes/curly quotes across all 384 rendered pages, 0 exact-duplicate bodies, all 50 correctly wired into their hub's pillar (row counts confirmed: aspiring hub 257 spokes, experienced 100, referral 15, all matching their track totals). Sitemap 334 -> 384. Pushed direct to main, confirmed live.
+
 ## 2026-07-21 (cont.)
 
 ### Batch 15: +43 pages, real search-demand validated (282 -> 325)

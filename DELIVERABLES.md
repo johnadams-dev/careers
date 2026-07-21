@@ -57,7 +57,16 @@ Each page targets a real question a prospect asks before choosing a brokerage, m
   - For a producing agent's real finances: an honest look at real take-home pay after fees, budgeting around commission-only income, and continuing-education tax questions.
   - For an agent scaling their business: using AI tools well, what a dedicated support manager actually does day to day, choosing a simple client-tracking system, and running social media and marketing without it taking over your time.
   - For an agent building a team: the real Florida licensing answer on what's required to start one, how much business you need first, how profit-sharing works, and how to split commission fairly with teammates.
-- **325 pages built and live.**
+
+## A second major expansion
+- **50 more new pages**, again built around real, verified questions:
+  - A series on second careers in real estate for specific backgrounds where this transition is a well-documented, common path: teachers, nurses and healthcare workers, military veterans, and stay-at-home parents, each with an honest, tailored answer rather than a one-size-fits-all page.
+  - More honest career-fit answers: health insurance as a self-employed agent, knowing when you're ready to go full-time, whether the career works if you dislike cold-calling, credit history, age, and starting fresh after just moving to Florida.
+  - More real Florida licensing facts: what actually disqualifies an applicant (broader than just felonies), a realistic start-to-finish timeline, what the fingerprinting and background check process involves, whether it can be done fully online, and clearing up the common confusion between the two required licensing courses.
+  - More brokerage-choice guidance: big brokerage versus boutique, negotiating as a brand-new agent, what lead support to expect, a fair onboarding timeline, and national franchise versus independent brokerage.
+  - For experienced and producing agents: the real Florida rule on forming an LLC or PA, retirement savings options as a self-employed agent, quarterly estimated taxes, the real FAA drone-license rule for listing photos, professional photography, staging, and open houses.
+  - For team builders: buying an existing team, moving from solo agent to team manager, honest reasons teams fail, and vacation coverage.
+- **375 pages built and live.**
 
 ## Editorial quality
 - **A full copy-quality pass** removed automated-writing tells across the entire site, so every page reads as professionally written by a person, not by a machine. This covers both the new pages and the original site pages.
