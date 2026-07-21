@@ -121,6 +121,10 @@ const EVERGREEN = [
   { pillar: 'grow',       format: 'article',    title: 'How to Recruit Agents to Grow Your Real Estate Team',        query: 'How do I recruit agents to grow my real estate team?', beat: 'HousingWire, The Close' },
   { pillar: 'grow',       format: 'comparison', title: 'Real Estate Team Lead vs. Solo Agent Income',                query: 'Do real estate agents make more money on a team or working solo?', beat: 'Colibri Real Estate, Allied Schools' },
   { pillar: 'referral',   format: 'article',    title: 'What Is a Typical Real Estate Referral Fee?',                query: 'What is a typical real estate referral fee?', beat: 'HousingWire, Placester' },
+  { pillar: 'referral',   format: 'guide',      title: 'How to Find Referral Leads as a Real Estate Agent',         query: 'How do I find referral leads as a real estate referral agent?', beat: 'General Referral, Follow Up Boss' },
+  { pillar: 'referral',   format: 'guide',      title: 'How Does a Real Estate Referral Fee Agreement Work in Florida?', query: 'How does a real estate referral fee agreement work?', beat: 'PA Realtors, Peyton Bolin' },
+  { pillar: 'park',       format: 'article',    title: 'The Real Cost to Keep a Florida Real Estate License Active', query: 'How much does it cost to keep a Florida real estate license active?', beat: 'MLS Campus, PassFloridaRealEstate' },
+  { pillar: 'referral',   format: 'faq',        title: 'Can You Refer a Client to an Out-of-State Real Estate Agent?', query: 'Can I refer a client to an out-of-state real estate agent?', beat: 'CrossView Referral Realty' },
   { pillar: 'switch-exp', format: 'article',    title: 'How to Negotiate a Better Commission Split When Switching Brokerages', query: 'How do I negotiate a better commission split when switching brokerages?', beat: 'The Close, Allied Schools' },
   { pillar: 'grow',       format: 'guide',      title: 'Real Estate Agent Designations Worth Getting',               query: 'Which real estate designations are worth getting, GRI, CRS, or ABR?', beat: 'AceableAgent' },
   { pillar: 'decide',     format: 'article',    title: 'Why Do Most Real Estate Agents Quit?',                       query: 'Why do most real estate agents quit or fail?', beat: 'The Close, Landvoice' },
@@ -311,6 +315,10 @@ const BUILT = {
   'how-to-recruit-agents-to-grow-your-real-estate-team':       { spec: 'content/how-to-recruit-agents-to-grow-your-real-estate-team.json' },
   'real-estate-team-lead-vs-solo-agent-income':                { spec: 'content/real-estate-team-lead-vs-solo-agent-income.json' },
   'what-is-a-typical-real-estate-referral-fee':                { spec: 'content/what-is-a-typical-real-estate-referral-fee.json' },
+  'how-to-find-referral-leads-as-a-real-estate-agent':         { spec: 'content/how-to-find-referral-leads-as-a-real-estate-agent.json' },
+  'how-does-a-real-estate-referral-fee-agreement-work-in-florida': { spec: 'content/how-does-a-real-estate-referral-fee-agreement-work-in-florida.json' },
+  'cost-to-keep-a-florida-real-estate-license-active':         { spec: 'content/cost-to-keep-a-florida-real-estate-license-active.json' },
+  'can-you-refer-a-client-to-an-out-of-state-real-estate-agent': { spec: 'content/can-you-refer-a-client-to-an-out-of-state-real-estate-agent.json' },
   'how-to-negotiate-a-better-commission-split-when-switching-brokerages': { spec: 'content/how-to-negotiate-a-better-commission-split-when-switching-brokerages.json' },
   'real-estate-agent-designations-worth-getting':              { spec: 'content/real-estate-agent-designations-worth-getting.json' },
   'why-do-most-real-estate-agents-quit':                       { spec: 'content/why-do-most-real-estate-agents-quit.json' },
@@ -489,6 +497,7 @@ const EVERGREEN_SLUG_OVERRIDE = {
   "Best Parks in Ponce Inlet, FL": "best-parks-ponce-inlet",
   "Best Parks in Port Orange, FL": "best-parks-port-orange",
   "Best Parks in South Daytona, FL": "best-parks-south-daytona",
+  'The Real Cost to Keep a Florida Real Estate License Active': 'cost-to-keep-a-florida-real-estate-license-active',
 };
 
 const trackOf = (pillarId) => (PILLARS.find((p) => p.id === pillarId) || {}).track;
