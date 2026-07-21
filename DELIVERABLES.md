@@ -7,6 +7,7 @@ A running summary of work shipped on the Adams, Cameron & Co. careers site, writ
 ## Site foundation
 - **New "The Listing" homepage and hub design** went live, replacing the earlier generic layout. The career is presented like a featured property listing, matched to what Adams, Cameron & Co. does.
 - **A scalable publishing engine** powers the site, so new pages can be added quickly and consistently from a single source of truth, with sitemap, AI-crawler files, and internal links generated automatically.
+- **Hub navigation reorganized** so the biggest, most-searched markets surface first and general topic questions are grouped separately from city-specific ones, instead of everything sitting in whatever order it happened to be published.
 
 ## Search and AI visibility
 - **Submitted to Google and Bing** for indexing. Bing also feeds AI assistants like ChatGPT and Copilot, which is central to getting the site cited in AI answers.

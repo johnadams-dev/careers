@@ -4,6 +4,18 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ---
 
+## 2026-07-21 (cont. x3)
+
+### Hub reorganization: sort by market priority, split geo from topical
+
+- Matt asked how the hub/discoverability actually looked. Real audit: technically zero orphans (every page reachable in one click, auto related-guides on every page) but the 3 track hubs render every pillar as one flat numbered list in raw build order — up to 78 links deep, city pages and unrelated topic FAQs interleaved with no logic to the order.
+- Fixed the two cheapest, template-level wins (no content rewrite, no new pages): (1) geo rows within each pillar now sort by real market priority (markets[] array order — Daytona Beach first down to Bunnell) instead of whatever order they were built in; (2) topical/evergreen questions split out under a "By topic" divider (reuses the existing `.lst-more` row style, no new CSS) instead of being shuffled in among city links.
+- Scoped to scripts/build-page.js's hubClusters()/renderHub() — only the 3 hub pages changed (261/104/19 links respectively, same total counts, just reordered/grouped). All 372 spoke pages untouched.
+- Verified: link counts identical before/after, 0 em dashes introduced, real headless-Chrome render checked at mobile width, pushed direct to main.
+- Not done (bigger template change, hold for now): capping each stop back to a short curated list with a real sub-index for the rest. Flagged to Matt as the next move if John ever asks why the hub doesn't convert.
+
+---
+
 ## 2026-07-21 (cont. x2)
 
 ### Batch 16: +50 pages, real search-demand validated (325 -> 375)

@@ -342,17 +342,39 @@ function aeoTop(spec) {
   return out.join('\n  ');
 }
 
+// Market rank: markets[] is authored biggest/highest-priority first, so its
+// array index doubles as a sort key. A page counts as "geo" if its .place
+// field names a market, or (parks/neighborhoods specs) its title does.
+const MARKET_RANK = new Map((MANIFEST.markets || []).map((mk, i) => [mk.place.toLowerCase(), i]));
+function marketRankFor(pg) {
+  if (pg.place && MARKET_RANK.has(pg.place.toLowerCase())) return MARKET_RANK.get(pg.place.toLowerCase());
+  const title = (pg.title || '').toLowerCase();
+  let best = -1;
+  for (const [place, rank] of MARKET_RANK) {
+    if (title.includes(place) && (best === -1 || rank < best)) best = rank;
+  }
+  return best; // -1 = not a geo page
+}
+
 // Hub clusters: use hand-listed spec.clusters, else auto-build from the registry
 // (this track's pillars × their pages) so a hub always reflects the manifest.
+// Within a pillar, geo pages sort by real market size/priority (not the order
+// they happened to be written in) and sit ahead of undifferentiated topical
+// FAQs, which sort alphabetically — so "Daytona Beach" isn't shuffled in
+// randomly next to "Bunnell", and a topic question isn't buried mid-roster.
 function hubClusters(spec) {
   if (spec.clusters) return spec.clusters;
   if (!spec.track) return [];
-  return MANIFEST.pillars.filter((pl) => pl.track === spec.track).map((pl) => ({
-    name: pl.title,
-    spokes: MANIFEST.pages
-      .filter((pg) => pg.track === spec.track && pg.pillar === pl.id && pg.type !== 'hub')
-      .map((pg) => ({ slug: pg.slug, title: pg.title })),
-  }));
+  return MANIFEST.pillars.filter((pl) => pl.track === spec.track).map((pl) => {
+    const pages = MANIFEST.pages.filter((pg) => pg.track === spec.track && pg.pillar === pl.id && pg.type !== 'hub');
+    const geo = pages.filter((pg) => marketRankFor(pg) !== -1).sort((a, b) => marketRankFor(a) - marketRankFor(b));
+    const topic = pages.filter((pg) => marketRankFor(pg) === -1).sort((a, b) => a.title.localeCompare(b.title));
+    const spokes = [
+      ...geo.map((pg) => ({ slug: pg.slug, title: pg.title, group: 'geo' })),
+      ...topic.map((pg) => ({ slug: pg.slug, title: pg.title, group: 'topic' })),
+    ];
+    return { name: pl.title, spokes };
+  });
 }
 
 // ── HUB ─────────────────────────────────────────────────────────────────────
@@ -369,11 +391,21 @@ function renderHub(spec) {
     // quiet "+N more publishing soon" line so the page never looks unfinished.
     const liveSpokes = cl.spokes.filter((sp) => slugExists(sp.slug));
     const comingCount = cl.spokes.length - liveSpokes.length;
-    let rows = liveSpokes.map((sp, i) => {
+    const geoLive = liveSpokes.filter((sp) => sp.group === 'geo');
+    const topicLive = liveSpokes.filter((sp) => sp.group === 'topic');
+    const renderGroup = (spokes) => spokes.map((sp, i) => {
       itemList.itemListElement.push({ '@type': 'ListItem', position: ++pos, url: `${SITE}/${sp.slug}`, name: sp.title });
       const num = String(i + 1).padStart(2, '0');
       return `<li class="lst-row"><a href="${sp.slug}.html"><span class="lst-row-no">${num}</span><span class="lst-row-t">${esc(sp.title)}</span><span class="lst-row-arr">&rarr;</span></a></li>`;
     }).join('\n      ');
+    let rows;
+    if (geoLive.length && topicLive.length) {
+      rows = renderGroup(geoLive)
+        + `\n      <li class="lst-row"><div class="lst-more">By topic</div></li>\n      `
+        + renderGroup(topicLive);
+    } else {
+      rows = renderGroup(geoLive.length ? geoLive : topicLive);
+    }
     if (comingCount) {
       const label = liveSpokes.length ? `${comingCount} more guide${comingCount > 1 ? 's' : ''} in this stop &middot; publishing soon`
         : `${comingCount} guide${comingCount > 1 ? 's' : ''} publishing soon`;
