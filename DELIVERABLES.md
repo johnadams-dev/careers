@@ -47,7 +47,17 @@ Each page targets a real question a prospect asks before choosing a brokerage, m
 
 ## Referral program content
 - **Four new pages** for licensed agents keeping their license active without actively selling: how to actually find people to refer, how the referral-fee paperwork works (in plain terms), a transparent look at the real cost of keeping a license active, and confirmation that referrals can go to agents in other states, not just Florida.
-- **282 pages built and live.**
+
+## A major expansion of the content library
+- **43 new pages**, all built around real questions people actually search for before, during, and after becoming or growing as an agent, not generic filler:
+  - For someone deciding if this career is right for them: honest answers on burnout, whether it suits an introverted personality, starting with no sales background, starting later in life or after retirement, and how competitive the field really is.
+  - For someone getting licensed: what the state's post-licensing coursework actually involves, what happens if the state exam isn't passed the first time, whether a college degree is required, and how to choose a licensing school.
+  - For someone choosing where to start: joining a team versus a traditional brokerage, what "brokerage culture" really means and how to judge it, and how to read online reviews of a brokerage with a clear head.
+  - For an experienced agent: whether a non-compete really holds up when switching brokerages, how much of your client relationships actually come with you, honest signs it's time to move on, and what else is worth negotiating besides the commission split.
+  - For a producing agent's real finances: an honest look at real take-home pay after fees, budgeting around commission-only income, and continuing-education tax questions.
+  - For an agent scaling their business: using AI tools well, what a dedicated support manager actually does day to day, choosing a simple client-tracking system, and running social media and marketing without it taking over your time.
+  - For an agent building a team: the real Florida licensing answer on what's required to start one, how much business you need first, how profit-sharing works, and how to split commission fairly with teammates.
+- **325 pages built and live.**
 
 ## Editorial quality
 - **A full copy-quality pass** removed automated-writing tells across the entire site, so every page reads as professionally written by a person, not by a machine. This covers both the new pages and the original site pages.

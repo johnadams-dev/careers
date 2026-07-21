@@ -4,6 +4,23 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ---
 
+## 2026-07-21 (cont.)
+
+### Batch 15: +43 pages, real search-demand validated (282 -> 325)
+
+- Matt asked to get to 325 pages. The geo grid (9 query templates x 21 markets) was already fully saturated (189/189, confirmed programmatically), so all 43 came from genuinely new, non-duplicate evergreen topics across all three tracks, validated against real search demand (Florida DBPR facts, common industry questions), not invented top-down.
+- Aspiring/decide (9): honest career-decision pieces, burnout, introverts, no sales experience required, higher mortgage rates, retirement, emotional difficulty, competitiveness, multi-year path to being established.
+- Aspiring/license (6): the 45-hour post-licensing course (distinct from the later 14hr CE renewal requirement), what happens if you fail the exam, no degree required, what to do right after passing, choosing a pre-license school, what's actually on the exam.
+- Aspiring/choose-new + compare (6): team vs. traditional brokerage, brokerage culture, buyer's vs. listing agent, in-person vs. virtual brokerage, reading online brokerage reviews.
+- Experienced/switch-exp (4): whether Florida non-compete clauses actually hold up when switching (real 6mo/2yr reasonableness rule, legal-review caveat), book-of-business portability, signs it's time to leave, what to negotiate beyond commission split.
+- Experienced/economics (4): agent attrition in years 3-5, real take-home pay after fees, budgeting irregular commission income, CE tax deductibility.
+- Experienced/scale (5): AI marketing tools, what a non-competing manager actually does day to day, CRM basics (no brand names), social media without wasting time, a solo marketing budget.
+- Experienced/grow (6): the real Florida DBPR answer on whether a broker license is required to start a team (no, not under an existing supervising broker; yes for your own brokerage), team revenue threshold, profit share, broker vs. team leader, building a referral network as a producing agent, splitting commission fairly on a team.
+- Referral (3): can a referral-only agent attend brokerage training, what happens if you don't renew, referral fee vs. commission split (a distinct conceptual FAQ).
+- Written via 43 parallel agents against a shared house-rules doc (exact schema, 750-950/350-450 word floors by format, zero em dash/curly quote/competitor names/fabricated stats). One agent misfired and never wrote its file (reported on an already-existing page instead); caught in the completeness check and re-run individually.
+- Full site-wide verification after integrating: 0 broken internal links, 0 competitor names, 0 em dashes or raw curly quotes across all 334 rendered pages, 0 exact-duplicate page bodies, and confirmed (after the known "new pages lag one build pass on the hub" quirk) that all 43 correctly appear under their track hub's right pillar, not dumped into the wrong section. Also closed two small pre-existing curly-quote spots found on the aspiring hub's own hand-authored copy (`tourTitle` and a hardcoded fallback string in `build-page.js`) while in there.
+- Sitemap 291 -> 334. Pushed direct to main, confirmed live.
+
 ## 2026-07-21
 
 ### Batch 14: +4 referral-track pages, real search-demand validated (278 -> 282)
