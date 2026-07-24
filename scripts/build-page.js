@@ -332,6 +332,28 @@ function relatedGuides(spec) {
 </div></section>`;
 }
 
+// Cross-link into the proven-winning county brokerage-comparison page (real
+// GSC data, 2026-07-24: 5-25x every other page's CTR) from the aspiring
+// track's city-level license/decide pillar pages, which don't naturally
+// surface it via relatedGuides()'s same-pillar pooling since they sit in a
+// different pillar entirely. 42 pages qualify (21 become-a-real-estate-agent-*
+// + 21 how-much-do-real-estate-agents-make-*).
+function winnerCrossLink(spec) {
+  const me = MANIFEST.pages.find((p) => p.slug === spec.slug);
+  if (!me || me.track !== 'aspiring' || !['license', 'decide'].includes(me.pillar) || !me.place) return '';
+  const market = (MANIFEST.markets || []).find((mk) => mk.place === me.place);
+  if (!market) return '';
+  const countySlug = market.county === 'Flagler' ? 'flagler-county' : 'volusia-county';
+  const winnerSlug = `best-real-estate-brokerage-to-join-${countySlug}`;
+  if (winnerSlug === spec.slug || !slugExists(winnerSlug)) return '';
+  const countyName = market.county === 'Flagler' ? 'Flagler County' : 'Volusia County';
+  return `
+<section class="lst-related"><div class="lst-narrow">
+  <p class="lst-kicker">Before you choose</p>
+  <p><a href="${winnerSlug}.html">See the full brokerage comparison for ${esc(countyName)} &rarr;</a></p>
+</div></section>`;
+}
+
 // on-page: liftable answer + key takeaways + freshness byline
 function aeoTop(spec) {
   const out = [`<p class="lst-updated">Updated ${esc(spec.updatedLabel || UPDATED_LABEL)} · Reviewed by Adams, Cameron &amp; Co.</p>`];
@@ -516,6 +538,7 @@ ${crumbHtml}
   ${spec.hub ? `<a class="lst-back" href="${spec.hub.slug}.html">&larr; Back to ${esc(spec.hub.name)}</a>` : ''}
 </article>
 
+${winnerCrossLink(spec)}
 ${relatedGuides(spec)}
 ${faqHtml(spec)}
 ${offerHtml(spec)}`;
@@ -567,6 +590,7 @@ ${crumbHtml}
   ${spec.hub ? `<a class="lst-back" href="${spec.hub.slug}.html">&larr; Back to ${esc(spec.hub.name)}</a>` : ''}
 </article>
 
+${winnerCrossLink(spec)}
 ${relatedGuides(spec)}
 ${faqHtml(spec)}
 ${offerHtml(spec)}`;
