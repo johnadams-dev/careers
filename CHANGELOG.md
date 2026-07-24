@@ -62,6 +62,14 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ---
 
+## 2026-07-24 (cont. x5) — Cross-linked the referral-track winners too (14 pages)
+
+- Matt said "Next." Continued the same compounding pattern from earlier this session: the 2 new referral-only brokerage comparison pages only had link weight from their own hub slot, same gap the aspiring-track winner had before the `winnerCrossLink()` fix.
+- Added `referralWinnerCrossLink()` in scripts/build-page.js. Different shape than the aspiring version: the 14 existing informational referral pages are FL-statewide, not bound to a specific city, so there's no single county to route to -- links to both Volusia and Flagler comparison pages instead of picking one.
+- Verified: exactly 14 pages carry the new link (matches the exact qualifying-page count), 0 leakage onto the winner pages themselves or unrelated tracks, 0 em dash/curly quote, confirmed live via poll.
+
+---
+
 ## 2026-07-21 (cont. x3)
 
 ### Hub reorganization: sort by market priority, split geo from topical
