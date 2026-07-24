@@ -95,6 +95,15 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ---
 
+## 2026-07-24 (cont. x8) — Authority-building pilot: expanded DeLand's town guide (765 -> 1460 words)
+
+- Matt pushed on authority-building and flagged "long guides to each town" as an obvious lever I'd missed. Checked the data: 18 of 21 per-town `become-a-real-estate-agent-*` guides sit at 703-1082 words -- thin for what should be each market's definitive resource. Different from the padding argued against earlier: these guides never got real depth, vs. already-complete narrow FAQ pages.
+- Piloted on DeLand before committing to all 18. Real, sourced research first (not invented): the "Athens of Florida" nickname's actual origin, Stetson University's real effect on local rental/starter-home demand, DeLand's 600+ Historic Register properties as a genuine agent skill differentiator, its role as county seat. Softened a contested population-growth stat rather than pick whichever number sounded better (two sources disagreed on methodology).
+- Verified: 0 em dash/curly quote, 0 competitor names, 0 new duplicate bodies across 381 pages, confirmed live.
+- **Holding here for a go-ahead before scaling to the other 17 towns** -- real research + writing effort per town, worth confirming the depth/quality bar landed before committing to the full batch.
+
+---
+
 ## 2026-07-21 (cont. x3)
 
 ### Hub reorganization: sort by market priority, split geo from topical
