@@ -40,6 +40,16 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ---
 
+## 2026-07-24 (cont. x3) — Re-architected hub link priority around the actual proven winner
+
+- Matt pushed hard on "what are the main things we want to come up for" as the real strategic question, not another tactical fix. Went back to the real GSC data and found the answer sitting in it already: `best-real-estate-brokerage-to-join-volusia-county` (20% CTR, position 4.0) and `best-brokerage-experienced-agents-volusia-county` (100% CTR, position 1.0) are, by a wide margin, the best-converting pages on the entire site -- 5-25x every other page found this session, including the previously-celebrated transfer-broker page (4% CTR). This held across both aspiring and experienced tracks, and specifically for "brokerage" phrasing, not "company to work for" (same pillar, same format, 0% CTR).
+- Root cause of why nobody noticed: county-level pages sat at MARKETS array rank 9/10 in scripts/seed-manifest.js, meaning every hub buried them below all 6-8 individual cities purely by population-order convention -- a structural priority mismatch, not a content problem.
+- Fix: added a narrow, evidence-scoped sort boost in `hubClusters()` (scripts/build-page.js) that promotes only the specific proven slug patterns (`best-real-estate-brokerage-to-join-*county`, `best-brokerage-experienced-agents-*county`) to the top of their pillar, ahead of city rank. Deliberately does not touch the weaker "company to work for" county variant sharing the same pillar.
+- This is a code-level, sitewide change (not a one-page edit) -- affects the aspiring hub and experienced hub link order. Referral hub confirmed unaffected (no matching slugs). Verified live.
+- **Not yet done, real next move:** extend this proven pattern with new content in the same shape (more "brokerage"-worded, decision-stage, county-or-region-level pages) instead of continuing informational breadth. Also worth testing: does the same "specific decision phrasing + broadest sensible geography" pattern hold for other query shapes we haven't tried yet (e.g., a Daytona-vs-Ormond style regional comparison, not just single-market pages)?
+
+---
+
 ## 2026-07-21 (cont. x3)
 
 ### Hub reorganization: sort by market priority, split geo from topical
