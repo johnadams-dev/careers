@@ -50,6 +50,18 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ---
 
+## 2026-07-24 (cont. x4) — Extended the winner: cross-links + a real gap fill (379 -> 381)
+
+- Executed the "next move" from above. Three planned pieces, one dropped after real research:
+  1. **Cross-linked the winner from its natural upstream pages.** Added `winnerCrossLink()` to scripts/build-page.js: 84 aspiring-track city pages (become-a-real-estate-agent-*, how-much-do-real-estate-agents-make-*, is-real-estate-a-good-career-*) now carry a "Before you choose" link to their county's brokerage-comparison page. These sit in different pillars (license/decide) than the winner (choose-new), so relatedGuides()'s same-pillar pooling never surfaced it to them. Verified: 0 leakage onto the winner page itself or unrelated pillars.
+  2. **Filled a real, checked gap:** the referral track had zero decision-stage comparison content (all 16 pages were informational). Built `best-referral-only-brokerage-volusia-county` + `...-flagler-county`, demand-checked first (referral-only brokerages are a real, established category with real competitor content) and generically described (no competitor names named, per doctrine).
+  3. **Dropped a third candidate after research disqualified it:** a noun-first "Volusia County real estate brokerages, compared" phrasing. Real search results for that exact phrasing pull consumer-facing agent-review sites (Zillow, Yelp, RateMyAgent) -- a different audience than recruits. Didn't build it rather than force a bet the research didn't support.
+- **Standing correction, applies going forward:** Matt flagged mid-write that the site's established 750-950 word range reads too short for genuine articles. Expanded both new referral pages substantially (963 -> 1557 words) with real added sections (referral-agreement mechanics, tax treatment, common mistakes), not padding. Logged as a standing rule change in Claude memory (`feedback_word_count_floor_too_short`) -- new content going forward should target roughly 1400-1600+ words with genuine substance, not the old 750-950 range.
+- **Open question for Matt, not yet decided:** do the other ~379 existing pages (built to the shorter range) get retroactively expanded, or does the new range apply only going forward? That's a real scope decision, not something to assume either way.
+- Verified: valid JSON, 0 em dash/curly quote, 0 competitor names, 0 duplicate bodies (381 pages), all new pages wired in, sitemap 384 -> 390 across this whole extension, all changes confirmed live via poll.
+
+---
+
 ## 2026-07-21 (cont. x3)
 
 ### Hub reorganization: sort by market priority, split geo from topical
