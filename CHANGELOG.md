@@ -30,6 +30,16 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ---
 
+## 2026-07-24 (cont. x2) — Google-native lever: closed a real fact-gap on the flagship page
+
+- Matt pushed on "rely on Google" specifically (not AI citation) after the earlier session's finding that the flagship `become-a-real-estate-agent-in-florida` page (position 67, our worst-performing head term with real volume) can't win on backlinks alone. Checked what Google's own top-ranked competitor pages for "how to become a realtor in florida" actually lead with, then diff'd that against our own page.
+- Real gap found and closed: our flagship FAQ answer was missing the Social Security number requirement, the exam administrator's name (Pearson VUE), and the fact the exam has two sections (state + national law) -- all short, specific, PAA/snippet-shaped facts that competitor content includes and ours didn't. Expanded the existing top FAQ answer (the one most likely to feed a featured snippet for this exact query) to include all three, without touching the page's custom hub design or journey stepper.
+- **Self-correction worth keeping on record:** initially also flagged the 18-year-old age requirement as missing, based on grep for "18 years" turning up 0 matches. Rechecked before editing and found the page already says "at least 18" -- my search phrase was too narrow, not a real gap. Caught and corrected before shipping anything based on it. Lesson: verify a "gap" against the actual full text, not just the specific phrase you expected to find.
+- Also checked the other broken flagship page (`how-to-renew-your-florida-real-estate-license`, position 61) against its own competitor set -- already covers the equivalent facts (March 31/September 30 deadlines, 90-day renewal window). No gap there, no change made.
+- Verified: valid JSON, 0 em dash/curly quote, 0 competitor names, rebuilt, confirmed live via poll.
+
+---
+
 ## 2026-07-21 (cont. x3)
 
 ### Hub reorganization: sort by market priority, split geo from topical
