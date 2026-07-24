@@ -70,6 +70,22 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ---
 
+## 2026-07-24 (cont. x6) — Full technical audit: word count, titles, metas, schema, internal links
+
+- Matt asked whether retroactively expanding all ~379 existing pages to the new ~1500-word standard would actually help. Real answer, not assumed: no, as a blanket policy -- this site's own data shows the best performers (transfer-broker guide, the county comparison winners) are 800-1000 words, not long. Word count isn't the lever; specificity and intent-match are. Recommended a real audit instead of a blanket rewrite. Matt said yes, then asked to also check titles, metas, schema, and internal linking while at it.
+- Built a full programmatic audit (word count, title length, metaDesc length, FAQ schema presence, inbound internal link count) across all 378 non-hub pages. Results:
+  - **Word count: healthy already.** Median 1241 words, p25 1060, p75 1424. The 750-950 range Matt flagged wasn't actually the site-wide norm; only ~74 pages (mostly `tool` format, inherently short by design) sit under 900.
+  - **Schema: 0 pages missing FAQPage.** Clean across the board.
+  - **Internal links: 0 orphan-risk pages.** Every page has 2+ inbound links (hub-and-spoke + relatedGuides() + this session's new cross-links working as intended).
+  - **Duplicate titles/metas: 0.**
+  - **Title length: checked the 34 shortest, found no real defect** -- they're short-and-precise for simple topics ("Best Parks in DeBary"), which is correct, not generic.
+  - **MetaDesc: found a real, systematic defect.** 30 pages under 100 chars, 24 of them clustering in one template family: `best-real-estate-company-to-work-for-*` and `best-real-estate-company-new-agents-*` (42 pages total). Cross-referenced against real GSC data: essentially the entire family shows 0% CTR, including pages at position 1-10 (Oak Hill at position 1.0, Daytona Beach at 6.9) getting zero clicks despite excellent rankings. Same defect class as the earlier Daytona Beach money-page fix, at template scale.
+- **Fixed:** generated new metaDescs programmatically for all 42 pages, pulling the real 3-model comparison structure already on each page (full-service vs. national franchise vs. discount/100%), market name substituted, "near" handled for the 2 smallest towns matching the site's existing small-town-honesty convention. Applied via surgical single-line replacement (not full-file JSON rewrite) to keep the diff scoped -- 42 files, 1 line each.
+- **Deliberately not done:** renaming "company" to "brokerage" in this family's titles/slugs, despite earlier data showing that phrasing converts better. That's a bigger, URL-changing move with real risk to already-indexed pages -- flagged as a separate decision, not bundled into a metaDesc fix.
+- Verified: all 42 valid JSON, 0 em dash/curly quote, 42/42 unique (no new duplicates introduced), rebuilt, confirmed live via poll.
+
+---
+
 ## 2026-07-21 (cont. x3)
 
 ### Hub reorganization: sort by market priority, split geo from topical
