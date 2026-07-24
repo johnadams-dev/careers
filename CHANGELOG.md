@@ -104,6 +104,19 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ---
 
+## 2026-07-24 (cont. x9) — Scaled the authority build to all 17 remaining towns
+
+- Matt said yes. Dispatched 17 parallel Haiku subagents (per feedback_agent_cost_efficiency_bulk_content: cheap model explicitly set, each agent scoped to exactly one content file, no site-wide scans delegated to any of them), each researching real local history/institutions/demographics for its own town via web search and expanding in the DeLand pattern: 3-4 new H2 sections, FAQ 3 -> 6, existing content preserved.
+- Ran the full verification pass myself after all 17 finished, not delegated to any agent: JSON validity, doctrine (em dash/curly quote/competitor names), sitewide duplicate-body hash check, broken internal links -- all 17 came back clean on every check.
+- **Caught two real problems in review before shipping, exactly the kind of thing a centralized human-equivalent pass is for:**
+  1. New Smyrna Beach's agent-cited $420K median price was stale/wrong -- current sourced data across multiple sites shows $470K-$510K for 2026. Corrected to ~$490K in both the stats callout and body prose.
+  2. Port Orange's Freemanville section had real accuracy problems: wrong founding year (said 1867, actually late 1865) and a sanitized "living legacy still visible today" framing that omitted the colony's real hardship and disbandment by 1869. This is real history about formerly enslaved people; rewrote it with the accurate timeline and the real remaining legacy (Mount Moriah Baptist Church, the one structure that still stands), treating it with the seriousness it deserves rather than a tidy marketing narrative.
+  3. Also swept all 17 for a recurring em-dash-removal grammar artifact (period + lowercase word) and found + fixed 2 real instances in Palm Coast.
+- Rebuilt (still 381/381, page count unchanged, depth added), 0 broken links, pushed direct to main, spot-checked 3 towns live plus both corrected facts confirmed deployed via poll.
+- Towns completed: Flagler Beach, Deltona, Port Orange, New Smyrna Beach, Ormond Beach, Bunnell, South Daytona, Palm Coast, Orange City, Edgewater, Holly Hill, DeBary, Daytona Beach Shores, Oak Hill, Ponce Inlet, Lake Helen, Pierson. Combined with DeLand, all 18 non-flagship aspiring-track town guides are now genuine authority pieces.
+
+---
+
 ## 2026-07-21 (cont. x3)
 
 ### Hub reorganization: sort by market priority, split geo from topical
