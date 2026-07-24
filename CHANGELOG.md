@@ -4,6 +4,22 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ---
 
+## 2026-07-24
+
+### First real Search Console analysis + a data-driven fix (in progress)
+
+- Built persistent Google Search Console access (`~/gsc-tool`, separate from this repo) — previously required pasting a fresh OAuth token every session, now it's a one-time sign-in that stays connected. Full detail in Claude memory `reference_gsc_persistent_tool`.
+- Pulled real 3-week performance data (2026-07-03 to 2026-07-24) and found:
+  - Impressions climbing steadily (26/day -> 130+/day) — Google is indexing the growth. Clicks still thin (0-3/day), expected this early.
+  - Best performer: `how-to-transfer-your-florida-real-estate-license-to-a-new-broker` — 99 impressions, position 6.7, 4 clicks. Narrow, decision-specific, low-competition query. The two broad flagship pages (`become-a-real-estate-agent-in-florida`, `how-to-renew-your-florida-real-estate-license`) have similar-quality copy and comparable internal links but sit at position 51-67 — they're fighting Zillow/Indeed/DBPR.gov directly, a longer authority game, not a quick fix.
+  - 30 pages already rank page 1 (position 3-10) with zero clicks in 3 weeks. Checked titles/metas by hand rather than assuming a bug: only `become-a-real-estate-agent-daytona-beach` (the #1 money page) was a real outlier — its metaDesc was 78 chars vs the site's own 143-char median across all 375 pages. Fixed (see below). The other two candidates checked (`active-vs-inactive-real-estate-license...`, `can-you-get-a-florida-real-estate-license-with-a-felony`) measured right at the site median (141, 160 chars) — no defect found, held as-is rather than force an unfounded change. Zero clicks at 22-61 impressions over 3 weeks isn't statistically alarming on its own; worth re-checking after another 3-4 weeks.
+- **Shipped:** rewrote the Daytona Beach money page's metaDesc (78 -> 156 chars), pulling the 63-hour/exam/2-4-month facts already on the page — no new claims. Pushed direct to main, confirmed live via poll (Netlify deploy lag ~15s). Commit `63f4e45`.
+- Mobile ranks meaningfully better than desktop (avg position 12 vs 23, better CTR too) — worth knowing given the mobile picker redesign work already in flight elsewhere.
+- Aside: some `/p/[address]/...` and `getagent/list.php` URLs are ranking too — looks like a leftover MLS/IDX property-listing widget on the original site, unrelated to the recruiting content engine. Flagged, not touched.
+- Scoped 4 new narrow, bottom-funnel topics in the transfer-broker pattern, each demand-checked (real web search, not invented) and confirmed non-duplicate against all 375 existing pages: license-transfer cost/who-pays, commission on pending deals after leaving a brokerage, exam retake rules, what to bring to the exam. 2 initial candidates (non-compete clauses, state reciprocity) turned out to already be covered by existing pages — dropped rather than duplicated. Full reasoning in WORKLOG.md. Not yet written — pending Matt's go-ahead.
+
+---
+
 ## 2026-07-21 (cont. x3)
 
 ### Hub reorganization: sort by market priority, split geo from topical
