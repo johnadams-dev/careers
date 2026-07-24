@@ -367,7 +367,17 @@ function hubClusters(spec) {
   if (!spec.track) return [];
   return MANIFEST.pillars.filter((pl) => pl.track === spec.track).map((pl) => {
     const pages = MANIFEST.pages.filter((pg) => pg.track === spec.track && pg.pillar === pl.id && pg.type !== 'hub');
-    const geo = pages.filter((pg) => marketRankFor(pg) !== -1).sort((a, b) => marketRankFor(a) - marketRankFor(b));
+    // Proven-winner boost (real GSC data, 2026-07-24): the county-level "brokerage
+    // to join"/"brokerage for experienced agents" pages convert at 5-25x every other
+    // page on the site (up to 100% CTR at position 1) when Google shows them, but sat
+    // buried at market-rank 9/10 behind every individual city. Pin those specific,
+    // proven slug patterns to the top of their pillar regardless of city population
+    // rank. Deliberately narrow: does NOT include "company to work for" county pages,
+    // which share the same pillar/format but convert at 0% -- the win is specific to
+    // the "brokerage" phrasing, not "county-level comparison" in general.
+    const isProvenWinner = (pg) => /county$/i.test(pg.place || '') && /^best-real-estate-brokerage-to-join-|^best-brokerage-experienced-agents-/.test(pg.slug || '');
+    const geo = pages.filter((pg) => marketRankFor(pg) !== -1)
+      .sort((a, b) => (isProvenWinner(b) - isProvenWinner(a)) || (marketRankFor(a) - marketRankFor(b)));
     const topic = pages.filter((pg) => marketRankFor(pg) === -1).sort((a, b) => a.title.localeCompare(b.title));
     const spokes = [
       ...geo.map((pg) => ({ slug: pg.slug, title: pg.title, group: 'geo' })),
