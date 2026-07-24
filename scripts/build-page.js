@@ -354,6 +354,25 @@ function winnerCrossLink(spec) {
 </div></section>`;
 }
 
+// Same pattern, referral track: the 2 new referral-only brokerage comparison
+// pages (2026-07-24) have no aspiring/experienced-style geo winner check
+// since the 14 existing referral pages are FL-statewide, not city-bound, so
+// there's no single county to disambiguate to. Link to both.
+function referralWinnerCrossLink(spec) {
+  const me = MANIFEST.pages.find((p) => p.slug === spec.slug);
+  if (!me || me.track !== 'referral' || me.type === 'hub' || me.format === 'comparison') return '';
+  const winners = [
+    { slug: 'best-referral-only-brokerage-volusia-county', name: 'Volusia County' },
+    { slug: 'best-referral-only-brokerage-flagler-county', name: 'Flagler County' },
+  ].filter((w) => slugExists(w.slug));
+  if (!winners.length) return '';
+  return `
+<section class="lst-related"><div class="lst-narrow">
+  <p class="lst-kicker">Before you choose where to park your license</p>
+  <p>${winners.map((w) => `<a href="${w.slug}.html">See the referral-only brokerage comparison for ${esc(w.name)} &rarr;</a>`).join('<br/>')}</p>
+</div></section>`;
+}
+
 // on-page: liftable answer + key takeaways + freshness byline
 function aeoTop(spec) {
   const out = [`<p class="lst-updated">Updated ${esc(spec.updatedLabel || UPDATED_LABEL)} · Reviewed by Adams, Cameron &amp; Co.</p>`];
@@ -539,6 +558,7 @@ ${crumbHtml}
 </article>
 
 ${winnerCrossLink(spec)}
+${referralWinnerCrossLink(spec)}
 ${relatedGuides(spec)}
 ${faqHtml(spec)}
 ${offerHtml(spec)}`;
@@ -591,6 +611,7 @@ ${crumbHtml}
 </article>
 
 ${winnerCrossLink(spec)}
+${referralWinnerCrossLink(spec)}
 ${relatedGuides(spec)}
 ${faqHtml(spec)}
 ${offerHtml(spec)}`;
