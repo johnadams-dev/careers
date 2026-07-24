@@ -86,6 +86,15 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ---
 
+## 2026-07-24 (cont. x7) — 2 more metaDesc stragglers, found by grouping GSC data correctly
+
+- Continued the audit. First attempt at grouping page performance by template family used a crude first-word split (collapsed everything into buckets like "become"/"best"/"how") -- caught it, redid it properly using the site's own market-slug list to strip city suffixes correctly.
+- Real result: `become-a-real-estate-agent-*` showed 0% CTR across the family (107 impr, 6 pages with signal). Checked all 21 city variants directly -- 19 already had the specific, local-detail metaDesc pattern from an earlier improvement pass; only Ponce Inlet (80 chars) and New Smyrna Beach (85 chars) were stragglers still on the old generic pattern. Fixed both using each page's own real local content (barrier-island market / coastal second-home market), matching sibling style and length.
+- Checked 2 other flagged-low-CTR families (`best-neighborhoods-to-know-selling-real-estate`, `how-much-do-real-estate-agents-make`) and found no real defect -- both already well-written; 0% CTR there is thin-sample noise (5-8 impressions/page), not fixable. Left them alone rather than manufacture work.
+- Verified: valid JSON, 0 em dash/curly quote, confirmed live via poll.
+
+---
+
 ## 2026-07-21 (cont. x3)
 
 ### Hub reorganization: sort by market priority, split geo from topical
