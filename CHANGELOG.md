@@ -4,6 +4,13 @@ Internal build log for floridarealtorcareers.com (Adams, Cameron & Co. careers s
 
 ---
 
+## 2026-07-24 (cont. x7) — History series: Flagler Beach shipped (382 -> 383), resuming after a session interruption
+
+- Picked up from the previous session's DeLand pilot. The Flagler Beach history article had been fully researched and written (Ocean City Beach founding by homesteader Isaac Moody in 1909, the 1920s postal-collision renaming to Flagler Beach, the 1925 incorporation, the 1928 pier, and the decades of deliberate building-height/preservation choices that made it "Florida's Last Beach Town") but the session ended before it was registered, built, or committed.
+- Registered it the same way as DeLand: `scripts/seed-manifest.js` EVERGREEN entry + BUILT map + slug override (auto-slugify would have kept a leading "the-" prefix), reseeded, built twice.
+- Two real fixes made before shipping: the metaDesc was 232 characters (over the site's ~160-char norm) — trimmed to 161 using only facts already in the piece. And the `become-a-real-estate-agent-flagler-beach` guide had no reciprocal link back to the new history page (the "local" pillar sits outside `relatedGuides()`'s same-pillar auto-linking), so added the same "go deeper on the town's real story" link DeLand's guide got.
+- Verified: valid JSON, 0 em dash/curly quote, 0 competitor names, 0 sitewide duplicate bodies (380 content files checked), 0 broken internal links, reciprocal link confirmed in the rendered HTML, pushed direct to main, confirmed live via poll (~15s Netlify lag). Sitemap 383.
+
 ## 2026-07-24
 
 ### First real Search Console analysis + a data-driven fix (in progress)
