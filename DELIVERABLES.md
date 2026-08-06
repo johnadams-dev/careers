@@ -85,6 +85,14 @@ Each page targets a real question a prospect asks before choosing a brokerage, m
 - **Seven towns done so far**, each requiring genuine research, not a template: DeLand, Flagler Beach, Daytona Beach, Ormond Beach, New Smyrna Beach, Port Orange, and Palm Coast. Where a town's real, documented history included something difficult, it was told honestly rather than smoothed over into a tidy marketing story.
 - **A new test page** compares two neighboring markets, Daytona Beach and Ormond Beach, head to head, honestly and without picking a "winner," for a prospect trying to decide where to start. If it performs well, the same approach can extend to other market pairs.
 
+## Six new pages answering the specific questions people actually search for
+- **A dedicated page explaining a real, Florida-specific licensing rule** ("transaction broker") that every new agent has to learn and is tested on, previously mentioned nowhere on the site in real depth.
+- **A genuinely local page on which MLS and Realtor association a new agent joins in Volusia and Flagler County.** This is a hyper-specific, practical question no national real estate site could ever answer, and the research surfaced a real correction along the way: the Daytona Beach area actually runs its own independent system rather than sharing the one the rest of the county uses.
+- **A real-compliance page on referral fees from lenders and title companies**, a genuinely different question from the site's existing content on agent-to-agent referrals, and an important guardrail for anyone considering the referral path.
+- **A tax-specific page on mileage deductions**, one of the most commonly searched real estate agent tax questions, including this year's IRS rate change mid-year.
+- **A concrete first-90-days plan for a new agent**, distinct from the existing "day in the life" content, answering a specific way people search when they're deciding whether and how to get started.
+- **An honest, consolidated "common mistakes" page** pulling together a topic that was previously scattered across several other pages into one clear resource, with new practical guidance not found elsewhere on the site.
+
 ## Editorial quality
 - **A full copy-quality pass** removed automated-writing tells across the entire site, so every page reads as professionally written by a person, not by a machine. This covers both the new pages and the original site pages.
 - **No other company is named anywhere on the site.** Every page speaks only to what Adams, Cameron & Co. offers; reputation and comparison content is written generically (review sites, brokerage models) rather than naming any competitor or third-party platform.
