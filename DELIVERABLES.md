@@ -74,10 +74,22 @@ Each page targets a real question a prospect asks before choosing a brokerage, m
   - For team builders: buying an existing team, moving from solo agent to team manager, honest reasons teams fail, and vacation coverage.
 - **375 pages built and live.**
 
+## Real performance data now drives the work
+- **Connected the site to real Google Search Console data** and used it to find out what's actually working, not just what looks complete on paper. The clearest finding: two specific pages, the county-wide "best brokerage" comparisons for Volusia and Flagler, are the strongest performers on the entire site by a wide margin, far ahead of every other page measured. That's a direct signal about what a real prospect searching for a brokerage actually wants to see.
+- **Acted on that finding in three ways**: promoted those two winning pages to the top of their section on the hub page (they were previously buried below individual cities purely by list order), added natural links pointing toward them from the pages most likely to send a reader their way, and fixed a handful of pages where the on-page description shown in search results was cut off mid-sentence, a real, fixable reason a page can rank well but still get skipped over.
+- **Closed a small but real content gap** on the site's most important page (the general "how to become an agent in Florida" guide) after comparing it directly against what's currently ranking well for that exact question elsewhere. A few short, specific facts prospects look for were missing; added them without touching the page's design.
+- **Every one of the 18 individual town guides was deepened into a genuine local resource**, not just a licensing checklist. Each now includes real local history, institutions, and what makes that specific town's market different, doubling or more than doubling in length with substance, not filler.
+
+## A new content type: real town histories, not just recruiting pages
+- **A standalone series telling the real, well-researched history of each town**, written specifically for someone considering a real estate career there. This isn't marketing copy: it's the same caliber of research a local historian would recognize, tied back to what that history actually means for an agent working the town today (why a neighborhood has the character it has, why a certain buyer shows up there, why a market behaves the way it does).
+- **Seven towns done so far**, each requiring genuine research, not a template: DeLand, Flagler Beach, Daytona Beach, Ormond Beach, New Smyrna Beach, Port Orange, and Palm Coast. Where a town's real, documented history included something difficult, it was told honestly rather than smoothed over into a tidy marketing story.
+- **A new test page** compares two neighboring markets, Daytona Beach and Ormond Beach, head to head, honestly and without picking a "winner," for a prospect trying to decide where to start. If it performs well, the same approach can extend to other market pairs.
+
 ## Editorial quality
 - **A full copy-quality pass** removed automated-writing tells across the entire site, so every page reads as professionally written by a person, not by a machine. This covers both the new pages and the original site pages.
 - **No other company is named anywhere on the site.** Every page speaks only to what Adams, Cameron & Co. offers; reputation and comparison content is written generically (review sites, brokerage models) rather than naming any competitor or third-party platform.
 
 ## What's next
-- Re-measure how often the site is cited by AI assistants and search, to show the gain against the starting baseline (due roughly early-to-mid August, 6-8 weeks from the June baseline).
+- Re-measure how often the site is cited by AI assistants and search, to show the gain against the starting baseline. That window has now arrived.
+- Continue the town history series to the remaining smaller towns, and extend the two-market comparison test to other neighboring pairs if the first one performs well.
 - Confirm Search Console access is fully handed to John as a Full user.
