@@ -1,13 +1,9 @@
 # netlify.toml
 # ── Netlify Configuration for floridarealtorcareers.com ──────────
-# Drop the entire /acrealtors folder into Netlify to deploy.
+# This repo holds the pre-built static site only. Pages are generated and
+# committed here as plain HTML, no build step runs, Netlify just serves them.
 [build]
   publish = "."
-  # Regenerate the whole site from the content registry on every deploy:
-  # renders all pages and auto-writes sitemap.xml + llms.txt from manifest.js.
-  # Pure Node, no dependencies to install. Generated HTML is also committed as
-  # a fallback, so a build hiccup never takes the site down.
-  command = "node scripts/build.js"
 
 # Redirect index.html to the root so there's only one canonical homepage URL
 [[redirects]]
