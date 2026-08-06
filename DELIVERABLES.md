@@ -85,6 +85,10 @@ Each page targets a real question a prospect asks before choosing a brokerage, m
 - **Seven towns done so far**, each requiring genuine research, not a template: DeLand, Flagler Beach, Daytona Beach, Ormond Beach, New Smyrna Beach, Port Orange, and Palm Coast. Where a town's real, documented history included something difficult, it was told honestly rather than smoothed over into a tidy marketing story.
 - **A new test page** compares two neighboring markets, Daytona Beach and Ormond Beach, head to head, honestly and without picking a "winner," for a prospect trying to decide where to start. If it performs well, the same approach can extend to other market pairs.
 
+## A new kind of page: an honest self-assessment, not just an article
+- **A short, scored self-assessment** that answers the most personal version of "should I do this," not a generic "is real estate a good career" article. A prospect rates themselves on 6 honest, real factors (savings cushion, comfort with commission-only income, how they handle rejection, whether they're self-directed) and gets an immediate, honest read on where they stand, with real next-step guidance either way.
+- **Deliberately not a sales trick.** If someone's answers point to "not quite yet," the page says so plainly and explains what to fix first, matching the same straight-talk voice already established across the site, rather than pushing everyone toward a "yes."
+
 ## Six new pages answering the specific questions people actually search for
 - **A dedicated page explaining a real, Florida-specific licensing rule** ("transaction broker") that every new agent has to learn and is tested on, previously mentioned nowhere on the site in real depth.
 - **A genuinely local page on which MLS and Realtor association a new agent joins in Volusia and Flagler County.** This is a hyper-specific, practical question no national real estate site could ever answer, and the research surfaced a real correction along the way: the Daytona Beach area actually runs its own independent system rather than sharing the one the rest of the county uses.

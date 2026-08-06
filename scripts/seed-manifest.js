@@ -282,6 +282,7 @@ const EVERGREEN = [
 
 // interactive tools (the Otto "tool" format — high citation value)
 const TOOLS = [
+  { pillar: 'decide',    title: 'Should I Become a Real Estate Agent? A Honest Self-Assessment', query: 'Should I become a real estate agent?' },
   { pillar: 'economics', title: 'Real Estate Commission Split Calculator',            query: 'How much will I actually take home at different commission splits?' },
   { pillar: 'decide',    title: 'Florida Real Estate Agent Income Estimator',          query: 'How much can I make as a real estate agent in Florida?' },
   { pillar: 'license',   title: 'Florida Real Estate License Cost Calculator',         query: 'How much does it cost to get a Florida real estate license?' },
@@ -305,6 +306,7 @@ const BUILT = {
   'how-a-real-estate-referral-company-works-in-florida':   { spec: 'content/how-a-real-estate-referral-company-works-in-florida.json' },
   'best-referral-only-brokerage-volusia-county': { spec: 'content/best-referral-only-brokerage-volusia-county.json' },
   'best-referral-only-brokerage-flagler-county': { spec: 'content/best-referral-only-brokerage-flagler-county.json' },
+  'should-i-become-a-real-estate-agent-a-honest-self-assessment': { spec: 'content/should-i-become-a-real-estate-agent-a-honest-self-assessment.json' },
   'real-estate-commission-split-calculator':               { spec: 'content/real-estate-commission-split-calculator.json' },
   'florida-real-estate-agent-income-estimator':            { spec: 'content/florida-real-estate-agent-income-estimator.json' },
   'best-real-estate-company-to-work-for-daytona-beach':    { spec: 'content/best-real-estate-company-to-work-for-daytona-beach.json' },
