@@ -83,7 +83,7 @@ h1{font-family:Georgia,serif;font-size:38px;letter-spacing:-.5px}
   <div class="stat"><b>${M.pages.length}</b><span>pages mapped now</span></div>
   <div class="stat"><b>3</b><span>audience tracks</span></div>
   <div class="stat"><b>${M.markets.length}</b><span>local markets</span></div>
-  <div class="stat"><b>5</b><span>Otto formats</span></div>
+  <div class="stat"><b>5</b><span>content formats</span></div>
   <div class="stat"><b>↑1,500</b><span>expandable</span></div>
 </div>
 <div class="tracks">${tracksHtml}</div>

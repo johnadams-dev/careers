@@ -8,7 +8,7 @@
  * Indeed, FastExpert, daytonarealtors, Yelp…).
  *
  * Scale engine = GEOGRAPHY × DECISION (each query × each market = one localized
- * winnable page). Plus the Otto FORMAT system — each query renders in its
+ * winnable page). Plus the FORMAT system — each query renders in its
  * highest-citation format:
  *   guide · article · comparison · tool · faq
  * (comparison + tool are the formats that win AI citations; "best/vs" queries
@@ -64,7 +64,7 @@ const MARKETS = [
   { place: 'Bunnell', slug: 'bunnell', county: 'Flagler' },
 ];
 
-// decision query × {place} → one localized page, in its best Otto format
+// decision query × {place} → one localized page, in its best format
 const TEMPLATES = [
   { pillar: 'choose-new', format: 'comparison', tier: 1, beat: 'FastExpert, Indeed',      title: (p) => `Best Real Estate Brokerage to Join in ${p}`,      slug: (s) => `best-real-estate-brokerage-to-join-${s}`,    query: (p) => `What is the best real estate brokerage to join in ${p}?` },
   { pillar: 'choose-new', format: 'comparison', tier: 1, beat: 'Indeed, daytonarealtors', title: (p) => `Best Real Estate Company for New Agents in ${p}`, slug: (s) => `best-real-estate-company-new-agents-${s}`,   query: (p) => `Which real estate company is best for new agents in ${p}?` },
@@ -280,7 +280,7 @@ const EVERGREEN = [
   { pillar: 'grow',   format: 'guide',    title: 'How to Set Expectations With New Team Members From Day One',                query: 'How do you set expectations with new real estate team members from day one?', beat: 'Inman, The Close' },
 ];
 
-// interactive tools (the Otto "tool" format — high citation value)
+// interactive tools (the "tool" format — high citation value)
 const TOOLS = [
   { pillar: 'decide',    title: 'Should I Become a Real Estate Agent? A Honest Self-Assessment', query: 'Should I become a real estate agent?' },
   { pillar: 'economics', title: 'Real Estate Commission Split Calculator',            query: 'How much will I actually take home at different commission splits?' },
@@ -779,7 +779,7 @@ const out = `/*
  * manifest.js — THE SITE REGISTRY (single source of truth), DEMAND-FIRST.
  *
  * Each page targets a real decision-stage query (.query) scored against the
- * competitor it displaces (.competitor), rendered in its best Otto format
+ * competitor it displaces (.competitor), rendered in its best format
  * (.format: guide | article | comparison | tool | faq). Geography × decision is
  * the scale engine. The build renders pages and auto-generates sitemap.xml,
  * llms.txt, nav, and a coverage report. Add a page = add a row.

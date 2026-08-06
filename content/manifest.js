@@ -2,7 +2,7 @@
  * manifest.js — THE SITE REGISTRY (single source of truth), DEMAND-FIRST.
  *
  * Each page targets a real decision-stage query (.query) scored against the
- * competitor it displaces (.competitor), rendered in its best Otto format
+ * competitor it displaces (.competitor), rendered in its best format
  * (.format: guide | article | comparison | tool | faq). Geography × decision is
  * the scale engine. The build renders pages and auto-generates sitemap.xml,
  * llms.txt, nav, and a coverage report. Add a page = add a row.
